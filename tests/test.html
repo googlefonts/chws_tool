@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contextual Spacing (chws) Test Page</title>
+<script>
+const fonts = [
+  // JAN
+  "DelaGothicOne-Regular.ttf",
+  "DotGothic16-Regular.ttf",
+  "HachiMaruPop-Regular.ttf",
+  "KiwiMaru-Light.ttf",
+  "KiwiMaru-Medium.ttf",
+  "KiwiMaru-Regular.ttf",
+  "Kosugi-Regular.ttf",
+  "KosugiMaru-Regular.ttf",
+  "MPLUS1p-Black.ttf",
+  "MPLUS1p-Bold.ttf",
+  "MPLUS1p-ExtraBold.ttf",
+  "MPLUS1p-Light.ttf",
+  "MPLUS1p-Medium.ttf",
+  "MPLUS1p-Regular.ttf",
+  "MPLUS1p-Thin.ttf",
+  "MPLUSRounded1c-Black.ttf",
+  "MPLUSRounded1c-Bold.ttf",
+  "MPLUSRounded1c-ExtraBold.ttf",
+  "MPLUSRounded1c-Light.ttf",
+  "MPLUSRounded1c-Medium.ttf",
+  "MPLUSRounded1c-Regular.ttf",
+  "MPLUSRounded1c-Thin.ttf",
+  "NewTegomin-Regular.ttf",
+  "PottaOne-Regular.ttf",
+  "ReggaeOne-Regular.ttf",
+  "RocknRollOne-Regular.ttf",
+  "SawarabiGothic-Regular.ttf",
+  "SawarabiMincho-Regular.ttf",
+  "ShipporiMincho-Bold.ttf",
+  "ShipporiMincho-ExtraBold.ttf",
+  "ShipporiMincho-Medium.ttf",
+  "ShipporiMincho-Regular.ttf",
+  "ShipporiMincho-SemiBold.ttf",
+  "ShipporiMinchoB1-Bold.ttf",
+  "ShipporiMinchoB1-ExtraBold.ttf",
+  "ShipporiMinchoB1-Medium.ttf",
+  "ShipporiMinchoB1-Regular.ttf",
+  "ShipporiMinchoB1-SemiBold.ttf",
+  "Stick-Regular.ttf",
+  "TrainOne-Regular.ttf",
+  "YuseiMagic-Regular.ttf",
+  // KOR
+  "GothicA1-Black.ttf",
+  "GothicA1-Bold.ttf",
+  "GothicA1-ExtraBold.ttf",
+  "GothicA1-ExtraLight.ttf",
+  "GothicA1-Light.ttf",
+  "GothicA1-Medium.ttf",
+  "GothicA1-Regular.ttf",
+  "GothicA1-SemiBold.ttf",
+  "GothicA1-Thin.ttf",
+  // ZHS
+  "LongCang-Regular.ttf",
+  "MaShanZheng-Regular.ttf",
+  "ZhiMangXing-Regular.ttf",
+];
+</script>
+<style>
+:root {
+  --ui-height: 8em;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+.vert {
+  writing-mode: vertical-rl;
+}
+.upright .test {
+  text-orientation: upright;
+}
+.fwid .test {
+  font-variant-east-asian: full-width;
+}
+#ui {
+  writing-mode: horizontal-tb;
+  position: fixed; left: 0; top: 0;
+  padding: .5em;
+  z-index: 1;
+  background: rgba(255, 253, 220, 0.9);
+  width: 100%;
+  user-select: none;
+}
+#ui ul {
+  margin: 0;
+  padding: 0;
+}
+#ui ul li {
+  display: inline;
+  white-space: nowrap;
+  margin-right: 5px;
+}
+#uivariables {
+  display: none;
+}
+input[type=range] {
+  vertical-align: middle;
+}
+#ui input[type=text].wide {
+  width: 30em;
+  max-width: 100%;
+}
+#ui .note {
+  font-family: 'Times New Roman', Times, serif;
+  margin-inline-start: 3em;
+}
+#container {
+  font-feature-settings: 'chws' 0, 'vchw' 0;
+  margin-top: var(--ui-height);
+  font-size: 20px;
+}
+summary {
+  cursor: default;
+}
+h2 {
+  font-size: 1em;
+  margin: 0;
+  float: left;
+}
+ol {
+  margin: 0;
+  margin-inline-start: 10ch;
+  padding-inline-start: 50px;
+}
+.test {
+  line-height: 1.5;
+  position: relative;
+}
+.on, .off {
+  display: inline-block;
+}
+.on {
+  font-feature-settings: 'chws' 1;
+  position: absolute; left: 0; top: 0;
+  border: blue 1px solid;
+}
+.vert .on {
+  font-feature-settings: 'vchw' 1;
+}
+.off {
+  color: lightblue;
+  border: lightblue 1px solid;
+}
+.ref {
+  position: absolute; left: 0; top: 0;
+  color: pink;
+  display: inline-block;
+}
+.hwid {
+  font-feature-settings: 'halt' 1;
+}
+.diffonly .diff-no {
+  visibility: hidden;
+  width: 0; height: 0;
+}
+</style>
+</head>
+<body>
+  <div id="ui">
+    <div id="uiformat">
+      <ul>
+        <li>
+          <label for="font">Font:</label>
+          <select id="font"></select>
+        </li>
+        <li>
+          <label for="lang">Language:</label>
+          <select id="lang">
+            <option>ja</option>
+            <option>zh</option>
+            <option>zh-cn</option>
+            <option>zh-tw</option>
+            <option>zh-hk</option>
+            <option>ko</option>
+          </select>
+        </li>
+        <li>
+          <label for="fwid"><input id="fwid" type="checkbox">Fullwidth</label>
+        </li>
+        <li>
+          <label for="vert"><input id="vert" type="checkbox">Vertical</label>
+        </li>
+        <li>
+          <label for="upright"><input id="upright" type="checkbox">Upright</label>
+        </li>
+      </ul>
+    </div>
+    <div id="uivariables">
+      <ul>
+        <li>
+          <label>Weight:</label>
+          <input id="weight" type="range" value="400" min="100" max="900">
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li>
+          <label for="diffonly"><input id="diffonly" type="checkbox">Hide same size</label>
+        </li>
+      </ul>
+    </div>
+    <div class="note" style="float: right">
+      The <span style="color: lightblue">lightblue text</span>
+      is without the
+      <a href="https://docs.microsoft.com/en-us/typography/opentype/spec/features_ae#tag-chws">chws</a>
+      feature.
+    </div>
+    <details>
+      <summary>
+        Characters
+        <span id="unicode"></span>
+      </summary>
+      <table>
+        <tr><td>Open:</td><td><input id="open" type="text" class="wide"></td></tr>
+        <tr><td>Close:</td><td><input id="close" type="text" class="wide"></td></tr>
+        <tr><td>Middle:</td><td><input id="middle" type="text" class="wide"></td></tr>
+        <tr><td>Before/after:</td><td>
+          <input id="context" type="text" value="あ">
+          <input id="create" type="button" value="Update Tests">
+        </td></tr>
+      </table>
+    </details>
+  </div>
+  <div id="container"></div>
+<script>
+function populateFonts() {
+  const styles = []
+  fonts.forEach((filename) => {
+    const url = '../build/' + filename;
+    const name = filename.replace(/[ \.]/g, '-');
+    styles.push(`@font-face { font-family: "${name}"; src: url("${url}"); ` +
+                `font-display: block; }`);
+    styles.push(`.font-${name} .test { font-family: ${name}; }`);
+    option_element = document.createElement("option");
+    option_element.value = name;
+    option_element.textContent = name;
+    font.appendChild(option_element);
+  });
+  style_element = document.createElement("style");
+  style_element.textContent = styles.join("\n");
+  document.head.appendChild(style_element);
+}
+populateFonts();
+
+const root = document.documentElement;
+const classTargetElement = root;
+const classList = classTargetElement.classList;
+
+function removeClassStartsWith(classList, prefix) {
+  for (let i = classList.length - 1; i >= 0; --i) {
+    let name = classList[i];
+    if (name.startsWith(prefix))
+      classList.remove(name);
+  }
+}
+
+function updateUrlSearchParams(name, value) {
+  const url = new URL(document.location);
+  const params = url.searchParams;
+  if (!value)
+    params.delete(name);
+  else if (typeof value === "boolean")
+    params.set(name, 1);
+  else
+    params.set(name, value);
+  history.replaceState(null, null, url.toString());
+}
+
+function onFontChanged(e) {
+  removeClassStartsWith(classList, "font-");
+  const value = font.value;
+  classList.add("font-" + value);
+  uivariables.style.display = value.includes('-vf-') ? 'block' : 'none';
+  root.style.setProperty("--ui-height", ui.offsetHeight + "px");
+  if (e)
+    updateUrlSearchParams('font', value);
+  spacing.updateDiff();
+  document.fonts.ready.then((e) => { spacing.updateDiff(); })
+}
+
+function updateFromSearchParams(element, params, name) {
+  let value = params.get(name);
+  if (element.type === 'checkbox') {
+    value = value !== null;
+    element.checked = value;
+    return;
+  }
+  if (value)
+    element.value = value;
+}
+
+function updateFromSearchParamsAll() {
+  const params = new URLSearchParams(document.location.search);
+  updateFromSearchParams(font, params, 'font');
+  onFontChanged();
+  updateFromSearchParams(lang, params, 'lang');
+  classTargetElement.lang = lang.value;
+  updateFromSearchParams(fwid, params, 'fwid');
+  classList.toggle('fwid', fwid.checked);
+  updateFromSearchParams(vert, params, 'vert');
+  classList.toggle('vert', vert.checked);
+  updateFromSearchParams(upright, params, 'upright');
+  classList.toggle('upright', upright.checked);
+  updateFromSearchParams(diffonly, params, 'diffonly');
+  classList.toggle('diffonly', diffonly.checked);
+  spacing.updateDiff();
+}
+
+font.addEventListener("change", onFontChanged);
+lang.addEventListener("change", (e) => {
+  const value = e.target.value;
+  classTargetElement.lang = value;
+  updateUrlSearchParams('lang', value);
+  spacing.updateDiff();
+});
+vert.addEventListener("change", (e) => {
+  const checked = e.target.checked;
+  classList.toggle("vert", checked);
+  updateUrlSearchParams('vert', checked);
+  spacing.updateDiff();
+});
+upright.addEventListener("change", (e) => {
+  const checked = e.target.checked;
+  if (checked) {
+    vert.checked = true;
+    classList.toggle("vert", true);
+    updateUrlSearchParams('vert', true);
+  }
+  classList.toggle("upright", checked);
+  updateUrlSearchParams('upright', checked);
+  spacing.updateDiff();
+});
+fwid.addEventListener("change", (e) => {
+  const checked = e.target.checked;
+  classList.toggle("fwid", checked);
+  updateUrlSearchParams('fwid', checked);
+  spacing.updateDiff();
+});
+diffonly.addEventListener("change", (e) => {
+  const checked = e.target.checked;
+  classList.toggle("diffonly", checked);
+  updateUrlSearchParams('diffonly', checked);
+  spacing.updateDiff();
+});
+
+const styleSheet = document.styleSheets[0];
+let testRule = null;
+for (const rule of styleSheet.cssRules) {
+  if (rule.selectorText === '.test') {
+    testRule = rule;
+    break;
+  }
+}
+weight.addEventListener('input', (e) => {
+  const value = e.target.value;
+  testRule.style.fontVariationSettings = `'wght' ${value}`;
+});
+
+function uhex(ch) {
+  return `U+${ch.toString(16).toUpperCase()}`;
+}
+
+function showUnicode(e) {
+  const element = e.target;
+  let text = element.textContent;
+  const before_after_len = context.value.length;
+  text = text.substring(before_after_len, text.length - before_after_len);
+  unicode_list = Array.from(text)
+    .map(ch => uhex(ch.charCodeAt(0)))
+    .join(' ');
+  unicode.textContent = unicode_list;
+}
+
+class SpacingTestCase {
+  constructor(parent, ch0, ch1) {
+    this.parent = parent;
+    this.ch0 = ch0;
+    this.ch1 = ch1;
+  }
+
+  createElemnt() {
+    const normal = document.createElement('span');
+    normal.classList.add('off');
+    const before_after = context.value;
+    const text = before_after + this.ch0 + this.ch1 + before_after;
+    normal.textContent = text;
+
+    const test = document.createElement('span');
+    test.classList.add('on');
+    test.textContent = text;
+    test.addEventListener('mouseover', showUnicode);
+    test.addEventListener('click', showUnicode);
+
+    const container = document.createElement('div');
+    container.classList.add('test');
+    container.appendChild(normal);
+    container.appendChild(test);
+    const item = document.createElement('li');
+    item.appendChild(container);
+    this.parent.appendChild(item);
+    this.item_element = item;
+    this.on_element = test;
+    this.off_element = normal;
+    item.addEventListener('click', (e) => {
+      this.updateDiff();
+    })
+  }
+
+  updateDiff() {
+    this.clearDiffUI();
+    this.updateDiffData();
+    this.addDiffUI();
+  }
+
+  clearDiffUI() {
+    const element = this.item_element;
+    const classList = element.classList;
+    removeClassStartsWith(classList, 'diff-');
+  }
+
+  updateDiffData() {
+    const on_bounds = this.on_element.getBoundingClientRect();
+    const off_bounds = this.off_element.getBoundingClientRect();
+    this.diff = Math.max(Math.abs(on_bounds.width - off_bounds.width),
+                         Math.abs(on_bounds.height - off_bounds.height));
+  }
+
+  addDiffUI() {
+    const element = this.item_element;
+    const classList = element.classList;
+    const class_name = this.diff >= 1.0 ? 'diff-yes' : 'diff-no';
+    classList.add(class_name);
+  }
+}
+
+class Spacing {
+  constructor() {
+    this.initUI();
+    this.initLists();
+  }
+
+  initUI() {
+    this.container = document.getElementById('container');
+    document.getElementById('create').addEventListener('click', () => {
+      this.updateFromUI();
+      this.container.textContent = '';
+      this.createTests();
+    });
+  }
+
+  initLists() {
+    this.open = '\u2018\u201C\u3008\u300A\u300C\u300E\u3010\u3014\u3016\u3018\u301A\u301D\uFF08\uFF3B\uFF5B\uFF5F';
+    this.close = '\u2019\u201D\u3009\u300B\u300D\u300F\u3011\u3015\u3017\u3019\u301B\u301E\u301F\uFF09\uFF3D\uFF5D\uFF60';
+    this.middle = '\u00B7\u2027\u30FB'
+    this.space = '\u3000';
+    this.period_comma = '\u3001\u3002\uFF0C\uFF0E';
+    this.colon = '\uFF1B\uFF1A';
+    this.exclam_question = '\uFF01\uFF1F';
+    // For Japanese:
+    this.close += this.period_comma;
+    this.middle += this.colon;
+    // For Chinese
+    this.close += this.exclam_question;
+    document.getElementById('open').value = this.open;
+    document.getElementById('close').value = this.close;
+    document.getElementById('middle').value = this.middle;
+  }
+
+  updateFromUI() {
+    this.open = document.getElementById('open').value;
+    this.close = document.getElementById('close').value;
+    this.middle = document.getElementById('middle').value;
+  }
+
+  createTests() {
+    this.tests = [];
+    this.createSection('Open+Open', [[this.open, this.open, false, true]]);
+    this.createSection('Close+Close', [[this.close, this.close, false, true]]);
+    this.createSection('Close+Open', [[this.close, this.open, false, true]]);
+    this.createSection('Close+Middle', [[this.close, this.middle, false, true]]);
+    this.createSection('Middle+Open', [[this.middle, this.open, false, true]]);
+    this.createSection('Space', [[this.close, this.space, true, false],
+                                 [this.space, this.open, false, true]]);
+  }
+
+  createSection(title, combinations) {
+    let section = document.createElement('details');
+    section.open = true;
+    let heading = document.createElement('summary');
+    heading.textContent = title;
+    section.appendChild(heading);
+    let list = document.createElement('ol');
+    section.appendChild(list);
+    this.container.appendChild(section);
+
+    for (let combination of combinations) {
+      this.createCombinations(list, ...combination)
+    }
+  }
+
+  createCombinations(container, list0, list1, half0, half1) {
+    for (let ch0 of list0) {
+      for (let ch1 of list1) {
+        const test = new SpacingTestCase(container, ch0, ch1);
+        test.createElemnt();
+        this.tests.push(test);
+      }
+    }
+  }
+
+  updateDiff() {
+    for (const test of this.tests)
+      test.clearDiffUI();
+    for (const test of this.tests)
+      test.updateDiffData();
+    for (const test of this.tests)
+      test.addDiffUI();
+  }
+}
+
+let spacing = new Spacing();
+spacing.createTests();
+root.style.setProperty("--ui-height", ui.offsetHeight + "px");
+
+updateFromSearchParamsAll();
+document.fonts.ready.then((e) => { spacing.updateDiff(); })
+</script>
+</body>
+</html>
