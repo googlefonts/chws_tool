@@ -14,7 +14,7 @@ using the [east-asian-sapcing] library.
 ```sh
 git clone https://github.com/googlefonts/chws_tool.git
 cd chws_tool
-pip install -e .
+pip install -e '.[dev]'
 ```
 
 ## Usage
@@ -49,7 +49,7 @@ asyncio.run(main_async())
 
 ## Adding Fonts
 
-This tool has a built-in list of supported fonts,
+This tool has a built-in list of supported fonts in its [config],
 and ignores fonts not in the list for the following reasons:
 * The tool needs to know the language of the font
   because the spacing rules vary by the language.
@@ -74,7 +74,7 @@ too tight spacings or glyph collisions caused by the kernings.
 
 This tool has heuristic rules to determine
 the applicability of the spacings using the glyph metrics,
-but assumes that full-width punctuation glyphs have enough spacings
+but assumes that full-width punctuation glyphs have enough internal spacings
 according to linguistic conventions
 as seen in [UAX#50](http://unicode.org/reports/tr50/#vertical_alternates).
 Unfortunately, not all fonts follow the conventions.
@@ -88,14 +88,14 @@ To run the visual test:
 
 Here is the check list and tips:
 
-* If glyphs collide when the feature is on but look fine without the feature,
-  it is a failure to investigate.
+* Find where glyphs are too tight or collide
+  when the feature is on but look fine without the feature.
   - Quotation marks can collide most often,
     especially in vertical flow but sometimes in horizontal flow too.
   - "Open+Open" and "Close+Close" are more likely to collide than other pairs.
+  - Select glyphs to check how much inks overflow the glyph metrics.
 * Test both horizontal and vertical flows
   by flipping the "Vertical" checkbox.
-  They may show different failures.
 
 Other controls in the test are not mandatory,
 but they may be useful in following cases.

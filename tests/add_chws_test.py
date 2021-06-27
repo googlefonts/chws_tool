@@ -20,10 +20,19 @@ import east_asian_spacing as chws
 
 @pytest.mark.asyncio
 async def test_add_chws(noto_sans_cjkjp_otf, tmp_path):
+    # Ensure the input font does not have the features.
+    input_font = chws.Font.load(noto_sans_cjkjp_otf)
+    assert not input_font.has_gpos_feature("chws")
+    assert not input_font.has_gpos_feature("vchw")
+
     output_path = await chws_tool.add_chws(noto_sans_cjkjp_otf, tmp_path)
     assert output_path
     assert output_path.exists()
 
+    # The output file should be the same file name as the input.
+    assert output_path.name == noto_sans_cjkjp_otf.name
+
+    # Test the features are added.
     output_font = chws.Font.load(output_path)
     assert output_font.has_gpos_feature("chws")
     assert output_font.has_gpos_feature("vchw")
