@@ -76,7 +76,8 @@ This tool has heuristic rules to determine
 the applicability of the spacings using the glyph metrics,
 but assumes that full-width punctuation glyphs have enough internal spacings
 according to linguistic conventions
-as seen in [UAX#50](http://unicode.org/reports/tr50/#vertical_alternates).
+as in [UAX#50](http://unicode.org/reports/tr50/#vertical_alternates)
+or in [CLREQ](https://w3c.github.io/clreq/#h-punctuation_adjustment_space).
 Unfortunately, not all fonts follow the conventions.
 
 To run the visual test:

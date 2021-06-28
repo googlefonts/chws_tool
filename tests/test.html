@@ -63,6 +63,10 @@ const fonts = [
   "MaShanZheng-Regular.ttf",
   "ZhiMangXing-Regular.ttf",
 ];
+const fonts_dir = '../build/';
+function isFontKeyVariable(name) {
+  return name.includes('-VF-');
+}
 </script>
 <style>
 :root {
@@ -233,7 +237,7 @@ ol {
 function populateFonts() {
   const styles = []
   fonts.forEach((filename) => {
-    const url = '../build/' + filename;
+    const url = fonts_dir + filename;
     const name = filename.replace(/[ \.]/g, '-');
     styles.push(`@font-face { font-family: "${name}"; src: url("${url}"); ` +
                 `font-display: block; }`);
@@ -277,7 +281,7 @@ function onFontChanged(e) {
   removeClassStartsWith(classList, "font-");
   const value = font.value;
   classList.add("font-" + value);
-  uivariables.style.display = value.includes('-vf-') ? 'block' : 'none';
+  uivariables.style.display = isFontKeyVariable(value) ? 'block' : 'none';
   root.style.setProperty("--ui-height", ui.offsetHeight + "px");
   if (e)
     updateUrlSearchParams('font', value);
