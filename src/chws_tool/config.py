@@ -66,24 +66,25 @@ def _get_factory_by_name() -> typing.Dict[
     def zhs(config, name, is_vertical):
         return config.for_language("ZHS")
 
-    def zhs_long_cang(config, name, is_vertical):
+    def zhs_middle_colon_semicolon_exclam_question(config, name, is_vertical):
         config = config.clone()
         config.language = "ZHS"
-        config.remove(0xFF0C, 0xFF0E, 0xFF5B, 0xFF5D)
         # These glyphs are supposed to be on the left-half in ZHS fonts,
         # but this font has them at the middle, similar to JAN/ZHT fonts.
         config.is_colon_semicolon_middle = True
-        config.is_exclam_question_middle = True
+        # U+FF01 FULLWIDTH EXCLAMATION MARK
+        # U+FF1F FULLWIDTH QUESTION MARK
+        config.remove(0xFF01, 0xFF1F)
+        return config
+
+    def zhs_long_cang(config, name, is_vertical):
+        config = zhs_middle_colon_semicolon_exclam_question(config, name, is_vertical)
+        config.remove(0xFF0C, 0xFF0E, 0xFF5B, 0xFF5D)
         return config
 
     def zhs_ma_shan_zheng(config, name, is_vertical):
-        config = config.clone()
-        config.language = "ZHS"
+        config = zhs_middle_colon_semicolon_exclam_question(config, name, is_vertical)
         config.remove(0xFF08, 0xFF09, 0xFF0C, 0xFF0E, 0xFF3B, 0xFF3D, 0xFF5B, 0xFF5D)
-        # These glyphs are supposed to be on the left-half in ZHS fonts,
-        # but this font has them at the middle, similar to JAN/ZHT fonts.
-        config.is_colon_semicolon_middle = True
-        config.is_exclam_question_middle = True
         return config
 
     return {
@@ -184,7 +185,7 @@ def _get_factory_by_name() -> typing.Dict[
         "ZCOOL KuaiLe": has_no_pairs,
         "ZCOOL QingKe HuangYou": has_no_pairs,
         "ZCOOL XiaoWei": has_no_pairs,
-        "Zhi Mang Xing": zhs,
+        "Zhi Mang Xing": zhs_middle_colon_semicolon_exclam_question,
     }
 
 
