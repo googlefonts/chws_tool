@@ -12,12 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import pathlib
 from setuptools import setup, find_packages
 
+# read the contents of your README file
+this_dir = pathlib.Path(__file__).parent.resolve()
 
 setup_args = dict(
     name="chws_tool",
     use_scm_version={"write_to": "src/chws_tool/_version.py"},
+    long_description=(this_dir / 'README.md').read_text(encoding='utf-8'),
+    long_description_content_type='text/markdown',
     package_dir={'': 'src'},
     packages=find_packages(where='src'),
     entry_points={

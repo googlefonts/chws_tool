@@ -1,3 +1,7 @@
+[![Continuous Test + Deploy](https://github.com/googlefonts/chws_tool/actions/workflows/ci.yml/badge.svg)](https://github.com/googlefonts/chws_tool/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/chws-tool.svg)](https://pypi.org/project/chws-tool/)
+[![Dependencies](https://badgen.net/github/dependabot/googlefonts/chws_tool)](https://github.com/googlefonts/chws_tool/network/updates)
+
 # chws_tool
 
 This tool adds the OpenType [`chws`]/[`vchw`] features to fonts
@@ -11,6 +15,10 @@ using the [east-asian-sapcing] library.
 
 ## Install
 
+```sh
+pip install chws-tool
+```
+or to clone and install in the editable mode with the development packages:
 ```sh
 git clone https://github.com/googlefonts/chws_tool.git
 cd chws_tool
