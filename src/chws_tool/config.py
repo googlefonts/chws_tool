@@ -87,30 +87,35 @@ def _get_factory_by_name() -> typing.Dict[
         config.remove(0xFF08, 0xFF09, 0xFF0C, 0xFF0E, 0xFF3B, 0xFF3D, 0xFF5B, 0xFF5D)
         return config
 
+    def zhs_zcool_qingke_huangyou(config, name, is_vertical):
+        config = zhs_middle_colon_semicolon_exclam_question(config, name, is_vertical)
+        config.remove(0x300E, 0x3014, 0x3015, 0x3016, 0x3017, 0xFF0C, 0xFF0E)
+        return config
+
     return {
         # JAN
         # "Dela Gothic One" lacks several vertical alternate glyphs.
         "Dela Gothic One": jan_no_vert,
         "DotGothic16": jan,
         "Hachi Maru Pop": jan,
+        "Kiwi Maru": jan,
         "Kiwi Maru Light": jan,
         "Kiwi Maru Medium": jan,
-        "Kiwi Maru": jan,
         "MotoyaLCedar": jan,
         "MotoyaLMaru": jan,
+        "Mplus 1p": jan_mplus1p,
         "Mplus 1p Black": jan_mplus1p,
         "Mplus 1p Bold": jan_mplus1p,
         "Mplus 1p ExtraBold": jan_mplus1p,
         "Mplus 1p Light": jan_mplus1p,
         "Mplus 1p Medium": jan_mplus1p,
-        "Mplus 1p": jan_mplus1p,
         "Mplus 1p Thin": jan_mplus1p,
+        "Rounded Mplus 1c": jan_mplus1p,
         "Rounded Mplus 1c Black": jan_mplus1p,
         "Rounded Mplus 1c Bold": jan_mplus1p,
         "Rounded Mplus 1c ExtraBold": jan_mplus1p,
         "Rounded Mplus 1c Light": jan_mplus1p,
         "Rounded Mplus 1c Medium": jan_mplus1p,
-        "Rounded Mplus 1c": jan_mplus1p,
         "Rounded Mplus 1c Thin": jan_mplus1p,
         "New Tegomin": jan_new_tegomin,
         "Potta One": jan_potta_one,
@@ -121,15 +126,13 @@ def _get_factory_by_name() -> typing.Dict[
         # feature.
         "Sawarabi Mincho": jan_no_vert,
         "Shippori Mincho": jan,
-        "Shippori Mincho ExtraBold": jan,
-        "Shippori Mincho Medium": jan,
-        "Shippori Mincho": jan,
-        "Shippori Mincho SemiBold": jan,
         "Shippori Mincho B1": jan,
         "Shippori Mincho B1 ExtraBold": jan,
         "Shippori Mincho B1 Medium": jan,
-        "Shippori Mincho B1": jan,
         "Shippori Mincho B1 SemiBold": jan,
+        "Shippori Mincho ExtraBold": jan,
+        "Shippori Mincho Medium": jan,
+        "Shippori Mincho SemiBold": jan,
         "Stick": jan,
         "Train One": jan,
         "Yusei Magic": jan,
@@ -142,17 +145,15 @@ def _get_factory_by_name() -> typing.Dict[
         "East Sea Dokdo": has_no_pairs,
         "Gaegu": has_no_pairs,
         "Gaegu Light": has_no_pairs,
-        "Gaegu": has_no_pairs,
         "Gamja Flower": has_no_pairs,
-        "Gothic A1 Black": kor,
-        "Gothic A1": kor,
-        "Gothic A1 ExtraBold": kor,
-        "Gothic A1 ExtraLight": kor,
-        "Gothic A1 Light": kor,
-        "Gothic A1 Medium": kor,
-        "Gothic A1": kor,
-        "Gothic A1 SemiBold": kor,
-        "Gothic A1 Thin": kor,
+        "Gothic A1": has_no_pairs,
+        "Gothic A1 Black": has_no_pairs,
+        "Gothic A1 ExtraBold": has_no_pairs,
+        "Gothic A1 ExtraLight": has_no_pairs,
+        "Gothic A1 Light": has_no_pairs,
+        "Gothic A1 Medium": has_no_pairs,
+        "Gothic A1 SemiBold": has_no_pairs,
+        "Gothic A1 Thin": has_no_pairs,
         "Gugi": has_no_pairs,
         "Hi Melody": has_no_pairs,
         "Jua": has_no_pairs,
@@ -160,14 +161,12 @@ def _get_factory_by_name() -> typing.Dict[
         # "Nanum Brush Script" has no applicable pairs in horizontal flows, and
         # vertical flow has issues even without the feature.
         "Nanum Brush Script": not_applicable,
-        "NanumGothic": has_no_pairs,
-        "NanumGothicExtraBold": has_no_pairs,
-        "NanumGothic": has_no_pairs,
+        "NanumGothic": kor,
+        "NanumGothicExtraBold": kor,
         # Don't apply to "NanumGothicCoding", this is a monospace font.
         "NanumGothicCoding": not_applicable,
         "NanumMyeongjo": has_no_pairs,
         "NanumMyeongjoExtraBold": has_no_pairs,
-        "NanumMyeongjo": has_no_pairs,
         # Same as "Nanum Brush Script".
         "Nanum Pen": not_applicable,
         "Poor Story": has_no_pairs,
@@ -182,9 +181,9 @@ def _get_factory_by_name() -> typing.Dict[
         "Liu Jian Mao Cao": has_no_pairs,
         "Long Cang": zhs_long_cang,
         "Ma Shan Zheng": zhs_ma_shan_zheng,
-        "ZCOOL KuaiLe": has_no_pairs,
-        "ZCOOL QingKe HuangYou": has_no_pairs,
-        "ZCOOL XiaoWei": has_no_pairs,
+        "ZCOOL KuaiLe": zhs_middle_colon_semicolon_exclam_question,
+        "ZCOOL QingKe HuangYou": zhs_zcool_qingke_huangyou,
+        "ZCOOL XiaoWei": zhs_middle_colon_semicolon_exclam_question,
         "Zhi Mang Xing": zhs_middle_colon_semicolon_exclam_question,
     }
 
