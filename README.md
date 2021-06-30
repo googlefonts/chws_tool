@@ -4,26 +4,32 @@
 
 # chws_tool
 
-This tool adds the OpenType [`chws`]/[`vchw`] features to fonts
-using the [east-asian-sapcing] library.
+This is a tool to add the OpenType [`chws`]/[`vchw`] features to OpenType fonts.
+
+This tool uses the [east-asian-sapcing] package as its core engine,
+and has following advantages:
+* Simpler API and command line options.
+* Built-in support of several CJK fonts at [fonts.google.com].
 
 [east-asian-sapcing]: https://github.com/kojiishi/east_asian_spacing
-
 [`chws`]: https://docs.microsoft.com/en-us/typography/opentype/spec/features_ae#tag-chws
 [`vchw`]: https://docs.microsoft.com/en-us/typography/opentype/spec/features_uz#tag-vchw
-
+[fonts.google.com]: https://fonts.google.com/
 
 ## Install
 
 ```sh
 pip install chws-tool
 ```
-or to clone and install in the editable mode with the development packages:
+If you want to clone and install
+in the [editable mode] with the development packages:
 ```sh
 git clone https://github.com/googlefonts/chws_tool.git
 cd chws_tool
 pip install -e '.[dev]'
 ```
+
+[editable mode]: https://pip.pypa.io/en/stable/cli/pip_install/#install-editable
 
 ## Usage
 
@@ -34,7 +40,8 @@ the tool expands it to all fonts in the directory recursively.
 ```sh
 add-chws input.otf
 ```
-Use the `-o` option to change the output directory.
+Use the `-o` option to change the output directory,
+or the `--help` option for the full list of options.
 ```sh
 add-chws input_dir -o output_dir
 ```
