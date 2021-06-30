@@ -21,8 +21,6 @@ this_dir = pathlib.Path(__file__).parent.resolve()
 setup_args = dict(
     name="chws_tool",
     use_scm_version={"write_to": "src/chws_tool/_version.py"},
-    long_description=(this_dir / 'README.md').read_text(encoding='utf-8'),
-    long_description_content_type='text/markdown',
     package_dir={'': 'src'},
     packages=find_packages(where='src'),
     entry_points={
@@ -32,7 +30,7 @@ setup_args = dict(
     },
     setup_requires=["setuptools_scm"],
     install_requires=[
-        "east-asian-spacing>=1.1.1",
+        "east-asian-spacing>=1.1.3",
     ],
     extras_require={
         "dev": [
@@ -55,6 +53,9 @@ setup_args = dict(
     description=(
         "Utility for OpenType chws/vchw features"
     ),
+    long_description=(this_dir / 'README.md').read_text(encoding='utf-8'),
+    long_description_content_type='text/markdown',
+    url='https://github.com/googlefonts/chws_tool',
 )
 
 
