@@ -9,7 +9,10 @@ This is a tool to add the OpenType [`chws`]/[`vchw`] features to OpenType fonts.
 This tool uses the [east-asian-sapcing] package as its core engine,
 and has following advantages:
 * Simpler API and command line options.
-* Built-in support of several CJK fonts at [fonts.google.com].
+* Supports CJK fonts at [fonts.google.com] in its built-in [config].
+
+To add new fonts to the supported font list,
+please see the [Adding Fonts] section below.
 
 [east-asian-sapcing]: https://github.com/kojiishi/east_asian_spacing
 [`chws`]: https://docs.microsoft.com/en-us/typography/opentype/spec/features_ae#tag-chws
@@ -63,6 +66,7 @@ asyncio.run(main_async())
 ```
 
 ## Adding Fonts
+[adding fonts]: #adding-fonts
 
 This tool has a built-in list of supported fonts in its [config],
 and ignores fonts not in the list for the following reasons:
