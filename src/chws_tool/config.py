@@ -12,9 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import logging
 import typing
 
 import east_asian_spacing as chws
+
+logger = logging.getLogger("config")
 
 
 def _get_factory_by_name() -> typing.Dict[
@@ -58,6 +61,25 @@ def _get_factory_by_name() -> typing.Dict[
         config.language = "JAN"
         if is_vertical:
             config.remove(0x2018, 0x201C)
+        return config
+
+    def jan_yomogi(config, name, is_vertical):
+        config = config.clone()
+        config.language = "JAN"
+        if is_vertical:
+            config.remove(0x2018, 0x201C)
+            config.remove(
+                0x3009,
+                0x300B,
+                0x300D,
+                0x300F,
+                0x3011,
+                0x3015,
+                0xFF09,
+                0xFF3B,
+                0xFF5D,
+            )
+            config.remove(0xFF1A)
         return config
 
     def kor(config, name, is_vertical):
@@ -110,6 +132,9 @@ def _get_factory_by_name() -> typing.Dict[
         "Mplus 1p Light": jan_mplus1p,
         "Mplus 1p Medium": jan_mplus1p,
         "Mplus 1p Thin": jan_mplus1p,
+        # "Otomanopee One" is almost proportional, only quotes are fullwidth.
+        # Not worth adding the features.
+        "Otomanopee One": not_applicable,
         "Rounded Mplus 1c": jan_mplus1p,
         "Rounded Mplus 1c Black": jan_mplus1p,
         "Rounded Mplus 1c Bold": jan_mplus1p,
@@ -135,6 +160,7 @@ def _get_factory_by_name() -> typing.Dict[
         "Shippori Mincho SemiBold": jan,
         "Stick": jan,
         "Train One": jan,
+        "Yomogi": jan_yomogi,
         "Yusei Magic": jan,
         # KOR
         "Black And White Picture": has_no_pairs,
@@ -204,6 +230,7 @@ class GoogleFontsConfig(chws.NotoCJKConfig):
 
         # Ignore unknown fonts.
         # We prefer manual visual check over relying on heuristic rules.
+        logger.warn('Skipped because not a known font: "%s"', name)
         return None
 
 
