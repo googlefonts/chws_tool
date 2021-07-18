@@ -1,0 +1,19 @@
+@@ -1,5 +1,6 @@
+ Font 0: "ZCOOL KuaiLe" "Regular" PS="ZCOOLKuaiLe-Regular"
+ Tag  Size      
++GPOS        256 [0]
+ GSUB        396 [0]
+ OS/2         96 [0]
+ cmap     28,926 [0]
+@@ -15,7 +16,7 @@
+ name      1,130 [0]
+ post     69,215 [0]
+ prep          7 [0]
+-Total: 3,264,036
+-Data: 3,263,771
+-Gap: 265
+-Tables: 15
++Total: 3,264,308
++Data: 3,264,027
++Gap: 281
++Tables: 16

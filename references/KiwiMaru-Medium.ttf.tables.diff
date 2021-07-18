@@ -1,0 +1,19 @@
+@@ -1,7 +1,7 @@
+ Font 0: "Kiwi Maru Medium" "Regular" PS="KiwiMaru-Medium"
+ Tag  Size      
+ GDEF        190 [0]
+-GPOS      4,010 [0]
++GPOS      4,474 [0]
+ GSUB     24,948 [0]
+ OS/2         96 [0]
+ cmap    132,164 [0]
+@@ -19,7 +19,7 @@
+ prep        203 [0]
+ vhea         36 [0]
+ vmtx     37,424 [0]
+-Total: 9,086,468
+-Data: 9,086,141
++Total: 9,086,932
++Data: 9,086,605
+ Gap: 327
+ Tables: 19

@@ -1,0 +1,19 @@
+@@ -1,7 +1,7 @@
+ Font 0: "Mplus 1p Light" "Regular" PS="Mplus1p-Light"
+ Tag  Size      
+ GDEF      1,564 [0]
+-GPOS     14,374 [0]
++GPOS     14,942 [0]
+ GSUB      9,874 [0]
+ OS/2         86 [0]
+ cmap     76,858 [0]
+@@ -19,7 +19,7 @@
+ prep         46 [0]
+ vhea         36 [0]
+ vmtx     22,852 [0]
+-Total: 1,763,248
+-Data: 1,762,907
++Total: 1,763,816
++Data: 1,763,475
+ Gap: 341
+ Tables: 19

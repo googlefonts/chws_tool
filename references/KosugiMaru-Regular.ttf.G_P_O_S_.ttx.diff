@@ -1,0 +1,310 @@
+@@
++<?xml version="1.0" encoding="UTF-8"?>
++<ttFont ttLibVersion="4.25">
++
++  <GPOS>
++    <Version value="0x00010000"/>
++    <ScriptList>
++      <!-- ScriptCount=1 -->
++      <ScriptRecord index="0">
++        <ScriptTag value="DFLT"/>
++        <Script>
++          <DefaultLangSys>
++            <ReqFeatureIndex value="65535"/>
++            <!-- FeatureCount=2 -->
++            <FeatureIndex index="0" value="0"/>
++            <FeatureIndex index="1" value="1"/>
++          </DefaultLangSys>
++          <!-- LangSysCount=0 -->
++        </Script>
++      </ScriptRecord>
++    </ScriptList>
++    <FeatureList>
++      <!-- FeatureCount=2 -->
++      <FeatureRecord index="0">
++        <FeatureTag value="chws"/>
++        <Feature>
++          <!-- LookupCount=2 -->
++          <LookupListIndex index="0" value="0"/>
++          <LookupListIndex index="1" value="2"/>
++        </Feature>
++      </FeatureRecord>
++      <FeatureRecord index="1">
++        <FeatureTag value="vchw"/>
++        <Feature>
++          <!-- LookupCount=2 -->
++          <LookupListIndex index="0" value="3"/>
++          <LookupListIndex index="1" value="5"/>
++        </Feature>
++      </FeatureRecord>
++    </FeatureList>
++    <LookupList>
++      <!-- LookupCount=6 -->
++      <Lookup index="0">
++        <LookupType value="2"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=1 -->
++        <PairPos index="0" Format="2">
++          <Coverage>
++            <Glyph value="quoteright"/>
++            <Glyph value="quotedblright"/>
++            <Glyph value="uni3001"/>
++            <Glyph value="uni3002"/>
++            <Glyph value="uni3009"/>
++            <Glyph value="uni300B"/>
++            <Glyph value="uni300D"/>
++            <Glyph value="uni300F"/>
++            <Glyph value="uni3011"/>
++            <Glyph value="uni3015"/>
++            <Glyph value="uni301F"/>
++            <Glyph value="uniFF09"/>
++            <Glyph value="uniFF0C"/>
++            <Glyph value="uniFF0E"/>
++            <Glyph value="uniFF3D"/>
++            <Glyph value="uniFF5D"/>
++          </Coverage>
++          <ValueFormat1 value="4"/>
++          <ValueFormat2 value="0"/>
++          <ClassDef1>
++          </ClassDef1>
++          <ClassDef2>
++            <ClassDef glyph="quotedblleft" class="1"/>
++            <ClassDef glyph="quotedblright" class="1"/>
++            <ClassDef glyph="quoteleft" class="1"/>
++            <ClassDef glyph="quoteright" class="1"/>
++            <ClassDef glyph="uni3000" class="1"/>
++            <ClassDef glyph="uni3001" class="1"/>
++            <ClassDef glyph="uni3002" class="1"/>
++            <ClassDef glyph="uni3008" class="1"/>
++            <ClassDef glyph="uni3009" class="1"/>
++            <ClassDef glyph="uni300A" class="1"/>
++            <ClassDef glyph="uni300B" class="1"/>
++            <ClassDef glyph="uni300C" class="1"/>
++            <ClassDef glyph="uni300D" class="1"/>
++            <ClassDef glyph="uni300E" class="1"/>
++            <ClassDef glyph="uni300F" class="1"/>
++            <ClassDef glyph="uni3010" class="1"/>
++            <ClassDef glyph="uni3011" class="1"/>
++            <ClassDef glyph="uni3014" class="1"/>
++            <ClassDef glyph="uni3015" class="1"/>
++            <ClassDef glyph="uni301D" class="1"/>
++            <ClassDef glyph="uni301F" class="1"/>
++            <ClassDef glyph="uni30FB" class="1"/>
++            <ClassDef glyph="uniFF08" class="1"/>
++            <ClassDef glyph="uniFF09" class="1"/>
++            <ClassDef glyph="uniFF0C" class="1"/>
++            <ClassDef glyph="uniFF0E" class="1"/>
++            <ClassDef glyph="uniFF1A" class="1"/>
++            <ClassDef glyph="uniFF1B" class="1"/>
++            <ClassDef glyph="uniFF3B" class="1"/>
++            <ClassDef glyph="uniFF3D" class="1"/>
++            <ClassDef glyph="uniFF5B" class="1"/>
++            <ClassDef glyph="uniFF5D" class="1"/>
++          </ClassDef2>
++          <!-- Class1Count=1 -->
++          <!-- Class2Count=2 -->
++          <Class1Record index="0">
++            <Class2Record index="0">
++              <Value1 XAdvance="0"/>
++            </Class2Record>
++            <Class2Record index="1">
++              <Value1 XAdvance="-512"/>
++            </Class2Record>
++          </Class1Record>
++        </PairPos>
++      </Lookup>
++      <Lookup index="1">
++        <LookupType value="1"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=1 -->
++        <SinglePos index="0" Format="1">
++          <Coverage>
++            <Glyph value="quoteleft"/>
++            <Glyph value="quotedblleft"/>
++            <Glyph value="uni3008"/>
++            <Glyph value="uni300A"/>
++            <Glyph value="uni300C"/>
++            <Glyph value="uni300E"/>
++            <Glyph value="uni3010"/>
++            <Glyph value="uni3014"/>
++            <Glyph value="uni301D"/>
++            <Glyph value="uniFF08"/>
++            <Glyph value="uniFF3B"/>
++            <Glyph value="uniFF5B"/>
++          </Coverage>
++          <ValueFormat value="5"/>
++          <Value XPlacement="-512" XAdvance="-512"/>
++        </SinglePos>
++      </Lookup>
++      <Lookup index="2">
++        <LookupType value="8"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=1 -->
++        <ChainContextPos index="0" Format="3">
++          <!-- BacktrackGlyphCount=1 -->
++          <BacktrackCoverage index="0">
++            <Glyph value="quoteleft"/>
++            <Glyph value="quotedblleft"/>
++            <Glyph value="uni3000"/>
++            <Glyph value="uni3008"/>
++            <Glyph value="uni300A"/>
++            <Glyph value="uni300C"/>
++            <Glyph value="uni300E"/>
++            <Glyph value="uni3010"/>
++            <Glyph value="uni3014"/>
++            <Glyph value="uni301D"/>
++            <Glyph value="uni30FB"/>
++            <Glyph value="uniFF08"/>
++            <Glyph value="uniFF1A"/>
++            <Glyph value="uniFF1B"/>
++            <Glyph value="uniFF3B"/>
++            <Glyph value="uniFF5B"/>
++          </BacktrackCoverage>
++          <!-- InputGlyphCount=1 -->
++          <InputCoverage index="0">
++            <Glyph value="quoteleft"/>
++            <Glyph value="quotedblleft"/>
++            <Glyph value="uni3008"/>
++            <Glyph value="uni300A"/>
++            <Glyph value="uni300C"/>
++            <Glyph value="uni300E"/>
++            <Glyph value="uni3010"/>
++            <Glyph value="uni3014"/>
++            <Glyph value="uni301D"/>
++            <Glyph value="uniFF08"/>
++            <Glyph value="uniFF3B"/>
++            <Glyph value="uniFF5B"/>
++          </InputCoverage>
++          <!-- LookAheadGlyphCount=0 -->
++          <!-- PosCount=1 -->
++          <PosLookupRecord index="0">
++            <SequenceIndex value="0"/>
++            <LookupListIndex value="1"/>
++          </PosLookupRecord>
++        </ChainContextPos>
++      </Lookup>
++      <Lookup index="3">
++        <LookupType value="2"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=1 -->
++        <PairPos index="0" Format="2">
++          <Coverage>
++            <Glyph value="glyph07495"/>
++            <Glyph value="glyph07496"/>
++            <Glyph value="glyph07498"/>
++            <Glyph value="glyph07500"/>
++            <Glyph value="glyph07502"/>
++            <Glyph value="glyph07504"/>
++            <Glyph value="glyph07506"/>
++            <Glyph value="glyph07509"/>
++            <Glyph value="glyph07550"/>
++            <Glyph value="glyph07551"/>
++            <Glyph value="glyph07552"/>
++            <Glyph value="glyph07555"/>
++            <Glyph value="glyph07559"/>
++          </Coverage>
++          <ValueFormat1 value="8"/>
++          <ValueFormat2 value="0"/>
++          <ClassDef1>
++          </ClassDef1>
++          <ClassDef2>
++            <ClassDef glyph="glyph07495" class="1"/>
++            <ClassDef glyph="glyph07496" class="1"/>
++            <ClassDef glyph="glyph07497" class="1"/>
++            <ClassDef glyph="glyph07498" class="1"/>
++            <ClassDef glyph="glyph07499" class="1"/>
++            <ClassDef glyph="glyph07500" class="1"/>
++            <ClassDef glyph="glyph07501" class="1"/>
++            <ClassDef glyph="glyph07502" class="1"/>
++            <ClassDef glyph="glyph07503" class="1"/>
++            <ClassDef glyph="glyph07504" class="1"/>
++            <ClassDef glyph="glyph07505" class="1"/>
++            <ClassDef glyph="glyph07506" class="1"/>
++            <ClassDef glyph="glyph07508" class="1"/>
++            <ClassDef glyph="glyph07509" class="1"/>
++            <ClassDef glyph="glyph07549" class="1"/>
++            <ClassDef glyph="glyph07550" class="1"/>
++            <ClassDef glyph="glyph07551" class="1"/>
++            <ClassDef glyph="glyph07552" class="1"/>
++            <ClassDef glyph="glyph07554" class="1"/>
++            <ClassDef glyph="glyph07555" class="1"/>
++            <ClassDef glyph="glyph07557" class="1"/>
++            <ClassDef glyph="glyph07559" class="1"/>
++            <ClassDef glyph="uni3000" class="1"/>
++            <ClassDef glyph="uni30FB" class="1"/>
++          </ClassDef2>
++          <!-- Class1Count=1 -->
++          <!-- Class2Count=2 -->
++          <Class1Record index="0">
++            <Class2Record index="0">
++              <Value1 YAdvance="0"/>
++            </Class2Record>
++            <Class2Record index="1">
++              <Value1 YAdvance="-512"/>
++            </Class2Record>
++          </Class1Record>
++        </PairPos>
++      </Lookup>
++      <Lookup index="4">
++        <LookupType value="1"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=1 -->
++        <SinglePos index="0" Format="1">
++          <Coverage>
++            <Glyph value="glyph07497"/>
++            <Glyph value="glyph07499"/>
++            <Glyph value="glyph07501"/>
++            <Glyph value="glyph07503"/>
++            <Glyph value="glyph07505"/>
++            <Glyph value="glyph07508"/>
++            <Glyph value="glyph07549"/>
++            <Glyph value="glyph07554"/>
++            <Glyph value="glyph07557"/>
++          </Coverage>
++          <ValueFormat value="10"/>
++          <Value YPlacement="512" YAdvance="-512"/>
++        </SinglePos>
++      </Lookup>
++      <Lookup index="5">
++        <LookupType value="8"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=1 -->
++        <ChainContextPos index="0" Format="3">
++          <!-- BacktrackGlyphCount=1 -->
++          <BacktrackCoverage index="0">
++            <Glyph value="uni3000"/>
++            <Glyph value="uni30FB"/>
++            <Glyph value="glyph07497"/>
++            <Glyph value="glyph07499"/>
++            <Glyph value="glyph07501"/>
++            <Glyph value="glyph07503"/>
++            <Glyph value="glyph07505"/>
++            <Glyph value="glyph07508"/>
++            <Glyph value="glyph07549"/>
++            <Glyph value="glyph07554"/>
++            <Glyph value="glyph07557"/>
++          </BacktrackCoverage>
++          <!-- InputGlyphCount=1 -->
++          <InputCoverage index="0">
++            <Glyph value="glyph07497"/>
++            <Glyph value="glyph07499"/>
++            <Glyph value="glyph07501"/>
++            <Glyph value="glyph07503"/>
++            <Glyph value="glyph07505"/>
++            <Glyph value="glyph07508"/>
++            <Glyph value="glyph07549"/>
++            <Glyph value="glyph07554"/>
++            <Glyph value="glyph07557"/>
++          </InputCoverage>
++          <!-- LookAheadGlyphCount=0 -->
++          <!-- PosCount=1 -->
++          <PosLookupRecord index="0">
++            <SequenceIndex value="0"/>
++            <LookupListIndex value="4"/>
++          </PosLookupRecord>
++        </ChainContextPos>
++      </Lookup>
++    </LookupList>
++  </GPOS>
++
++</ttFont>

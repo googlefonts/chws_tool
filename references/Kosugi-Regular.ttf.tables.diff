@@ -1,0 +1,19 @@
+@@ -1,5 +1,6 @@
+ Font 0: "MotoyaLCedar" "W3 mono" PS="MotoyaLCedar-W3-90ms-RKSJ-H"
+ Tag  Size      
++GPOS        536 [0]
+ GSUB        364 [0]
+ OS/2         86 [0]
+ cmap     34,012 [0]
+@@ -15,7 +16,7 @@
+ prep         10 [0]
+ vhea         36 [0]
+ vmtx     15,150 [0]
+-Total: 1,918,536
+-Data: 1,918,271
+-Gap: 265
+-Tables: 15
++Total: 1,919,086
++Data: 1,918,807
++Gap: 279
++Tables: 16

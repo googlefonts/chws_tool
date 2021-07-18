@@ -1,0 +1,19 @@
+@@ -1,6 +1,6 @@
+ Font 0: "ZCOOL XiaoWei" "Regular" PS="ZCOOLXiaoWei-Regular"
+ Tag  Size      
+-GPOS      8,060 [0]
++GPOS      8,290 [0]
+ GSUB        396 [0]
+ OS/2         96 [0]
+ cmap     28,926 [0]
+@@ -16,7 +16,7 @@
+ name      1,060 [0]
+ post     69,215 [0]
+ prep          7 [0]
+-Total: 6,302,056
+-Data: 6,301,778
+-Gap: 278
++Total: 6,302,288
++Data: 6,302,008
++Gap: 280
+ Tables: 16

@@ -1,0 +1,19 @@
+@@ -1,5 +1,6 @@
+ Font 0: "NanumGothic" "Bold" PS="NanumGothicBold"
+ Tag  Size      
++GPOS        232 [0]
+ OS/2         96 [0]
+ cmap     51,122 [0]
+ cvt         820 [0]
+@@ -15,7 +16,7 @@
+ name        938 [0]
+ post         32 [0]
+ prep        234 [0]
+-Total: 4,004,184
+-Data: 4,003,922
+-Gap: 262
+-Tables: 15
++Total: 4,004,432
++Data: 4,004,154
++Gap: 278
++Tables: 16

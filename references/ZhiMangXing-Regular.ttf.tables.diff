@@ -1,0 +1,19 @@
+@@ -1,6 +1,6 @@
+ Font 0: "Zhi Mang Xing" "Regular" PS="ZhiMangXing-Regular"
+ Tag  Size      
+-GPOS      3,678 [0]
++GPOS      3,848 [0]
+ GSUB         10 [0]
+ OS/2         96 [0]
+ cmap     28,918 [0]
+@@ -14,7 +14,7 @@
+ name        992 [0]
+ post     69,190 [0]
+ prep          7 [0]
+-Total: 4,052,186
+-Data: 4,051,939
+-Gap: 247
++Total: 4,052,354
++Data: 4,052,109
++Gap: 245
+ Tables: 14

@@ -1,0 +1,20 @@
+@@ -1,7 +1,7 @@
+ Font 0: "Train One" "Regular" PS="TrainOne-Regular"
+ Tag  Size      
+ GDEF         64 [0]
+-GPOS      2,884 [0]
++GPOS      3,268 [0]
+ GSUB     16,946 [0]
+ OS/2         96 [0]
+ cmap     66,276 [0]
+@@ -19,7 +19,7 @@
+ prep        203 [0]
+ vhea         36 [0]
+ vmtx     20,978 [0]
+-Total: 4,277,556
+-Data: 4,277,228
+-Gap: 328
++Total: 4,277,938
++Data: 4,277,612
++Gap: 326
+ Tables: 19

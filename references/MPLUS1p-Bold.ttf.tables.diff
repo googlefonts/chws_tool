@@ -1,0 +1,19 @@
+@@ -1,7 +1,7 @@
+ Font 0: "Mplus 1p Bold" "Bold" PS="Mplus1p-Bold"
+ Tag  Size      
+ GDEF      1,564 [0]
+-GPOS     14,368 [0]
++GPOS     14,936 [0]
+ GSUB      9,874 [0]
+ OS/2         86 [0]
+ cmap     76,858 [0]
+@@ -19,7 +19,7 @@
+ prep         46 [0]
+ vhea         36 [0]
+ vmtx     22,852 [0]
+-Total: 1,762,564
+-Data: 1,762,229
++Total: 1,763,132
++Data: 1,762,797
+ Gap: 335
+ Tables: 19

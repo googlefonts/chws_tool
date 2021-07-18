@@ -30,11 +30,15 @@ logger = logging.getLogger("add_chws")
 async def add_chws(
     input: typing.Union[str, os.PathLike],
     output: typing.Union[str, os.PathLike],
+    **kwargs,
 ) -> typing.Optional[pathlib.Path]:
     """Add OpenType chws/vchw features to a font.
 
     Returns the path of the output font,
-    or `None` if the feature is not applicable to the font."""
+    or `None` if the feature is not applicable to the font.
+
+    `**kwargs` are optional. They are passed directly to
+    `east_asian_spacing.Builder.save()`."""
 
     builder = chws.Builder(input, config=GoogleFontsConfig.default)
     await builder.build()
@@ -45,7 +49,7 @@ async def add_chws(
             logger.warning('Skipped due to no changes: "%s"', input)
         return None
 
-    output_path = builder.save(output)
+    output_path = builder.save(output, **kwargs)
     logger.info("%s ==> %s", input, output_path)
 
     await builder.test()
@@ -58,7 +62,16 @@ async def main_async() -> None:
     parser.add_argument("inputs", nargs="+")
     parser.add_argument("--dump-name", help="dump font names", action="store_true")
     parser.add_argument(
+        "-g", "--glyph-out", type=pathlib.Path, help="output glyph list."
+    )
+    parser.add_argument(
         "-o", "--output", default="build", type=pathlib.Path, help="output directory"
+    )
+    parser.add_argument(
+        "-p",
+        "--print-path",
+        action="store_true",
+        help="print the file paths to stdout.",
     )
     parser.add_argument(
         "-v", "--verbose", help="increase output verbosity", action="count", default=0
@@ -79,7 +92,9 @@ async def main_async() -> None:
 
     args.output.mkdir(exist_ok=True, parents=True)
     for input in inputs:
-        await add_chws(input, args.output)
+        await add_chws(
+            input, args.output, glyph_out=args.glyph_out, print_path=args.print_path
+        )
 
 
 def main() -> None:

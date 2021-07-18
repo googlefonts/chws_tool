@@ -1,0 +1,20 @@
+@@ -1,7 +1,7 @@
+ Font 0: "Rounded Mplus 1c" "Regular" PS="RoundedMplus1c-Regular"
+ Tag  Size      
+ GDEF      1,564 [0]
+-GPOS     14,390 [0]
++GPOS     14,966 [0]
+ GSUB      9,860 [0]
+ OS/2         86 [0]
+ cmap     75,738 [0]
+@@ -19,7 +19,7 @@
+ prep         46 [0]
+ vhea         36 [0]
+ vmtx     17,066 [0]
+-Total: 3,380,812
+-Data: 3,380,474
+-Gap: 338
++Total: 3,381,386
++Data: 3,381,050
++Gap: 336
+ Tables: 19

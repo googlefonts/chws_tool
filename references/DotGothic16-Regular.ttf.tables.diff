@@ -1,0 +1,19 @@
+@@ -1,6 +1,6 @@
+ Font 0: "DotGothic16" "Regular" PS="DotGothic16-Regular"
+ Tag  Size      
+-GPOS        300 [0]
++GPOS        684 [0]
+ GSUB     10,816 [0]
+ OS/2         96 [0]
+ cmap    130,722 [0]
+@@ -18,7 +18,7 @@
+ prep        203 [0]
+ vhea         36 [0]
+ vmtx     36,682 [0]
+-Total: 4,318,532
+-Data: 4,318,218
+-Gap: 314
++Total: 4,318,914
++Data: 4,318,602
++Gap: 312
+ Tables: 18

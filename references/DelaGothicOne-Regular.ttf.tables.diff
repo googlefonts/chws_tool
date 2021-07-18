@@ -1,0 +1,19 @@
+@@ -1,7 +1,7 @@
+ Font 0: "Dela Gothic One" "Regular" PS="DelaGothicOne-Regular"
+ Tag  Size      
+ GDEF        562 [0]
+-GPOS     14,048 [0]
++GPOS     14,198 [0]
+ GSUB      5,034 [0]
+ OS/2         96 [0]
+ cmap    101,274 [0]
+@@ -19,7 +19,7 @@
+ prep        214 [0]
+ vhea         36 [0]
+ vmtx     36,190 [0]
+-Total: 5,450,336
+-Data: 5,450,004
++Total: 5,450,486
++Data: 5,450,154
+ Gap: 332
+ Tables: 19

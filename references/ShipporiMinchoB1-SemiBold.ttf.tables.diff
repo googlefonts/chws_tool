@@ -1,0 +1,20 @@
+@@ -1,7 +1,7 @@
+ Font 0: "Shippori Mincho B1 SemiBold" "Regular" PS="ShipporiMinchoB1-SemiBold"
+ Tag  Size      
+ GDEF        754 [0]
+-GPOS     12,316 [0]
++GPOS     12,848 [0]
+ GSUB     13,382 [0]
+ OS/2         96 [0]
+ cmap    100,708 [0]
+@@ -19,7 +19,7 @@
+ prep        178 [0]
+ vhea         36 [0]
+ vmtx     64,826 [0]
+-Total: 32,611,336
+-Data: 32,611,005
+-Gap: 331
++Total: 32,611,866
++Data: 32,611,537
++Gap: 329
+ Tables: 19
