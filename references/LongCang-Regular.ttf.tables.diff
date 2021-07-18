@@ -2,7 +2,7 @@
  Font 0: "Long Cang" "Regular" PS="LongCang-Regular"
  Tag  Size      
 -GPOS        704 [0]
-+GPOS        908 [0]
++GPOS        920 [0]
  GSUB         10 [0]
  OS/2         96 [0]
  cmap     28,918 [0]
@@ -12,7 +12,7 @@
  prep          7 [0]
 -Total: 5,150,986
 -Data: 5,150,740
-+Total: 5,151,190
-+Data: 5,150,944
++Total: 5,151,202
++Data: 5,150,956
  Gap: 246
  Tables: 14

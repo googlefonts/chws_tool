@@ -2,7 +2,7 @@
  Font 0: "New Tegomin" "Regular" PS="NewTegomin-Regular"
  Tag  Size      
  GDEF         22 [0]
-+GPOS        530 [0]
++GPOS        494 [0]
  GSUB      4,866 [0]
  OS/2         96 [0]
  cmap     34,178 [0]
@@ -14,7 +14,7 @@
 -Data: 7,450,346
 -Gap: 266
 -Tables: 15
-+Total: 7,451,160
-+Data: 7,450,876
++Total: 7,451,124
++Data: 7,450,840
 +Gap: 284
 +Tables: 16

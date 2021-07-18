@@ -47,8 +47,6 @@
 +        <PairPos index="0" Format="2">
 +          <Coverage>
 +            <Glyph value="uni3001"/>
-+            <Glyph value="uniFF0C"/>
-+            <Glyph value="uniFF0E"/>
 +            <Glyph value="uni3009"/>
 +            <Glyph value="uniFF5D"/>
 +            <Glyph value="uni300B"/>
@@ -123,6 +121,8 @@
 +          <!-- BacktrackGlyphCount=1 -->
 +          <BacktrackCoverage index="0">
 +            <Glyph value="uniFF1A"/>
++            <Glyph value="uniFF0C"/>
++            <Glyph value="uniFF0E"/>
 +            <Glyph value="uniFF1B"/>
 +            <Glyph value="uni3008"/>
 +            <Glyph value="uniFF5B"/>

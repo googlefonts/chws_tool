@@ -1,0 +1,19 @@
+@@ -1,7 +1,7 @@
+ Font 0: "Nanum Pen" "Regular" PS="NanumPen"
+ Tag  Size      
+ GDEF         94 [0]
+-GPOS        350 [0]
++GPOS        550 [0]
+ GSUB     12,092 [0]
+ OS/2         96 [0]
+ cmap     28,814 [0]
+@@ -18,7 +18,7 @@
+ post    202,833 [0]
+ prep          4 [0]
+ prop        578 [0]
+-Total: 3,367,750
+-Data: 3,367,435
++Total: 3,367,950
++Data: 3,367,635
+ Gap: 315
+ Tables: 18

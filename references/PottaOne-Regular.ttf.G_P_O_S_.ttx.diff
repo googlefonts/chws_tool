@@ -73,7 +73,6 @@
 +            <Glyph value="uni3011"/>
 +            <Glyph value="uniFF5D"/>
 +            <Glyph value="uni300D"/>
-+            <Glyph value="uni300B"/>
 +            <Glyph value="uni3015"/>
 +            <Glyph value="uni300F"/>
 +            <Glyph value="uniFF3D"/>
@@ -92,8 +91,6 @@
 +            <ClassDef glyph="uni3002" class="1"/>
 +            <ClassDef glyph="uni3008" class="1"/>
 +            <ClassDef glyph="uni3009" class="1"/>
-+            <ClassDef glyph="uni300A" class="1"/>
-+            <ClassDef glyph="uni300B" class="1"/>
 +            <ClassDef glyph="uni300C" class="1"/>
 +            <ClassDef glyph="uni300D" class="1"/>
 +            <ClassDef glyph="uni300E" class="1"/>
@@ -138,7 +135,6 @@
 +            <Glyph value="uni3010"/>
 +            <Glyph value="uniFF5B"/>
 +            <Glyph value="uni300C"/>
-+            <Glyph value="uni300A"/>
 +            <Glyph value="uni3014"/>
 +            <Glyph value="uni300E"/>
 +            <Glyph value="uniFF3B"/>
@@ -162,7 +158,6 @@
 +            <Glyph value="uni3010"/>
 +            <Glyph value="uniFF5B"/>
 +            <Glyph value="uni300C"/>
-+            <Glyph value="uni300A"/>
 +            <Glyph value="uni3014"/>
 +            <Glyph value="uni300E"/>
 +            <Glyph value="uniFF3B"/>
@@ -177,7 +172,6 @@
 +            <Glyph value="uni3010"/>
 +            <Glyph value="uniFF5B"/>
 +            <Glyph value="uni300C"/>
-+            <Glyph value="uni300A"/>
 +            <Glyph value="uni3014"/>
 +            <Glyph value="uni300E"/>
 +            <Glyph value="uniFF3B"/>
@@ -205,7 +199,6 @@
 +            <Glyph value="uniFE38"/>
 +            <Glyph value="uniFE48"/>
 +            <Glyph value="uniFE42"/>
-+            <Glyph value="uniFE3E"/>
 +            <Glyph value="uniFE3A"/>
 +            <Glyph value="uniFE36"/>
 +            <Glyph value="uniFE44"/>
@@ -238,8 +231,6 @@
 +            <ClassDef glyph="uniFE3A" class="1"/>
 +            <ClassDef glyph="uniFE3B" class="1"/>
 +            <ClassDef glyph="uniFE3C" class="1"/>
-+            <ClassDef glyph="uniFE3D" class="1"/>
-+            <ClassDef glyph="uniFE3E" class="1"/>
 +            <ClassDef glyph="uniFE3F" class="1"/>
 +            <ClassDef glyph="uniFE40" class="1"/>
 +            <ClassDef glyph="uniFE41" class="1"/>
@@ -272,7 +263,6 @@
 +            <Glyph value="uniFE37"/>
 +            <Glyph value="uniFE47"/>
 +            <Glyph value="uniFE41"/>
-+            <Glyph value="uniFE3D"/>
 +            <Glyph value="uniFE39"/>
 +            <Glyph value="uniFE35"/>
 +            <Glyph value="uniFE43"/>
@@ -294,7 +284,6 @@
 +            <Glyph value="uniFE37"/>
 +            <Glyph value="uniFE47"/>
 +            <Glyph value="uniFE41"/>
-+            <Glyph value="uniFE3D"/>
 +            <Glyph value="uniFE39"/>
 +            <Glyph value="uniFE35"/>
 +            <Glyph value="uniFE43"/>
@@ -309,7 +298,6 @@
 +            <Glyph value="uniFE37"/>
 +            <Glyph value="uniFE47"/>
 +            <Glyph value="uniFE41"/>
-+            <Glyph value="uniFE3D"/>
 +            <Glyph value="uniFE39"/>
 +            <Glyph value="uniFE35"/>
 +            <Glyph value="uniFE43"/>

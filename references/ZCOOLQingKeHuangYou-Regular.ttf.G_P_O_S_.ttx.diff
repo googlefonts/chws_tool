@@ -41,8 +41,6 @@
 +            <Glyph value="uni3011"/>
 +            <Glyph value="uniFF5D"/>
 +            <Glyph value="uni300D"/>
-+            <Glyph value="uni300B"/>
-+            <Glyph value="uni300F"/>
 +            <Glyph value="uniFF3D"/>
 +            <Glyph value="uniFF09"/>
 +            <Glyph value="quotedblright"/>
@@ -61,15 +59,14 @@
 +            <ClassDef glyph="uni3002" class="1"/>
 +            <ClassDef glyph="uni3008" class="1"/>
 +            <ClassDef glyph="uni3009" class="1"/>
-+            <ClassDef glyph="uni300A" class="1"/>
-+            <ClassDef glyph="uni300B" class="1"/>
 +            <ClassDef glyph="uni300C" class="1"/>
 +            <ClassDef glyph="uni300D" class="1"/>
-+            <ClassDef glyph="uni300F" class="1"/>
 +            <ClassDef glyph="uni3010" class="1"/>
 +            <ClassDef glyph="uni3011" class="1"/>
 +            <ClassDef glyph="uniFF08" class="1"/>
 +            <ClassDef glyph="uniFF09" class="1"/>
++            <ClassDef glyph="uniFF0C" class="1"/>
++            <ClassDef glyph="uniFF0E" class="1"/>
 +            <ClassDef glyph="uniFF1A" class="1"/>
 +            <ClassDef glyph="uniFF1B" class="1"/>
 +            <ClassDef glyph="uniFF3B" class="1"/>
@@ -99,7 +96,6 @@
 +            <Glyph value="uni3010"/>
 +            <Glyph value="uniFF5B"/>
 +            <Glyph value="uni300C"/>
-+            <Glyph value="uni300A"/>
 +            <Glyph value="uniFF3B"/>
 +            <Glyph value="uniFF08"/>
 +            <Glyph value="quotedblleft"/>
@@ -117,12 +113,13 @@
 +          <!-- BacktrackGlyphCount=1 -->
 +          <BacktrackCoverage index="0">
 +            <Glyph value="uniFF1A"/>
++            <Glyph value="uniFF0C"/>
++            <Glyph value="uniFF0E"/>
 +            <Glyph value="uniFF1B"/>
 +            <Glyph value="uni3008"/>
 +            <Glyph value="uni3010"/>
 +            <Glyph value="uniFF5B"/>
 +            <Glyph value="uni300C"/>
-+            <Glyph value="uni300A"/>
 +            <Glyph value="uniFF3B"/>
 +            <Glyph value="uniFF08"/>
 +            <Glyph value="quotedblleft"/>
@@ -134,7 +131,6 @@
 +            <Glyph value="uni3010"/>
 +            <Glyph value="uniFF5B"/>
 +            <Glyph value="uni300C"/>
-+            <Glyph value="uni300A"/>
 +            <Glyph value="uniFF3B"/>
 +            <Glyph value="uniFF08"/>
 +            <Glyph value="quotedblleft"/>

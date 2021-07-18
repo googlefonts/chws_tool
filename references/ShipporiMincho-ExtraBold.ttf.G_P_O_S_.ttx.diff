@@ -69,7 +69,6 @@
 +            <Glyph value="uni300F"/>
 +            <Glyph value="uniFF3D"/>
 +            <Glyph value="uniFF09"/>
-+            <Glyph value="uni301F"/>
 +            <Glyph value="quotedblright.full"/>
 +            <Glyph value="quoteright.full"/>
 +            <Glyph value="uni3001"/>
@@ -99,8 +98,6 @@
 +            <ClassDef glyph="uni3011" class="1"/>
 +            <ClassDef glyph="uni3014" class="1"/>
 +            <ClassDef glyph="uni3015" class="1"/>
-+            <ClassDef glyph="uni301D" class="1"/>
-+            <ClassDef glyph="uni301F" class="1"/>
 +            <ClassDef glyph="uni30FB" class="1"/>
 +            <ClassDef glyph="uniFF08" class="1"/>
 +            <ClassDef glyph="uniFF09" class="1"/>
@@ -140,7 +137,6 @@
 +            <Glyph value="uni300E"/>
 +            <Glyph value="uniFF3B"/>
 +            <Glyph value="uniFF08"/>
-+            <Glyph value="uni301D"/>
 +            <Glyph value="quotedblleft.full"/>
 +            <Glyph value="quoteleft.full"/>
 +          </Coverage>
@@ -166,7 +162,6 @@
 +            <Glyph value="uni300E"/>
 +            <Glyph value="uniFF3B"/>
 +            <Glyph value="uniFF08"/>
-+            <Glyph value="uni301D"/>
 +            <Glyph value="quotedblleft.full"/>
 +            <Glyph value="quoteleft.full"/>
 +            <Glyph value="uni30FB"/>
@@ -183,7 +178,6 @@
 +            <Glyph value="uni300E"/>
 +            <Glyph value="uniFF3B"/>
 +            <Glyph value="uniFF08"/>
-+            <Glyph value="uni301D"/>
 +            <Glyph value="quotedblleft.full"/>
 +            <Glyph value="quoteleft.full"/>
 +          </InputCoverage>
@@ -247,8 +241,6 @@
 +            <ClassDef glyph="uniFE47" class="1"/>
 +            <ClassDef glyph="uniFE48" class="1"/>
 +            <ClassDef glyph="uniFF0E.vert" class="1"/>
-+            <ClassDef glyph="uniFF1A.vert" class="1"/>
-+            <ClassDef glyph="uniFF1B.vert" class="1"/>
 +          </ClassDef2>
 +          <!-- Class1Count=1 -->
 +          <!-- Class2Count=2 -->
@@ -290,8 +282,6 @@
 +        <ChainContextPos index="0" Format="3">
 +          <!-- BacktrackGlyphCount=1 -->
 +          <BacktrackCoverage index="0">
-+            <Glyph value="uniFF1A.vert"/>
-+            <Glyph value="uniFF1B.vert"/>
 +            <Glyph value="uniFE3F"/>
 +            <Glyph value="uniFE3B"/>
 +            <Glyph value="uniFE37"/>

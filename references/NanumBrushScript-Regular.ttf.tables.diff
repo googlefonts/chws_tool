@@ -1,0 +1,18 @@
+@@ -1,6 +1,6 @@
+ Font 0: "Nanum Brush Script" "Regular" PS="NanumBrush"
+ Tag  Size      
+-GPOS        474 [0]
++GPOS        674 [0]
+ GSUB     12,506 [0]
+ OS/2         96 [0]
+ cmap     50,996 [0]
+@@ -16,7 +16,7 @@
+ name        866 [0]
+ post         32 [0]
+ prep          4 [0]
+-Total: 3,432,146
+-Data: 3,431,868
++Total: 3,432,346
++Data: 3,432,068
+ Gap: 278
+ Tables: 16

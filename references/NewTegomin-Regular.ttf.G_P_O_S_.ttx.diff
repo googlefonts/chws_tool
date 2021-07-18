@@ -52,7 +52,6 @@
 +            <Glyph value="uni3011"/>
 +            <Glyph value="uniFF5D"/>
 +            <Glyph value="uni300D"/>
-+            <Glyph value="uni300B"/>
 +            <Glyph value="uni3015"/>
 +            <Glyph value="uni300F"/>
 +            <Glyph value="uniFF3D"/>
@@ -70,8 +69,6 @@
 +            <ClassDef glyph="uni3002" class="1"/>
 +            <ClassDef glyph="uni3008" class="1"/>
 +            <ClassDef glyph="uni3009" class="1"/>
-+            <ClassDef glyph="uni300A" class="1"/>
-+            <ClassDef glyph="uni300B" class="1"/>
 +            <ClassDef glyph="uni300C" class="1"/>
 +            <ClassDef glyph="uni300D" class="1"/>
 +            <ClassDef glyph="uni300E" class="1"/>
@@ -114,7 +111,6 @@
 +            <Glyph value="uni3010"/>
 +            <Glyph value="uniFF5B"/>
 +            <Glyph value="uni300C"/>
-+            <Glyph value="uni300A"/>
 +            <Glyph value="uni3014"/>
 +            <Glyph value="uni300E"/>
 +            <Glyph value="uniFF3B"/>
@@ -137,7 +133,6 @@
 +            <Glyph value="uni3010"/>
 +            <Glyph value="uniFF5B"/>
 +            <Glyph value="uni300C"/>
-+            <Glyph value="uni300A"/>
 +            <Glyph value="uni3014"/>
 +            <Glyph value="uni300E"/>
 +            <Glyph value="uniFF3B"/>
@@ -151,7 +146,6 @@
 +            <Glyph value="uni3010"/>
 +            <Glyph value="uniFF5B"/>
 +            <Glyph value="uni300C"/>
-+            <Glyph value="uni300A"/>
 +            <Glyph value="uni3014"/>
 +            <Glyph value="uni300E"/>
 +            <Glyph value="uniFF3B"/>
@@ -171,11 +165,9 @@
 +        <!-- SubTableCount=1 -->
 +        <PairPos index="0" Format="2">
 +          <Coverage>
-+            <Glyph value="uniFE3C"/>
 +            <Glyph value="uniFE38"/>
 +            <Glyph value="uniFE48"/>
 +            <Glyph value="uniFE42"/>
-+            <Glyph value="uniFE3A"/>
 +            <Glyph value="uniFE36"/>
 +            <Glyph value="quotedblright"/>
 +            <Glyph value="quoteright"/>
@@ -197,15 +189,8 @@
 +            <ClassDef glyph="uniFE36" class="1"/>
 +            <ClassDef glyph="uniFE37" class="1"/>
 +            <ClassDef glyph="uniFE38" class="1"/>
-+            <ClassDef glyph="uniFE39" class="1"/>
-+            <ClassDef glyph="uniFE3A" class="1"/>
-+            <ClassDef glyph="uniFE3B" class="1"/>
-+            <ClassDef glyph="uniFE3C" class="1"/>
-+            <ClassDef glyph="uniFE3D" class="1"/>
-+            <ClassDef glyph="uniFE3F" class="1"/>
 +            <ClassDef glyph="uniFE41" class="1"/>
 +            <ClassDef glyph="uniFE42" class="1"/>
-+            <ClassDef glyph="uniFE43" class="1"/>
 +            <ClassDef glyph="uniFE47" class="1"/>
 +            <ClassDef glyph="uniFE48" class="1"/>
 +          </ClassDef2>
@@ -227,15 +212,10 @@
 +        <!-- SubTableCount=1 -->
 +        <SinglePos index="0" Format="1">
 +          <Coverage>
-+            <Glyph value="uniFE3F"/>
-+            <Glyph value="uniFE3B"/>
 +            <Glyph value="uniFE37"/>
 +            <Glyph value="uniFE47"/>
 +            <Glyph value="uniFE41"/>
-+            <Glyph value="uniFE3D"/>
-+            <Glyph value="uniFE39"/>
 +            <Glyph value="uniFE35"/>
-+            <Glyph value="uniFE43"/>
 +          </Coverage>
 +          <ValueFormat value="10"/>
 +          <Value YPlacement="500" YAdvance="-500"/>
@@ -248,29 +228,19 @@
 +        <ChainContextPos index="0" Format="3">
 +          <!-- BacktrackGlyphCount=1 -->
 +          <BacktrackCoverage index="0">
-+            <Glyph value="uniFE3F"/>
-+            <Glyph value="uniFE3B"/>
 +            <Glyph value="uniFE37"/>
 +            <Glyph value="uniFE47"/>
 +            <Glyph value="uniFE41"/>
-+            <Glyph value="uniFE3D"/>
-+            <Glyph value="uniFE39"/>
 +            <Glyph value="uniFE35"/>
-+            <Glyph value="uniFE43"/>
 +            <Glyph value="uni30FB"/>
 +            <Glyph value="uni3000"/>
 +          </BacktrackCoverage>
 +          <!-- InputGlyphCount=1 -->
 +          <InputCoverage index="0">
-+            <Glyph value="uniFE3F"/>
-+            <Glyph value="uniFE3B"/>
 +            <Glyph value="uniFE37"/>
 +            <Glyph value="uniFE47"/>
 +            <Glyph value="uniFE41"/>
-+            <Glyph value="uniFE3D"/>
-+            <Glyph value="uniFE39"/>
 +            <Glyph value="uniFE35"/>
-+            <Glyph value="uniFE43"/>
 +          </InputCoverage>
 +          <!-- LookAheadGlyphCount=0 -->
 +          <!-- PosCount=1 -->

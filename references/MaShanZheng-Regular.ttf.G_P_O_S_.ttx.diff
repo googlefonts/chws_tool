@@ -49,10 +49,8 @@
 +            <Glyph value="uni3009"/>
 +            <Glyph value="uni3011"/>
 +            <Glyph value="uni300D"/>
-+            <Glyph value="uni300B"/>
 +            <Glyph value="uni3015"/>
 +            <Glyph value="uni300F"/>
-+            <Glyph value="uni3017"/>
 +            <Glyph value="uni3001"/>
 +            <Glyph value="uni3002"/>
 +          </Coverage>
@@ -66,18 +64,14 @@
 +            <ClassDef glyph="uni3002" class="1"/>
 +            <ClassDef glyph="uni3008" class="1"/>
 +            <ClassDef glyph="uni3009" class="1"/>
-+            <ClassDef glyph="uni300A" class="1"/>
-+            <ClassDef glyph="uni300B" class="1"/>
 +            <ClassDef glyph="uni300C" class="1"/>
 +            <ClassDef glyph="uni300D" class="1"/>
-+            <ClassDef glyph="uni300E" class="1"/>
 +            <ClassDef glyph="uni300F" class="1"/>
-+            <ClassDef glyph="uni3010" class="1"/>
 +            <ClassDef glyph="uni3011" class="1"/>
 +            <ClassDef glyph="uni3014" class="1"/>
 +            <ClassDef glyph="uni3015" class="1"/>
-+            <ClassDef glyph="uni3016" class="1"/>
-+            <ClassDef glyph="uni3017" class="1"/>
++            <ClassDef glyph="uniFF0C" class="1"/>
++            <ClassDef glyph="uniFF0E" class="1"/>
 +            <ClassDef glyph="uniFF1A" class="1"/>
 +            <ClassDef glyph="uniFF1B" class="1"/>
 +          </ClassDef2>
@@ -100,12 +94,8 @@
 +        <SinglePos index="0" Format="1">
 +          <Coverage>
 +            <Glyph value="uni3008"/>
-+            <Glyph value="uni3010"/>
 +            <Glyph value="uni300C"/>
-+            <Glyph value="uni300A"/>
 +            <Glyph value="uni3014"/>
-+            <Glyph value="uni300E"/>
-+            <Glyph value="uni3016"/>
 +          </Coverage>
 +          <ValueFormat value="5"/>
 +          <Value XPlacement="-500" XAdvance="-500"/>
@@ -119,25 +109,19 @@
 +          <!-- BacktrackGlyphCount=1 -->
 +          <BacktrackCoverage index="0">
 +            <Glyph value="uniFF1A"/>
++            <Glyph value="uniFF0C"/>
++            <Glyph value="uniFF0E"/>
 +            <Glyph value="uniFF1B"/>
 +            <Glyph value="uni3008"/>
-+            <Glyph value="uni3010"/>
 +            <Glyph value="uni300C"/>
-+            <Glyph value="uni300A"/>
 +            <Glyph value="uni3014"/>
-+            <Glyph value="uni300E"/>
-+            <Glyph value="uni3016"/>
 +            <Glyph value="uni3000"/>
 +          </BacktrackCoverage>
 +          <!-- InputGlyphCount=1 -->
 +          <InputCoverage index="0">
 +            <Glyph value="uni3008"/>
-+            <Glyph value="uni3010"/>
 +            <Glyph value="uni300C"/>
-+            <Glyph value="uni300A"/>
 +            <Glyph value="uni3014"/>
-+            <Glyph value="uni300E"/>
-+            <Glyph value="uni3016"/>
 +          </InputCoverage>
 +          <!-- LookAheadGlyphCount=0 -->
 +          <!-- PosCount=1 -->
