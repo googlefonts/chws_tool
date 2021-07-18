@@ -23,145 +23,66 @@ logger = logging.getLogger("config")
 def _get_factory_by_name() -> typing.Dict[
     str, typing.Callable[[chws.Config, str, bool], typing.Optional[chws.Config]]
 ]:
+    def default(config, name, is_vertical):
+        return config
+
+    def allow_monospace_ascii(config, name, is_vertical):
+        config = config.clone()
+        config.skip_monospace_ascii = False
+        return config
+
+    # `has_no_pairs` indicates that the tool did not produce any pairs for them,
+    # and therefore they are not tested.
+    def has_no_pairs(config, name, is_vertical):
+        return None
+
     # `not_applicable` disables adding the feature.
     def not_applicable(config, name, is_vertical):
         return None
 
-    # `has_no_pairs` is the same as `not_applicable` but indicates that the tool
-    # did not produce any pairs for them, and therefore they are not tested.
-    has_no_pairs = not_applicable
-
-    def jan(config, name, is_vertical):
-        return config.for_language("JAN")
-
-    def jan_no_vert(config, name, is_vertical):
-        if is_vertical:
-            return None
-        return config.for_language("JAN")
-
-    def jan_mplus1p(config, name, is_vertical):
-        config = config.clone()
-        config.language = "JAN"
-        # These glyphs are wider than half-width and that they collide if
-        # kernings are applied.
-        config.remove(0x300A, 0x300B)
-        if is_vertical:
-            config.remove(0x2018, 0x201C)
-        return config
-
-    def jan_new_tegomin(config, name, is_vertical):
-        config = config.clone()
-        config.language = "JAN"
-        if is_vertical:
-            config.remove(0x2018, 0x201C, 0x3009, 0x300B, 0x300F, 0xFF0C, 0xFF0E)
-        return config
-
-    def jan_potta_one(config, name, is_vertical):
-        config = config.clone()
-        config.language = "JAN"
-        if is_vertical:
-            config.remove(0x2018, 0x201C)
-        return config
-
-    def jan_yomogi(config, name, is_vertical):
-        config = config.clone()
-        config.language = "JAN"
-        if is_vertical:
-            config.remove(0x2018, 0x201C)
-            config.remove(
-                0x3009,
-                0x300B,
-                0x300D,
-                0x300F,
-                0x3011,
-                0x3015,
-                0xFF09,
-                0xFF3B,
-                0xFF5D,
-            )
-            config.remove(0xFF1A)
-        return config
-
-    def kor(config, name, is_vertical):
-        return config.for_language("KOR")
-
-    def zhs(config, name, is_vertical):
-        return config.for_language("ZHS")
-
-    def zhs_middle_colon_semicolon_exclam_question(config, name, is_vertical):
-        config = config.clone()
-        config.language = "ZHS"
-        # These glyphs are supposed to be on the left-half in ZHS fonts,
-        # but this font has them at the middle, similar to JAN/ZHT fonts.
-        config.is_colon_semicolon_middle = True
-        # U+FF01 FULLWIDTH EXCLAMATION MARK
-        # U+FF1F FULLWIDTH QUESTION MARK
-        config.remove(0xFF01, 0xFF1F)
-        return config
-
-    def zhs_long_cang(config, name, is_vertical):
-        config = zhs_middle_colon_semicolon_exclam_question(config, name, is_vertical)
-        config.remove(0xFF0C, 0xFF0E, 0xFF5B, 0xFF5D)
-        return config
-
-    def zhs_ma_shan_zheng(config, name, is_vertical):
-        config = zhs_middle_colon_semicolon_exclam_question(config, name, is_vertical)
-        config.remove(0xFF08, 0xFF09, 0xFF0C, 0xFF0E, 0xFF3B, 0xFF3D, 0xFF5B, 0xFF5D)
-        return config
-
-    def zhs_zcool_qingke_huangyou(config, name, is_vertical):
-        config = zhs_middle_colon_semicolon_exclam_question(config, name, is_vertical)
-        config.remove(0x300E, 0x3014, 0x3015, 0x3016, 0x3017, 0xFF0C, 0xFF0E)
-        return config
-
     return {
         # JAN
-        # "Dela Gothic One" lacks several vertical alternate glyphs.
-        "Dela Gothic One": jan_no_vert,
-        "DotGothic16": jan,
-        "Hachi Maru Pop": jan,
-        "Kiwi Maru": jan,
-        "Kiwi Maru Light": jan,
-        "Kiwi Maru Medium": jan,
-        "MotoyaLCedar": jan,
-        "MotoyaLMaru": jan,
-        "Mplus 1p": jan_mplus1p,
-        "Mplus 1p Black": jan_mplus1p,
-        "Mplus 1p Bold": jan_mplus1p,
-        "Mplus 1p ExtraBold": jan_mplus1p,
-        "Mplus 1p Light": jan_mplus1p,
-        "Mplus 1p Medium": jan_mplus1p,
-        "Mplus 1p Thin": jan_mplus1p,
-        # "Otomanopee One" is almost proportional, only quotes are fullwidth.
-        # Not worth adding the features.
-        "Otomanopee One": not_applicable,
-        "Rounded Mplus 1c": jan_mplus1p,
-        "Rounded Mplus 1c Black": jan_mplus1p,
-        "Rounded Mplus 1c Bold": jan_mplus1p,
-        "Rounded Mplus 1c ExtraBold": jan_mplus1p,
-        "Rounded Mplus 1c Light": jan_mplus1p,
-        "Rounded Mplus 1c Medium": jan_mplus1p,
-        "Rounded Mplus 1c Thin": jan_mplus1p,
-        "New Tegomin": jan_new_tegomin,
-        "Potta One": jan_potta_one,
-        "Reggae One": jan,
-        "RocknRoll One": jan,
-        "Sawarabi Gothic": jan,
-        # "Sawarabi Mincho" has Issues in vertical flow, even without the
-        # feature.
-        "Sawarabi Mincho": jan_no_vert,
-        "Shippori Mincho": jan,
-        "Shippori Mincho B1": jan,
-        "Shippori Mincho B1 ExtraBold": jan,
-        "Shippori Mincho B1 Medium": jan,
-        "Shippori Mincho B1 SemiBold": jan,
-        "Shippori Mincho ExtraBold": jan,
-        "Shippori Mincho Medium": jan,
-        "Shippori Mincho SemiBold": jan,
-        "Stick": jan,
-        "Train One": jan,
-        "Yomogi": jan_yomogi,
-        "Yusei Magic": jan,
+        "Dela Gothic One": default,
+        "DotGothic16": allow_monospace_ascii,
+        "Hachi Maru Pop": default,
+        "Kiwi Maru": default,
+        "Kiwi Maru Light": default,
+        "Kiwi Maru Medium": default,
+        "MotoyaLCedar": allow_monospace_ascii,
+        "MotoyaLMaru": allow_monospace_ascii,
+        "Mplus 1p": default,
+        "Mplus 1p Black": default,
+        "Mplus 1p Bold": default,
+        "Mplus 1p ExtraBold": default,
+        "Mplus 1p Light": default,
+        "Mplus 1p Medium": default,
+        "Mplus 1p Thin": default,
+        "Otomanopee One": has_no_pairs,
+        "Rounded Mplus 1c": default,
+        "Rounded Mplus 1c Black": default,
+        "Rounded Mplus 1c Bold": default,
+        "Rounded Mplus 1c ExtraBold": default,
+        "Rounded Mplus 1c Light": default,
+        "Rounded Mplus 1c Medium": default,
+        "Rounded Mplus 1c Thin": default,
+        "New Tegomin": default,
+        "Potta One": default,
+        "Reggae One": default,
+        "RocknRoll One": default,
+        "Sawarabi Gothic": default,
+        "Sawarabi Mincho": default,
+        "Shippori Mincho": default,
+        "Shippori Mincho B1": default,
+        "Shippori Mincho B1 ExtraBold": default,
+        "Shippori Mincho B1 Medium": default,
+        "Shippori Mincho B1 SemiBold": default,
+        "Shippori Mincho ExtraBold": default,
+        "Shippori Mincho Medium": default,
+        "Shippori Mincho SemiBold": default,
+        "Stick": default,
+        "Train One": default,
+        "Yomogi": allow_monospace_ascii,
+        "Yusei Magic": default,
         # KOR
         "Black And White Picture": has_no_pairs,
         "Black Han Sans": has_no_pairs,
@@ -184,17 +105,13 @@ def _get_factory_by_name() -> typing.Dict[
         "Hi Melody": has_no_pairs,
         "Jua": has_no_pairs,
         "Kirang Haerang": has_no_pairs,
-        # "Nanum Brush Script" has no applicable pairs in horizontal flows, and
-        # vertical flow has issues even without the feature.
-        "Nanum Brush Script": not_applicable,
-        "NanumGothic": kor,
-        "NanumGothicExtraBold": kor,
-        # Don't apply to "NanumGothicCoding", this is a monospace font.
-        "NanumGothicCoding": not_applicable,
+        "Nanum Brush Script": default,
+        "NanumGothic": default,
+        "NanumGothicExtraBold": default,
+        "NanumGothicCoding": has_no_pairs,
         "NanumMyeongjo": has_no_pairs,
         "NanumMyeongjoExtraBold": has_no_pairs,
-        # Same as "Nanum Brush Script".
-        "Nanum Pen": not_applicable,
+        "Nanum Pen": default,
         "Poor Story": has_no_pairs,
         "Single Day": has_no_pairs,
         "Song Myung": has_no_pairs,
@@ -205,16 +122,16 @@ def _get_factory_by_name() -> typing.Dict[
         "Yeon Sung": has_no_pairs,
         # ZHS
         "Liu Jian Mao Cao": has_no_pairs,
-        "Long Cang": zhs_long_cang,
-        "Ma Shan Zheng": zhs_ma_shan_zheng,
-        "ZCOOL KuaiLe": zhs_middle_colon_semicolon_exclam_question,
-        "ZCOOL QingKe HuangYou": zhs_zcool_qingke_huangyou,
-        "ZCOOL XiaoWei": zhs_middle_colon_semicolon_exclam_question,
-        "Zhi Mang Xing": zhs_middle_colon_semicolon_exclam_question,
+        "Long Cang": default,
+        "Ma Shan Zheng": default,
+        "ZCOOL KuaiLe": default,
+        "ZCOOL QingKe HuangYou": default,
+        "ZCOOL XiaoWei": default,
+        "Zhi Mang Xing": has_no_pairs,
     }
 
 
-class GoogleFontsConfig(chws.NotoCJKConfig):
+class GoogleFontsConfig(chws.Config):
     _factory_by_name = _get_factory_by_name()
 
     def for_font_name(
@@ -224,14 +141,14 @@ class GoogleFontsConfig(chws.NotoCJKConfig):
         if factory:
             return factory(self, name, is_vertical)
 
-        # Delegate Noto CJK to `NotoCJKConfig`.
+        # Delegate Noto CJK to `Config`.
         if name.startswith("Noto "):
             return super().for_font_name(name, is_vertical)
 
         # Ignore unknown fonts.
         # We prefer manual visual check over relying on heuristic rules.
-        logger.warn('Skipped because not a known font: "%s"', name)
-        return None
+        logger.warning('Not a known font, run with the default config: "%s"', name)
+        return self
 
 
 GoogleFontsConfig.default = GoogleFontsConfig()

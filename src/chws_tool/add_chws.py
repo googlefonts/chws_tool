@@ -77,7 +77,7 @@ async def main_async() -> None:
         "-v", "--verbose", help="increase output verbosity", action="count", default=0
     )
     args = parser.parse_args()
-    chws.init_logging(args.verbose, main=logger)
+    chws.init_logging(args.verbose, loggers=[logger, logging.getLogger('build')])
 
     # Expand directories.
     inputs = chws.Builder.expand_paths(args.inputs)

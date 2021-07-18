@@ -19,11 +19,6 @@ def test_config_for_font_name():
     config = chws_tool.GoogleFontsConfig.default
 
     mplus_1p = config.for_font_name("Mplus 1p", False)
-    assert mplus_1p is not config
-    assert mplus_1p.language == "JAN"
+    assert mplus_1p is config
 
-    zhi_mang_xing = config.for_font_name("Zhi Mang Xing", False)
-    assert zhi_mang_xing is not config
-    assert zhi_mang_xing.language == "ZHS"
-
-    assert config.for_font_name("never exists", False) is None
+    assert config.for_font_name("never exists", False) is config
