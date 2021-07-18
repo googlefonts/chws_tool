@@ -57,6 +57,14 @@ async def add_chws(
     return output_path
 
 
+def _dump_font_names(inputs):
+    for input in inputs:
+        font = chws.Font.load(input)
+        fonts = font.fonts_in_collection if font.is_collection else (font,)
+        for font in fonts:
+            print(font.debug_name(1))
+
+
 async def main_async() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("inputs", nargs="+")
@@ -83,11 +91,7 @@ async def main_async() -> None:
     inputs = chws.Builder.expand_paths(args.inputs)
 
     if args.dump_name:
-        for input in inputs:
-            font = chws.Font.load(input)
-            fonts = font.fonts_in_collection if font.is_collection else (font,)
-            for font in fonts:
-                print(font.debug_name(1))
+        _dump_font_names(inputs)
         return
 
     args.output.mkdir(exist_ok=True, parents=True)

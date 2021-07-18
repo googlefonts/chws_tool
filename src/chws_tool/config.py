@@ -147,7 +147,7 @@ class GoogleFontsConfig(chws.Config):
 
         # Ignore unknown fonts.
         # We prefer manual visual check over relying on heuristic rules.
-        logger.warning('Not a known font, run with the default config: "%s"', name)
+        logger.warning('Not a known font, using the default config: "%s"', name)
         return self
 
 

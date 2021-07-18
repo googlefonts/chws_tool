@@ -34,7 +34,7 @@ pip install -e '.[dev]'
 
 [editable mode]: https://pip.pypa.io/en/stable/cli/pip_install/#install-editable
 
-## Usage
+## Command Line Usage
 
 The following example adds the features to `input.otf`
 and saves it to the `build` directory.
@@ -68,18 +68,20 @@ asyncio.run(main_async())
 ## Adding Fonts
 [adding fonts]: #adding-fonts
 
-This tool has a built-in list of supported fonts in its [config],
-and ignores fonts not in the list for the following reasons:
-* The tool needs to know the language of the font
-  because the spacing rules vary by the language.
-* Fonts may have glyphs
-  that require tweaking code points to adjust spacing pairs.
+This package has a built-in list of supported fonts in its [config].
+The list indicates these fonts passed the [visual test],
+with possibly tweaked configurations.
 
-When adding new fonts, the following process is recommended:
+Fonts not in the known list are still processed
+with the default configuration,
+but this package shows a warning message.
+
+When adding new fonts to the known font list,
+the following process is recommended:
 
 1. Find the font names.
    Running the `add-chws` with `--dump-name` option can print them.
-2. Add them to the [config] with the appropriate language.
+2. Add them to the [config].
 3. Build the font and run the [Visual Test].
 4. Tweak the [config] if needed.
 
