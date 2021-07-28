@@ -19,3 +19,4 @@ except ImportError:
 
 from .config import GoogleFontsConfig
 from .add_chws import add_chws
+from .add_chws import add_chws_async

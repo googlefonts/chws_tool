@@ -52,11 +52,22 @@ add-chws input_dir -o output_dir
 ## API
 
 ```python
+import chws_tool
+
+def main():
+    output_path = chws_tool.add_chws("fonts/input.otf", "build")
+    if output_path:
+        print("Success!")
+    else:
+        print("Skipped")
+```
+For [asyncio] programs:
+```python
 import asyncio
 import chws_tool
 
 async def main_async():
-    output_path = await chws_tool.add_chws("fonts/input.otf", "build")
+    output_path = await chws_tool.add_chws_async("fonts/input.otf", "build")
     if output_path:
         print("Success!")
     else:
@@ -64,6 +75,8 @@ async def main_async():
 
 asyncio.run(main_async())
 ```
+
+[asyncio]: https://docs.python.org/3/library/asyncio.html
 
 ## Adding Fonts
 [adding fonts]: #adding-fonts

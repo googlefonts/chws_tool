@@ -27,7 +27,7 @@ from chws_tool.config import GoogleFontsConfig
 logger = logging.getLogger("add_chws")
 
 
-async def add_chws(
+async def add_chws_async(
     input: typing.Union[str, os.PathLike],
     output: typing.Union[str, os.PathLike],
     **kwargs,
@@ -55,6 +55,15 @@ async def add_chws(
     await builder.test()
 
     return output_path
+
+
+def add_chws(
+    input: typing.Union[str, os.PathLike],
+    output: typing.Union[str, os.PathLike],
+    **kwargs,
+) -> typing.Optional[pathlib.Path]:
+    loop = asyncio.get_event_loop()
+    return loop.run_until_complete(add_chws_async(input, output, **kwargs))
 
 
 def _dump_font_names(inputs):
@@ -96,7 +105,7 @@ async def main_async() -> None:
 
     args.output.mkdir(exist_ok=True, parents=True)
     for input in inputs:
-        await add_chws(
+        await add_chws_async(
             input, args.output, glyph_out=args.glyph_out, print_path=args.print_path
         )
 

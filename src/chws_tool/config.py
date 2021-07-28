@@ -27,9 +27,7 @@ def _get_factory_by_name() -> typing.Dict[
         return config
 
     def allow_monospace_ascii(config, name, is_vertical):
-        config = config.clone()
-        config.skip_monospace_ascii = False
-        return config
+        return config.with_skip_monospace_ascii(False)
 
     # `has_no_pairs` indicates that the tool did not produce any pairs for them,
     # and therefore they are not tested.
