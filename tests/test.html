@@ -143,9 +143,9 @@ ol {
   position: absolute; left: 0; top: 0;
   border: blue 1px solid;
 }
-.vert .on {
-  font-feature-settings: 'vchw' 1;
-}
+.vert .on { font-feature-settings: 'vchw' 1; }
+.halt .on { font-feature-settings: 'halt' 1; }
+.halt.vert .on { font-feature-settings: 'vhal' 1; }
 .off {
   color: lightblue;
   border: lightblue 1px solid;
@@ -206,6 +206,9 @@ ol {
       <ul>
         <li>
           <label for="diffonly"><input id="diffonly" type="checkbox">Hide same size</label>
+        </li>
+        <li>
+          <label for="halt"><input id="halt" type="checkbox">halt/valt</label>
         </li>
       </ul>
     </div>
@@ -311,6 +314,8 @@ function updateFromSearchParamsAll() {
   classList.toggle('vert', vert.checked);
   updateFromSearchParams(upright, params, 'upright');
   classList.toggle('upright', upright.checked);
+  updateFromSearchParams(halt, params, 'halt');
+  classList.toggle('halt', halt.checked);
   updateFromSearchParams(diffonly, params, 'diffonly');
   classList.toggle('diffonly', diffonly.checked);
   spacing.updateDiff();
@@ -344,6 +349,12 @@ fwid.addEventListener("change", (e) => {
   const checked = e.target.checked;
   classList.toggle("fwid", checked);
   updateUrlSearchParams('fwid', checked);
+  spacing.updateDiff();
+});
+halt.addEventListener("change", (e) => {
+  const checked = e.target.checked;
+  classList.toggle("halt", checked);
+  updateUrlSearchParams('halt', checked);
   spacing.updateDiff();
 });
 diffonly.addEventListener("change", (e) => {

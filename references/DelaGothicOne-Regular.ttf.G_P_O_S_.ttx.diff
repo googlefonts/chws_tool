@@ -3,11 +3,12 @@
            <DefaultLangSys>
              <ReqFeatureIndex value="65535"/>
 -            <!-- FeatureCount=3 -->
-+            <!-- FeatureCount=4 -->
++            <!-- FeatureCount=5 -->
              <FeatureIndex index="0" value="0"/>
              <FeatureIndex index="1" value="3"/>
              <FeatureIndex index="2" value="6"/>
 +            <FeatureIndex index="3" value="9"/>
++            <FeatureIndex index="4" value="10"/>
            </DefaultLangSys>
            <!-- LangSysCount=0 -->
          </Script>
@@ -16,11 +17,12 @@
            <DefaultLangSys>
              <ReqFeatureIndex value="65535"/>
 -            <!-- FeatureCount=3 -->
-+            <!-- FeatureCount=4 -->
++            <!-- FeatureCount=5 -->
              <FeatureIndex index="0" value="1"/>
              <FeatureIndex index="1" value="4"/>
              <FeatureIndex index="2" value="7"/>
 +            <FeatureIndex index="3" value="9"/>
++            <FeatureIndex index="4" value="10"/>
            </DefaultLangSys>
            <!-- LangSysCount=0 -->
          </Script>
@@ -29,11 +31,12 @@
            <DefaultLangSys>
              <ReqFeatureIndex value="65535"/>
 -            <!-- FeatureCount=3 -->
-+            <!-- FeatureCount=4 -->
++            <!-- FeatureCount=5 -->
              <FeatureIndex index="0" value="2"/>
              <FeatureIndex index="1" value="5"/>
              <FeatureIndex index="2" value="8"/>
 +            <FeatureIndex index="3" value="9"/>
++            <FeatureIndex index="4" value="10"/>
            </DefaultLangSys>
            <!-- LangSysCount=0 -->
          </Script>
@@ -41,7 +44,7 @@
      </ScriptList>
      <FeatureList>
 -      <!-- FeatureCount=9 -->
-+      <!-- FeatureCount=10 -->
++      <!-- FeatureCount=11 -->
        <FeatureRecord index="0">
          <FeatureTag value="kern"/>
          <Feature>
@@ -50,17 +53,24 @@
          </Feature>
        </FeatureRecord>
 +      <FeatureRecord index="9">
++        <FeatureTag value="halt"/>
++        <Feature>
++          <!-- LookupCount=1 -->
++          <LookupListIndex index="0" value="10"/>
++        </Feature>
++      </FeatureRecord>
++      <FeatureRecord index="10">
 +        <FeatureTag value="chws"/>
 +        <Feature>
 +          <!-- LookupCount=2 -->
-+          <LookupListIndex index="0" value="10"/>
-+          <LookupListIndex index="1" value="12"/>
++          <LookupListIndex index="0" value="11"/>
++          <LookupListIndex index="1" value="13"/>
 +        </Feature>
 +      </FeatureRecord>
      </FeatureList>
      <LookupList>
 -      <!-- LookupCount=10 -->
-+      <!-- LookupCount=13 -->
++      <!-- LookupCount=14 -->
        <Lookup index="0">
          <LookupType value="2"/>
          <LookupFlag value="8"/><!-- ignoreMarks -->
@@ -69,6 +79,30 @@
          </MarkMarkPos>
        </Lookup>
 +      <Lookup index="10">
++        <LookupType value="1"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=2 -->
++        <SinglePos index="0" Format="2">
++          <Coverage>
++            <Glyph value="uniFF1A"/>
++            <Glyph value="uniFF1B"/>
++            <Glyph value="uniFF08"/>
++          </Coverage>
++          <ValueFormat value="5"/>
++          <!-- ValueCount=3 -->
++          <Value index="0" XPlacement="-250" XAdvance="-500"/>
++          <Value index="1" XPlacement="-250" XAdvance="-500"/>
++          <Value index="2" XPlacement="-500" XAdvance="-500"/>
++        </SinglePos>
++        <SinglePos index="1" Format="1">
++          <Coverage>
++            <Glyph value="uniFF09"/>
++          </Coverage>
++          <ValueFormat value="4"/>
++          <Value XAdvance="-500"/>
++        </SinglePos>
++      </Lookup>
++      <Lookup index="11">
 +        <LookupType value="2"/>
 +        <LookupFlag value="0"/>
 +        <!-- SubTableCount=1 -->
@@ -99,7 +133,7 @@
 +          </Class1Record>
 +        </PairPos>
 +      </Lookup>
-+      <Lookup index="11">
++      <Lookup index="12">
 +        <LookupType value="1"/>
 +        <LookupFlag value="0"/>
 +        <!-- SubTableCount=1 -->
@@ -111,7 +145,7 @@
 +          <Value XPlacement="-500" XAdvance="-500"/>
 +        </SinglePos>
 +      </Lookup>
-+      <Lookup index="12">
++      <Lookup index="13">
 +        <LookupType value="8"/>
 +        <LookupFlag value="0"/>
 +        <!-- SubTableCount=1 -->
@@ -131,7 +165,7 @@
 +          <!-- PosCount=1 -->
 +          <PosLookupRecord index="0">
 +            <SequenceIndex value="0"/>
-+            <LookupListIndex value="11"/>
++            <LookupListIndex value="12"/>
 +          </PosLookupRecord>
 +        </ChainContextPos>
 +      </Lookup>

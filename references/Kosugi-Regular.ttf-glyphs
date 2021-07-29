@@ -29,10 +29,11 @@
 7385
 7417
 # middle
-375
 571
 7352
 7353
+# space
+375
 # vertical.left
 7495
 7496
@@ -58,5 +59,6 @@
 7554
 7557
 # vertical.middle
-375
 571
+# vertical.space
+375

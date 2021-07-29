@@ -2,7 +2,7 @@
  Font 0: "Ma Shan Zheng" "Regular" PS="MaShanZheng-Regular"
  Tag  Size      
 -GPOS      3,678 [0]
-+GPOS      3,882 [0]
++GPOS      3,940 [0]
  GSUB         10 [0]
  OS/2         96 [0]
  cmap     28,918 [0]
@@ -12,7 +12,8 @@
  prep          7 [0]
 -Total: 5,856,030
 -Data: 5,855,782
-+Total: 5,856,234
-+Data: 5,855,986
- Gap: 248
+-Gap: 248
++Total: 5,856,290
++Data: 5,856,044
++Gap: 246
  Tables: 14

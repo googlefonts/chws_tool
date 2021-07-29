@@ -29,10 +29,20 @@ def _get_factory_by_name() -> typing.Dict[
     def allow_monospace_ascii(config, name, is_vertical):
         return config.with_skip_monospace_ascii(False)
 
+    def allow_monospace_ascii_no_vert(config, name, is_vertical):
+        if is_vertical:
+            return None
+        return config.with_skip_monospace_ascii(False)
+
     # `has_no_pairs` indicates that the tool did not produce any pairs for them,
     # and therefore they are not tested.
     def has_no_pairs(config, name, is_vertical):
         return None
+
+    def has_no_vert_pairs(config, name, is_vertical):
+        if is_vertical:
+            return None
+        return config
 
     # `not_applicable` disables adding the feature.
     def not_applicable(config, name, is_vertical):
@@ -40,7 +50,7 @@ def _get_factory_by_name() -> typing.Dict[
 
     return {
         # JAN
-        "Dela Gothic One": default,
+        "Dela Gothic One": has_no_vert_pairs,
         "DotGothic16": allow_monospace_ascii,
         "Hachi Maru Pop": default,
         "Kiwi Maru": default,
@@ -79,8 +89,8 @@ def _get_factory_by_name() -> typing.Dict[
         "Shippori Mincho SemiBold": default,
         "Stick": default,
         "Train One": default,
-        "Yomogi": allow_monospace_ascii,
-        "Yusei Magic": default,
+        "Yomogi": allow_monospace_ascii_no_vert,
+        "Yusei Magic": has_no_vert_pairs,
         # KOR
         "Black And White Picture": has_no_pairs,
         "Black Han Sans": has_no_pairs,
@@ -103,13 +113,13 @@ def _get_factory_by_name() -> typing.Dict[
         "Hi Melody": has_no_pairs,
         "Jua": has_no_pairs,
         "Kirang Haerang": has_no_pairs,
-        "Nanum Brush Script": default,
+        "Nanum Brush Script": has_no_vert_pairs,
         "NanumGothic": default,
         "NanumGothicExtraBold": default,
         "NanumGothicCoding": has_no_pairs,
         "NanumMyeongjo": has_no_pairs,
         "NanumMyeongjoExtraBold": has_no_pairs,
-        "Nanum Pen": default,
+        "Nanum Pen": has_no_vert_pairs,
         "Poor Story": has_no_pairs,
         "Single Day": has_no_pairs,
         "Song Myung": has_no_pairs,

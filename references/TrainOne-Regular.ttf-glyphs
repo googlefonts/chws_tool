@@ -29,10 +29,11 @@
 687
 4211
 # middle
-630
 635
 636
 637
+# space
+630
 # vertical.left
 4231
 4232
@@ -62,5 +63,6 @@
 4295
 4553
 # vertical.middle
-630
 635
+# vertical.space
+630

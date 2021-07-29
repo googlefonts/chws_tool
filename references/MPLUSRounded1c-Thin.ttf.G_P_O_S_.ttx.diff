@@ -3,12 +3,14 @@
            <DefaultLangSys>
              <ReqFeatureIndex value="65535"/>
 -            <!-- FeatureCount=3 -->
-+            <!-- FeatureCount=5 -->
++            <!-- FeatureCount=7 -->
              <FeatureIndex index="0" value="0"/>
              <FeatureIndex index="1" value="1"/>
              <FeatureIndex index="2" value="3"/>
 +            <FeatureIndex index="3" value="4"/>
 +            <FeatureIndex index="4" value="5"/>
++            <FeatureIndex index="5" value="6"/>
++            <FeatureIndex index="6" value="7"/>
            </DefaultLangSys>
            <!-- LangSysCount=0 -->
          </Script>
@@ -17,11 +19,13 @@
            <DefaultLangSys>
              <ReqFeatureIndex value="65535"/>
 -            <!-- FeatureCount=2 -->
-+            <!-- FeatureCount=4 -->
++            <!-- FeatureCount=6 -->
              <FeatureIndex index="0" value="1"/>
              <FeatureIndex index="1" value="3"/>
 +            <FeatureIndex index="2" value="4"/>
 +            <FeatureIndex index="3" value="5"/>
++            <FeatureIndex index="4" value="6"/>
++            <FeatureIndex index="5" value="7"/>
            </DefaultLangSys>
            <!-- LangSysCount=0 -->
          </Script>
@@ -30,10 +34,12 @@
            <DefaultLangSys>
              <ReqFeatureIndex value="65535"/>
 -            <!-- FeatureCount=1 -->
-+            <!-- FeatureCount=3 -->
++            <!-- FeatureCount=5 -->
              <FeatureIndex index="0" value="2"/>
 +            <FeatureIndex index="1" value="4"/>
 +            <FeatureIndex index="2" value="5"/>
++            <FeatureIndex index="3" value="6"/>
++            <FeatureIndex index="4" value="7"/>
            </DefaultLangSys>
            <!-- LangSysCount=0 -->
          </Script>
@@ -42,12 +48,14 @@
            <DefaultLangSys>
              <ReqFeatureIndex value="65535"/>
 -            <!-- FeatureCount=3 -->
-+            <!-- FeatureCount=5 -->
++            <!-- FeatureCount=7 -->
              <FeatureIndex index="0" value="0"/>
              <FeatureIndex index="1" value="1"/>
              <FeatureIndex index="2" value="3"/>
 +            <FeatureIndex index="3" value="4"/>
 +            <FeatureIndex index="4" value="5"/>
++            <FeatureIndex index="5" value="6"/>
++            <FeatureIndex index="6" value="7"/>
            </DefaultLangSys>
            <!-- LangSysCount=0 -->
          </Script>
@@ -55,7 +63,7 @@
      </ScriptList>
      <FeatureList>
 -      <!-- FeatureCount=4 -->
-+      <!-- FeatureCount=6 -->
++      <!-- FeatureCount=8 -->
        <FeatureRecord index="0">
          <FeatureTag value="kern"/>
          <Feature>
@@ -64,25 +72,39 @@
          </Feature>
        </FeatureRecord>
 +      <FeatureRecord index="4">
-+        <FeatureTag value="chws"/>
++        <FeatureTag value="halt"/>
 +        <Feature>
-+          <!-- LookupCount=2 -->
++          <!-- LookupCount=1 -->
 +          <LookupListIndex index="0" value="5"/>
-+          <LookupListIndex index="1" value="7"/>
 +        </Feature>
 +      </FeatureRecord>
 +      <FeatureRecord index="5">
++        <FeatureTag value="chws"/>
++        <Feature>
++          <!-- LookupCount=2 -->
++          <LookupListIndex index="0" value="6"/>
++          <LookupListIndex index="1" value="8"/>
++        </Feature>
++      </FeatureRecord>
++      <FeatureRecord index="6">
++        <FeatureTag value="vhal"/>
++        <Feature>
++          <!-- LookupCount=1 -->
++          <LookupListIndex index="0" value="9"/>
++        </Feature>
++      </FeatureRecord>
++      <FeatureRecord index="7">
 +        <FeatureTag value="vchw"/>
 +        <Feature>
 +          <!-- LookupCount=2 -->
-+          <LookupListIndex index="0" value="8"/>
-+          <LookupListIndex index="1" value="10"/>
++          <LookupListIndex index="0" value="10"/>
++          <LookupListIndex index="1" value="12"/>
 +        </Feature>
 +      </FeatureRecord>
      </FeatureList>
      <LookupList>
 -      <!-- LookupCount=5 -->
-+      <!-- LookupCount=11 -->
++      <!-- LookupCount=13 -->
        <Lookup index="0">
          <LookupType value="2"/>
          <LookupFlag value="0"/>
@@ -91,6 +113,62 @@
          </MarkMarkPos>
        </Lookup>
 +      <Lookup index="5">
++        <LookupType value="1"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=3 -->
++        <SinglePos index="0" Format="1">
++          <Coverage>
++            <Glyph value="uni3001"/>
++            <Glyph value="uni3002"/>
++            <Glyph value="uni3009"/>
++            <Glyph value="uni300D"/>
++            <Glyph value="uni300F"/>
++            <Glyph value="uni3011"/>
++            <Glyph value="uni3015"/>
++            <Glyph value="uni3017"/>
++            <Glyph value="uni3019"/>
++            <Glyph value="uni301B"/>
++            <Glyph value="uni301E"/>
++            <Glyph value="uni301F"/>
++            <Glyph value="uniFF09"/>
++            <Glyph value="uniFF0C"/>
++            <Glyph value="uniFF0E"/>
++            <Glyph value="uniFF3D"/>
++            <Glyph value="uniFF60"/>
++          </Coverage>
++          <ValueFormat value="4"/>
++          <Value XAdvance="-500"/>
++        </SinglePos>
++        <SinglePos index="1" Format="1">
++          <Coverage>
++            <Glyph value="uni3008"/>
++            <Glyph value="uni300A"/>
++            <Glyph value="uni300C"/>
++            <Glyph value="uni300E"/>
++            <Glyph value="uni3010"/>
++            <Glyph value="uni3014"/>
++            <Glyph value="uni3016"/>
++            <Glyph value="uni3018"/>
++            <Glyph value="uni301A"/>
++            <Glyph value="uni301D"/>
++            <Glyph value="uniFF08"/>
++            <Glyph value="uniFF3B"/>
++            <Glyph value="uniFF5F"/>
++          </Coverage>
++          <ValueFormat value="5"/>
++          <Value XPlacement="-500" XAdvance="-500"/>
++        </SinglePos>
++        <SinglePos index="2" Format="1">
++          <Coverage>
++            <Glyph value="uni30FB"/>
++            <Glyph value="uniFF1A"/>
++            <Glyph value="uniFF1B"/>
++          </Coverage>
++          <ValueFormat value="5"/>
++          <Value XPlacement="-250" XAdvance="-500"/>
++        </SinglePos>
++      </Lookup>
++      <Lookup index="6">
 +        <LookupType value="2"/>
 +        <LookupFlag value="0"/>
 +        <!-- SubTableCount=1 -->
@@ -166,7 +244,7 @@
 +          </Class1Record>
 +        </PairPos>
 +      </Lookup>
-+      <Lookup index="6">
++      <Lookup index="7">
 +        <LookupType value="1"/>
 +        <LookupFlag value="0"/>
 +        <!-- SubTableCount=1 -->
@@ -190,7 +268,7 @@
 +          <Value XPlacement="-500" XAdvance="-500"/>
 +        </SinglePos>
 +      </Lookup>
-+      <Lookup index="7">
++      <Lookup index="8">
 +        <LookupType value="8"/>
 +        <LookupFlag value="0"/>
 +        <!-- SubTableCount=1 -->
@@ -235,11 +313,65 @@
 +          <!-- PosCount=1 -->
 +          <PosLookupRecord index="0">
 +            <SequenceIndex value="0"/>
-+            <LookupListIndex value="6"/>
++            <LookupListIndex value="7"/>
 +          </PosLookupRecord>
 +        </ChainContextPos>
 +      </Lookup>
-+      <Lookup index="8">
++      <Lookup index="9">
++        <LookupType value="1"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=3 -->
++        <SinglePos index="0" Format="1">
++          <Coverage>
++            <Glyph value="glyph08466"/>
++            <Glyph value="glyph08467"/>
++            <Glyph value="glyph08469"/>
++            <Glyph value="glyph08473"/>
++            <Glyph value="glyph08475"/>
++            <Glyph value="glyph08477"/>
++            <Glyph value="glyph08480"/>
++            <Glyph value="glyph08482"/>
++            <Glyph value="glyph08484"/>
++            <Glyph value="glyph08486"/>
++            <Glyph value="glyph08489"/>
++            <Glyph value="glyph08490"/>
++            <Glyph value="glyph08517"/>
++            <Glyph value="glyph08521"/>
++            <Glyph value="glyph08525"/>
++            <Glyph value="glyph08526"/>
++            <Glyph value="glyph08539"/>
++            <Glyph value="glyph08543"/>
++          </Coverage>
++          <ValueFormat value="8"/>
++          <Value YAdvance="-500"/>
++        </SinglePos>
++        <SinglePos index="1" Format="1">
++          <Coverage>
++            <Glyph value="glyph08468"/>
++            <Glyph value="glyph08470"/>
++            <Glyph value="glyph08472"/>
++            <Glyph value="glyph08474"/>
++            <Glyph value="glyph08476"/>
++            <Glyph value="glyph08479"/>
++            <Glyph value="glyph08481"/>
++            <Glyph value="glyph08483"/>
++            <Glyph value="glyph08485"/>
++            <Glyph value="glyph08488"/>
++            <Glyph value="glyph08516"/>
++            <Glyph value="glyph08520"/>
++          </Coverage>
++          <ValueFormat value="10"/>
++          <Value YPlacement="500" YAdvance="-500"/>
++        </SinglePos>
++        <SinglePos index="2" Format="1">
++          <Coverage>
++            <Glyph value="uni30FB"/>
++          </Coverage>
++          <ValueFormat value="10"/>
++          <Value YPlacement="250" YAdvance="-500"/>
++        </SinglePos>
++      </Lookup>
++      <Lookup index="10">
 +        <LookupType value="2"/>
 +        <LookupFlag value="0"/>
 +        <!-- SubTableCount=1 -->
@@ -314,7 +446,7 @@
 +          </Class1Record>
 +        </PairPos>
 +      </Lookup>
-+      <Lookup index="9">
++      <Lookup index="11">
 +        <LookupType value="1"/>
 +        <LookupFlag value="0"/>
 +        <!-- SubTableCount=1 -->
@@ -337,7 +469,7 @@
 +          <Value YPlacement="500" YAdvance="-500"/>
 +        </SinglePos>
 +      </Lookup>
-+      <Lookup index="10">
++      <Lookup index="12">
 +        <LookupType value="8"/>
 +        <LookupFlag value="0"/>
 +        <!-- SubTableCount=1 -->
@@ -378,7 +510,7 @@
 +          <!-- PosCount=1 -->
 +          <PosLookupRecord index="0">
 +            <SequenceIndex value="0"/>
-+            <LookupListIndex value="9"/>
++            <LookupListIndex value="11"/>
 +          </PosLookupRecord>
 +        </ChainContextPos>
 +      </Lookup>

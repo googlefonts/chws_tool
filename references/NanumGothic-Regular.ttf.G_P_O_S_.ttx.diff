@@ -11,27 +11,70 @@
 +        <Script>
 +          <DefaultLangSys>
 +            <ReqFeatureIndex value="65535"/>
-+            <!-- FeatureCount=1 -->
++            <!-- FeatureCount=2 -->
 +            <FeatureIndex index="0" value="0"/>
++            <FeatureIndex index="1" value="1"/>
 +          </DefaultLangSys>
 +          <!-- LangSysCount=0 -->
 +        </Script>
 +      </ScriptRecord>
 +    </ScriptList>
 +    <FeatureList>
-+      <!-- FeatureCount=1 -->
++      <!-- FeatureCount=2 -->
 +      <FeatureRecord index="0">
++        <FeatureTag value="halt"/>
++        <Feature>
++          <!-- LookupCount=1 -->
++          <LookupListIndex index="0" value="0"/>
++        </Feature>
++      </FeatureRecord>
++      <FeatureRecord index="1">
 +        <FeatureTag value="chws"/>
 +        <Feature>
 +          <!-- LookupCount=2 -->
-+          <LookupListIndex index="0" value="0"/>
-+          <LookupListIndex index="1" value="2"/>
++          <LookupListIndex index="0" value="1"/>
++          <LookupListIndex index="1" value="3"/>
 +        </Feature>
 +      </FeatureRecord>
 +    </FeatureList>
 +    <LookupList>
-+      <!-- LookupCount=3 -->
++      <!-- LookupCount=4 -->
 +      <Lookup index="0">
++        <LookupType value="1"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=3 -->
++        <SinglePos index="0" Format="1">
++          <Coverage>
++            <Glyph value="uni3001"/>
++            <Glyph value="uni3002"/>
++            <Glyph value="uniFF09"/>
++            <Glyph value="uniFF0C"/>
++            <Glyph value="uniFF0E"/>
++            <Glyph value="uniFF3D"/>
++            <Glyph value="uniFF5D"/>
++          </Coverage>
++          <ValueFormat value="4"/>
++          <Value XAdvance="-470"/>
++        </SinglePos>
++        <SinglePos index="1" Format="1">
++          <Coverage>
++            <Glyph value="uniFF08"/>
++            <Glyph value="uniFF3B"/>
++            <Glyph value="uniFF5B"/>
++          </Coverage>
++          <ValueFormat value="5"/>
++          <Value XPlacement="-470" XAdvance="-470"/>
++        </SinglePos>
++        <SinglePos index="2" Format="1">
++          <Coverage>
++            <Glyph value="uniFF1A"/>
++            <Glyph value="uniFF1B"/>
++          </Coverage>
++          <ValueFormat value="5"/>
++          <Value XPlacement="-235" XAdvance="-470"/>
++        </SinglePos>
++      </Lookup>
++      <Lookup index="1">
 +        <LookupType value="2"/>
 +        <LookupFlag value="0"/>
 +        <!-- SubTableCount=1 -->
@@ -76,7 +119,7 @@
 +          </Class1Record>
 +        </PairPos>
 +      </Lookup>
-+      <Lookup index="1">
++      <Lookup index="2">
 +        <LookupType value="1"/>
 +        <LookupFlag value="0"/>
 +        <!-- SubTableCount=1 -->
@@ -90,7 +133,7 @@
 +          <Value XPlacement="-470" XAdvance="-470"/>
 +        </SinglePos>
 +      </Lookup>
-+      <Lookup index="2">
++      <Lookup index="3">
 +        <LookupType value="8"/>
 +        <LookupFlag value="0"/>
 +        <!-- SubTableCount=1 -->
@@ -114,7 +157,7 @@
 +          <!-- PosCount=1 -->
 +          <PosLookupRecord index="0">
 +            <SequenceIndex value="0"/>
-+            <LookupListIndex value="1"/>
++            <LookupListIndex value="2"/>
 +          </PosLookupRecord>
 +        </ChainContextPos>
 +      </Lookup>

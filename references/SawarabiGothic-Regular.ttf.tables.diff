@@ -2,7 +2,7 @@
  Font 0: "Sawarabi Gothic" "Regular" PS="SawarabiGothic-Regular"
  Tag  Size      
  GDEF         22 [0]
-+GPOS        326 [0]
++GPOS        382 [0]
  OS/2         96 [0]
  cmap     66,140 [0]
  glyf  1,706,301 [0]
@@ -14,7 +14,7 @@
 -Data: 1,896,144
 -Gap: 198
 -Tables: 11
-+Total: 1,896,686
-+Data: 1,896,470
++Total: 1,896,742
++Data: 1,896,526
 +Gap: 216
 +Tables: 12

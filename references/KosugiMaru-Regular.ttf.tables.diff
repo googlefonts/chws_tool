@@ -1,7 +1,7 @@
 @@ -1,5 +1,6 @@
  Font 0: "MotoyaLMaru" "W3 mono" PS="MotoyaLMaru-W3-90ms-RKSJ-H"
  Tag  Size      
-+GPOS        536 [0]
++GPOS        644 [0]
  GSUB        364 [0]
  OS/2         86 [0]
  cmap     34,020 [0]
@@ -13,7 +13,7 @@
 -Data: 2,558,004
 -Gap: 260
 -Tables: 15
-+Total: 2,558,816
-+Data: 2,558,540
++Total: 2,558,924
++Data: 2,558,648
 +Gap: 276
 +Tables: 16

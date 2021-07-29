@@ -27,10 +27,11 @@
 687
 7488
 # middle
-630
 635
 636
 637
+# space
+630
 # vertical.left
 7761
 7762
@@ -60,5 +61,6 @@
 7824
 8128
 # vertical.middle
-630
 635
+# vertical.space
+630

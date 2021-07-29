@@ -28,10 +28,11 @@
 8160
 8211
 # middle
-2762
 2987
 8178
 8179
+# space
+2762
 # vertical.left
 8580
 8581
@@ -62,3 +63,5 @@
 # vertical.middle
 2987
 8632
+# vertical.space
+

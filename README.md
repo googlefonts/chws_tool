@@ -4,7 +4,10 @@
 
 # chws_tool
 
-This is a tool to add the OpenType [`chws`]/[`vchw`] features to OpenType fonts.
+This tool adds the OpenType
+[`chws`], [`vchw`], [`halt`], and [`vhal`]
+features to OpenType fonts if any of these features are missing.
+Please see [east-asian-sapcing] for details of these features.
 
 This tool uses the [east-asian-sapcing] package as its core engine,
 and has following advantages:
@@ -16,7 +19,9 @@ please see the [Adding Fonts] section below.
 
 [east-asian-sapcing]: https://github.com/kojiishi/east_asian_spacing
 [`chws`]: https://docs.microsoft.com/en-us/typography/opentype/spec/features_ae#tag-chws
+[`halt`]: https://docs.microsoft.com/en-us/typography/opentype/spec/features_fj#tag-halt
 [`vchw`]: https://docs.microsoft.com/en-us/typography/opentype/spec/features_uz#tag-vchw
+[`vhal`]: https://docs.microsoft.com/en-us/typography/opentype/spec/features_uz#tag-vhal
 [fonts.google.com]: https://fonts.google.com/
 
 ## Install

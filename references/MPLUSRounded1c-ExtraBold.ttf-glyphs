@@ -15,10 +15,11 @@
 2789
 8030
 # middle
-2760
 2985
 8048
 8049
+# space
+2760
 # vertical.left
 8452
 8453
@@ -38,5 +39,6 @@
 8474
 8502
 # vertical.middle
-2760
 2985
+# vertical.space
+2760

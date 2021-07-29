@@ -18,6 +18,7 @@ import asyncio
 import logging
 import os
 import pathlib
+import sys
 import time
 import typing
 
@@ -78,9 +79,7 @@ async def main_async() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("inputs", nargs="+")
     parser.add_argument("--dump-name", help="dump font names", action="store_true")
-    parser.add_argument(
-        "-g", "--glyph-out", type=pathlib.Path, help="output glyph list."
-    )
+    parser.add_argument("-g", "--glyph-out", help="output glyph list")
     parser.add_argument(
         "-o", "--output", default="build", type=pathlib.Path, help="output directory"
     )
@@ -88,13 +87,13 @@ async def main_async() -> None:
         "-p",
         "--print-path",
         action="store_true",
-        help="print the file paths to stdout.",
+        help="print the file paths to stdout",
     )
     parser.add_argument(
         "-v", "--verbose", help="increase output verbosity", action="count", default=0
     )
     args = parser.parse_args()
-    chws.init_logging(args.verbose, loggers=[logger, logging.getLogger("build")])
+    chws.init_logging(args.verbose, main=logger)
 
     # Expand directories.
     inputs = chws.Builder.expand_paths(args.inputs)
@@ -103,7 +102,14 @@ async def main_async() -> None:
         _dump_font_names(inputs)
         return
 
+    if args.glyph_out:
+        if args.glyph_out == "-":
+            args.glyph_out = sys.stdout
+        else:
+            args.glyph_out = pathlib.Path(args.glyph_out)
+            args.glyph_out.mkdir(exist_ok=True, parents=True)
     args.output.mkdir(exist_ok=True, parents=True)
+
     for input in inputs:
         await add_chws_async(
             input, args.output, glyph_out=args.glyph_out, print_path=args.print_path

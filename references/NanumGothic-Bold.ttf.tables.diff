@@ -1,7 +1,7 @@
 @@ -1,5 +1,6 @@
  Font 0: "NanumGothic" "Bold" PS="NanumGothicBold"
  Tag  Size      
-+GPOS        232 [0]
++GPOS        286 [0]
  OS/2         96 [0]
  cmap     51,122 [0]
  cvt         820 [0]
@@ -13,7 +13,7 @@
 -Data: 4,003,922
 -Gap: 262
 -Tables: 15
-+Total: 4,004,432
-+Data: 4,004,154
++Total: 4,004,486
++Data: 4,004,208
 +Gap: 278
 +Tables: 16
