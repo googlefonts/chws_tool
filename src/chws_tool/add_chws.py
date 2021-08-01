@@ -44,10 +44,7 @@ async def add_chws_async(
     builder = chws.Builder(input, config=GoogleFontsConfig.default)
     await builder.build()
     if not builder.has_spacings:
-        if builder.config.for_font(builder.font) is None:
-            logger.info('Skipped by config: "%s"', input)
-        else:
-            logger.warning('Skipped due to no changes: "%s"', input)
+        logger.info('Skipped saving due to no changes: "%s"', input)
         return None
 
     output_path = builder.save(output, **kwargs)
