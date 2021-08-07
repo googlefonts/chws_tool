@@ -58,7 +58,7 @@ def _get_factory_by_name() -> typing.Dict[
 
     def _ZCOOL_XiaoWei(config, name, is_vertical):
         # '「」' are not fullwidth.
-        return config.with_fullwidth_advance('四水城（）')
+        return config.with_fullwidth_advance("四水城（）")
 
     return {
         # JAN
