@@ -34,6 +34,14 @@ def _get_factory_by_name() -> typing.Dict[
             return None
         return config.with_skip_monospace_ascii(False)
 
+    def use_upem(config, name, is_vertical):
+        return config.with_fullwidth_advance(None)
+
+    def use_upem_no_vert(config, name, is_vertical):
+        if is_vertical:
+            return None
+        return config.with_fullwidth_advance(None)
+
     # `has_no_pairs` indicates that the tool did not produce any pairs for them,
     # and therefore they are not tested.
     def has_no_pairs(config, name, is_vertical):
@@ -48,9 +56,13 @@ def _get_factory_by_name() -> typing.Dict[
     def not_applicable(config, name, is_vertical):
         return None
 
+    def _ZCOOL_XiaoWei(config, name, is_vertical):
+        # '「」' are not fullwidth.
+        return config.with_fullwidth_advance('四水城（）')
+
     return {
         # JAN
-        "Dela Gothic One": has_no_vert_pairs,
+        "Dela Gothic One": use_upem_no_vert,
         "DotGothic16": allow_monospace_ascii,
         "Hachi Maru Pop": default,
         "Kiwi Maru": default,
@@ -74,6 +86,7 @@ def _get_factory_by_name() -> typing.Dict[
         "Rounded Mplus 1c Medium": default,
         "Rounded Mplus 1c Thin": default,
         "New Tegomin": default,
+        "Palette Mosaic": not_applicable,
         "Potta One": default,
         "Reggae One": default,
         "RocknRoll One": default,
@@ -113,13 +126,13 @@ def _get_factory_by_name() -> typing.Dict[
         "Hi Melody": has_no_pairs,
         "Jua": has_no_pairs,
         "Kirang Haerang": has_no_pairs,
-        "Nanum Brush Script": has_no_vert_pairs,
-        "NanumGothic": default,
-        "NanumGothicExtraBold": default,
+        "Nanum Brush Script": not_applicable,
+        "NanumGothic": not_applicable,
+        "NanumGothicExtraBold": not_applicable,
         "NanumGothicCoding": has_no_pairs,
         "NanumMyeongjo": has_no_pairs,
         "NanumMyeongjoExtraBold": has_no_pairs,
-        "Nanum Pen": has_no_vert_pairs,
+        "Nanum Pen": not_applicable,
         "Poor Story": has_no_pairs,
         "Single Day": has_no_pairs,
         "Song Myung": has_no_pairs,
@@ -134,7 +147,7 @@ def _get_factory_by_name() -> typing.Dict[
         "Ma Shan Zheng": default,
         "ZCOOL KuaiLe": default,
         "ZCOOL QingKe HuangYou": default,
-        "ZCOOL XiaoWei": default,
+        "ZCOOL XiaoWei": _ZCOOL_XiaoWei,
         "Zhi Mang Xing": has_no_pairs,
     }
 
