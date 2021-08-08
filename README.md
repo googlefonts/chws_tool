@@ -6,7 +6,7 @@
 
 This tool adds the OpenType
 [`chws`], [`vchw`], [`halt`], and [`vhal`]
-features to OpenType fonts if any of these features are missing.
+features to OpenType/TrueType fonts when any of these features are missing.
 Please see [east-asian-spacing] for details of these features.
 
 This tool uses the [east-asian-spacing] package as its core engine,

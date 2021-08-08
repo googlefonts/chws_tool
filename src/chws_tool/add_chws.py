@@ -36,12 +36,17 @@ async def add_chws_async(
 ) -> Optional[pathlib.Path]:
     """Add OpenType chws/vchw features to a font.
 
-    Returns the path of the output font,
-    or `None` if the feature is not applicable to the font.
+    Args:
+        input: The path of the input font.
+        output: The path or the directory of the output font.
+          When omitted, the input font is updated.
+        kwargs: They are passed directly to
+          `east_asian_spacing.Builder.save()`.
 
-    `**kwargs` are optional. They are passed directly to
-    `east_asian_spacing.Builder.save()`."""
-
+    Returns:
+        The path of the output font.
+        `None` if the feature is not applicable to the font.
+    """
     builder = chws.Builder(input, config=GoogleFontsConfig.default)
     output_path = await builder.build_and_save(output, **kwargs)
     if not output_path:
@@ -59,6 +64,19 @@ def add_chws(
     output: Optional[Union[str, os.PathLike]] = None,
     **kwargs,
 ) -> Optional[pathlib.Path]:
+    """Add OpenType chws/vchw features to a font.
+
+    Args:
+        input: The path of the input font.
+        output: The path or the directory of the output font.
+          When omitted, the input font is updated.
+        kwargs: They are passed directly to
+          `east_asian_spacing.Builder.save()`.
+
+    Returns:
+        The path of the output font.
+        `None` if the feature is not applicable to the font.
+    """
     loop = asyncio.get_event_loop()
     return loop.run_until_complete(add_chws_async(input, output, **kwargs))
 
