@@ -20,7 +20,8 @@ import os
 import pathlib
 import sys
 import time
-import typing
+from typing import Optional
+from typing import Union
 
 import east_asian_spacing as chws
 from chws_tool.config import GoogleFontsConfig
@@ -29,10 +30,10 @@ logger = logging.getLogger("add_chws")
 
 
 async def add_chws_async(
-    input: typing.Union[str, os.PathLike],
-    output: typing.Union[str, os.PathLike],
+    input: Union[str, os.PathLike],
+    output: Optional[Union[str, os.PathLike]] = None,
     **kwargs,
-) -> typing.Optional[pathlib.Path]:
+) -> Optional[pathlib.Path]:
     """Add OpenType chws/vchw features to a font.
 
     Returns the path of the output font,
@@ -42,12 +43,10 @@ async def add_chws_async(
     `east_asian_spacing.Builder.save()`."""
 
     builder = chws.Builder(input, config=GoogleFontsConfig.default)
-    await builder.build()
-    if not builder.has_spacings:
+    output_path = await builder.build_and_save(output, **kwargs)
+    if not output_path:
         logger.info('Skipped saving due to no changes: "%s"', input)
         return None
-
-    output_path = builder.save(output, **kwargs)
     logger.info("%s ==> %s", input, output_path)
 
     await builder.test()
@@ -56,10 +55,10 @@ async def add_chws_async(
 
 
 def add_chws(
-    input: typing.Union[str, os.PathLike],
-    output: typing.Union[str, os.PathLike],
+    input: Union[str, os.PathLike],
+    output: Optional[Union[str, os.PathLike]] = None,
     **kwargs,
-) -> typing.Optional[pathlib.Path]:
+) -> Optional[pathlib.Path]:
     loop = asyncio.get_event_loop()
     return loop.run_until_complete(add_chws_async(input, output, **kwargs))
 
