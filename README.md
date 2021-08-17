@@ -7,9 +7,9 @@
 This tool adds the OpenType
 [`chws`], [`vchw`], [`halt`], and [`vhal`]
 features to OpenType fonts if any of these features are missing.
-Please see [east-asian-sapcing] for details of these features.
+Please see [east-asian-spacing] for details of these features.
 
-This tool uses the [east-asian-sapcing] package as its core engine,
+This tool uses the [east-asian-spacing] package as its core engine,
 and has following advantages:
 * Simpler API and command line options.
 * Supports CJK fonts at [fonts.google.com] in its built-in [config].
@@ -17,7 +17,7 @@ and has following advantages:
 To add new fonts to the supported font list,
 please see the [Adding Fonts] section below.
 
-[east-asian-sapcing]: https://github.com/kojiishi/east_asian_spacing
+[east-asian-spacing]: https://github.com/kojiishi/east_asian_spacing
 [`chws`]: https://docs.microsoft.com/en-us/typography/opentype/spec/features_ae#tag-chws
 [`halt`]: https://docs.microsoft.com/en-us/typography/opentype/spec/features_fj#tag-halt
 [`vchw`]: https://docs.microsoft.com/en-us/typography/opentype/spec/features_uz#tag-vchw
