@@ -1,0 +1,18 @@
+@@ -1,6 +1,6 @@
+ Font 0: "IBM Plex Sans KR" "Regular" PS="IBMPlexSansKR-Regular"
+ Tag  Size      
+-GPOS     11,618 [0]
++GPOS     11,950 [0]
+ GSUB      2,726 [0]
+ OS/2         96 [0]
+ VDMX      1,504 [0]
+@@ -17,7 +17,7 @@
+ name      1,480 [0]
+ post         32 [0]
+ prep        256 [0]
+-Total: 2,792,386
+-Data: 2,792,096
++Total: 2,792,718
++Data: 2,792,428
+ Gap: 290
+ Tables: 17

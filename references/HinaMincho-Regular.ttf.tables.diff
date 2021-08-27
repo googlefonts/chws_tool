@@ -1,0 +1,20 @@
+@@ -1,7 +1,7 @@
+ Font 0: "Hina Mincho" "Regular" PS="HinaMincho-Regular"
+ Tag  Size      
+ GDEF      1,192 [0]
+-GPOS     18,418 [0]
++GPOS     18,710 [0]
+ GSUB      6,740 [0]
+ OS/2         96 [0]
+ cmap     95,888 [0]
+@@ -16,7 +16,7 @@
+ post     82,105 [0]
+ vhea         36 [0]
+ vmtx     33,066 [0]
+-Total: 6,429,512
+-Data: 6,429,231
+-Gap: 281
++Total: 6,429,802
++Data: 6,429,523
++Gap: 279
+ Tables: 16

@@ -1,0 +1,19 @@
+@@ -1,5 +1,6 @@
+ Font 0: "Kaisei Tokumin Medium" "Regular" PS="KaiseiTokumin-Medium"
+ Tag  Size      
++GPOS        572 [0]
+ GSUB     10,216 [0]
+ OS/2         96 [0]
+ cmap    126,536 [0]
+@@ -14,7 +15,7 @@
+ post    105,267 [0]
+ vhea         36 [0]
+ vmtx     36,494 [0]
+-Total: 4,265,744
+-Data: 4,265,499
+-Gap: 245
+-Tables: 14
++Total: 4,266,330
++Data: 4,266,071
++Gap: 259
++Tables: 15

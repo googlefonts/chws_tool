@@ -1,0 +1,426 @@
+@@
++<?xml version="1.0" encoding="UTF-8"?>
++<ttFont ttLibVersion="4.26">
++
++  <GPOS>
++    <Version value="0x00010000"/>
++    <ScriptList>
++      <!-- ScriptCount=1 -->
++      <ScriptRecord index="0">
++        <ScriptTag value="DFLT"/>
++        <Script>
++          <DefaultLangSys>
++            <ReqFeatureIndex value="65535"/>
++            <!-- FeatureCount=4 -->
++            <FeatureIndex index="0" value="0"/>
++            <FeatureIndex index="1" value="1"/>
++            <FeatureIndex index="2" value="2"/>
++            <FeatureIndex index="3" value="3"/>
++          </DefaultLangSys>
++          <!-- LangSysCount=0 -->
++        </Script>
++      </ScriptRecord>
++    </ScriptList>
++    <FeatureList>
++      <!-- FeatureCount=4 -->
++      <FeatureRecord index="0">
++        <FeatureTag value="halt"/>
++        <Feature>
++          <!-- LookupCount=1 -->
++          <LookupListIndex index="0" value="0"/>
++        </Feature>
++      </FeatureRecord>
++      <FeatureRecord index="1">
++        <FeatureTag value="chws"/>
++        <Feature>
++          <!-- LookupCount=2 -->
++          <LookupListIndex index="0" value="1"/>
++          <LookupListIndex index="1" value="3"/>
++        </Feature>
++      </FeatureRecord>
++      <FeatureRecord index="2">
++        <FeatureTag value="vhal"/>
++        <Feature>
++          <!-- LookupCount=1 -->
++          <LookupListIndex index="0" value="4"/>
++        </Feature>
++      </FeatureRecord>
++      <FeatureRecord index="3">
++        <FeatureTag value="vchw"/>
++        <Feature>
++          <!-- LookupCount=2 -->
++          <LookupListIndex index="0" value="5"/>
++          <LookupListIndex index="1" value="7"/>
++        </Feature>
++      </FeatureRecord>
++    </FeatureList>
++    <LookupList>
++      <!-- LookupCount=8 -->
++      <Lookup index="0">
++        <LookupType value="1"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=3 -->
++        <SinglePos index="0" Format="1">
++          <Coverage>
++            <Glyph value="uni3001"/>
++            <Glyph value="uni3002"/>
++            <Glyph value="comma.full"/>
++            <Glyph value="period.full"/>
++            <Glyph value="quoteright.full"/>
++            <Glyph value="quotedblright.full"/>
++            <Glyph value="parenright.full"/>
++            <Glyph value="tortoiseshellbracketright"/>
++            <Glyph value="bracketright.full"/>
++            <Glyph value="braceright.full"/>
++            <Glyph value="anglebracketright"/>
++            <Glyph value="dblanglebracketright"/>
++            <Glyph value="cornerbracketright"/>
++            <Glyph value="whitecornerbracketright"/>
++            <Glyph value="blacklenticularbracketright"/>
++            <Glyph value="lowquotedoubleprime"/>
++          </Coverage>
++          <ValueFormat value="4"/>
++          <Value XAdvance="-500"/>
++        </SinglePos>
++        <SinglePos index="1" Format="1">
++          <Coverage>
++            <Glyph value="quoteleft.full"/>
++            <Glyph value="quotedblleft.full"/>
++            <Glyph value="parenleft.full"/>
++            <Glyph value="tortoiseshellbracketleft"/>
++            <Glyph value="bracketleft.full"/>
++            <Glyph value="braceleft.full"/>
++            <Glyph value="anglebracketleft"/>
++            <Glyph value="dblanglebracketleft"/>
++            <Glyph value="cornerbracketleft"/>
++            <Glyph value="whitecornerbracketleft"/>
++            <Glyph value="blacklenticularbracketleft"/>
++            <Glyph value="quotedoubleprimeReversed"/>
++          </Coverage>
++          <ValueFormat value="5"/>
++          <Value XPlacement="-500" XAdvance="-500"/>
++        </SinglePos>
++        <SinglePos index="2" Format="1">
++          <Coverage>
++            <Glyph value="dotkata"/>
++            <Glyph value="colon.full"/>
++            <Glyph value="semicolon.full"/>
++          </Coverage>
++          <ValueFormat value="5"/>
++          <Value XPlacement="-250" XAdvance="-500"/>
++        </SinglePos>
++      </Lookup>
++      <Lookup index="1">
++        <LookupType value="2"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=1 -->
++        <PairPos index="0" Format="2">
++          <Coverage>
++            <Glyph value="uni3001"/>
++            <Glyph value="uni3002"/>
++            <Glyph value="comma.full"/>
++            <Glyph value="period.full"/>
++            <Glyph value="quoteright.full"/>
++            <Glyph value="quotedblright.full"/>
++            <Glyph value="parenright.full"/>
++            <Glyph value="tortoiseshellbracketright"/>
++            <Glyph value="bracketright.full"/>
++            <Glyph value="braceright.full"/>
++            <Glyph value="anglebracketright"/>
++            <Glyph value="dblanglebracketright"/>
++            <Glyph value="cornerbracketright"/>
++            <Glyph value="whitecornerbracketright"/>
++            <Glyph value="blacklenticularbracketright"/>
++            <Glyph value="lowquotedoubleprime"/>
++          </Coverage>
++          <ValueFormat1 value="4"/>
++          <ValueFormat2 value="0"/>
++          <ClassDef1>
++          </ClassDef1>
++          <ClassDef2>
++            <ClassDef glyph="anglebracketleft" class="1"/>
++            <ClassDef glyph="anglebracketright" class="1"/>
++            <ClassDef glyph="blacklenticularbracketleft" class="1"/>
++            <ClassDef glyph="blacklenticularbracketright" class="1"/>
++            <ClassDef glyph="braceleft.full" class="1"/>
++            <ClassDef glyph="braceright.full" class="1"/>
++            <ClassDef glyph="bracketleft.full" class="1"/>
++            <ClassDef glyph="bracketright.full" class="1"/>
++            <ClassDef glyph="colon.full" class="1"/>
++            <ClassDef glyph="comma.full" class="1"/>
++            <ClassDef glyph="cornerbracketleft" class="1"/>
++            <ClassDef glyph="cornerbracketright" class="1"/>
++            <ClassDef glyph="dblanglebracketleft" class="1"/>
++            <ClassDef glyph="dblanglebracketright" class="1"/>
++            <ClassDef glyph="dotkata" class="1"/>
++            <ClassDef glyph="lowquotedoubleprime" class="1"/>
++            <ClassDef glyph="parenleft.full" class="1"/>
++            <ClassDef glyph="parenright.full" class="1"/>
++            <ClassDef glyph="period.full" class="1"/>
++            <ClassDef glyph="quotedblleft.full" class="1"/>
++            <ClassDef glyph="quotedblright.full" class="1"/>
++            <ClassDef glyph="quotedoubleprimeReversed" class="1"/>
++            <ClassDef glyph="quoteleft.full" class="1"/>
++            <ClassDef glyph="quoteright.full" class="1"/>
++            <ClassDef glyph="semicolon.full" class="1"/>
++            <ClassDef glyph="spacehan" class="1"/>
++            <ClassDef glyph="tortoiseshellbracketleft" class="1"/>
++            <ClassDef glyph="tortoiseshellbracketright" class="1"/>
++            <ClassDef glyph="uni3001" class="1"/>
++            <ClassDef glyph="uni3002" class="1"/>
++            <ClassDef glyph="whitecornerbracketleft" class="1"/>
++            <ClassDef glyph="whitecornerbracketright" class="1"/>
++          </ClassDef2>
++          <!-- Class1Count=1 -->
++          <!-- Class2Count=2 -->
++          <Class1Record index="0">
++            <Class2Record index="0">
++              <Value1 XAdvance="0"/>
++            </Class2Record>
++            <Class2Record index="1">
++              <Value1 XAdvance="-500"/>
++            </Class2Record>
++          </Class1Record>
++        </PairPos>
++      </Lookup>
++      <Lookup index="2">
++        <LookupType value="1"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=1 -->
++        <SinglePos index="0" Format="1">
++          <Coverage>
++            <Glyph value="quoteleft.full"/>
++            <Glyph value="quotedblleft.full"/>
++            <Glyph value="parenleft.full"/>
++            <Glyph value="tortoiseshellbracketleft"/>
++            <Glyph value="bracketleft.full"/>
++            <Glyph value="braceleft.full"/>
++            <Glyph value="anglebracketleft"/>
++            <Glyph value="dblanglebracketleft"/>
++            <Glyph value="cornerbracketleft"/>
++            <Glyph value="whitecornerbracketleft"/>
++            <Glyph value="blacklenticularbracketleft"/>
++            <Glyph value="quotedoubleprimeReversed"/>
++          </Coverage>
++          <ValueFormat value="5"/>
++          <Value XPlacement="-500" XAdvance="-500"/>
++        </SinglePos>
++      </Lookup>
++      <Lookup index="3">
++        <LookupType value="8"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=1 -->
++        <ChainContextPos index="0" Format="3">
++          <!-- BacktrackGlyphCount=1 -->
++          <BacktrackCoverage index="0">
++            <Glyph value="spacehan"/>
++            <Glyph value="dotkata"/>
++            <Glyph value="colon.full"/>
++            <Glyph value="semicolon.full"/>
++            <Glyph value="quoteleft.full"/>
++            <Glyph value="quotedblleft.full"/>
++            <Glyph value="parenleft.full"/>
++            <Glyph value="tortoiseshellbracketleft"/>
++            <Glyph value="bracketleft.full"/>
++            <Glyph value="braceleft.full"/>
++            <Glyph value="anglebracketleft"/>
++            <Glyph value="dblanglebracketleft"/>
++            <Glyph value="cornerbracketleft"/>
++            <Glyph value="whitecornerbracketleft"/>
++            <Glyph value="blacklenticularbracketleft"/>
++            <Glyph value="quotedoubleprimeReversed"/>
++          </BacktrackCoverage>
++          <!-- InputGlyphCount=1 -->
++          <InputCoverage index="0">
++            <Glyph value="quoteleft.full"/>
++            <Glyph value="quotedblleft.full"/>
++            <Glyph value="parenleft.full"/>
++            <Glyph value="tortoiseshellbracketleft"/>
++            <Glyph value="bracketleft.full"/>
++            <Glyph value="braceleft.full"/>
++            <Glyph value="anglebracketleft"/>
++            <Glyph value="dblanglebracketleft"/>
++            <Glyph value="cornerbracketleft"/>
++            <Glyph value="whitecornerbracketleft"/>
++            <Glyph value="blacklenticularbracketleft"/>
++            <Glyph value="quotedoubleprimeReversed"/>
++          </InputCoverage>
++          <!-- LookAheadGlyphCount=0 -->
++          <!-- PosCount=1 -->
++          <PosLookupRecord index="0">
++            <SequenceIndex value="0"/>
++            <LookupListIndex value="2"/>
++          </PosLookupRecord>
++        </ChainContextPos>
++      </Lookup>
++      <Lookup index="4">
++        <LookupType value="1"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=3 -->
++        <SinglePos index="0" Format="1">
++          <Coverage>
++            <Glyph value="uniFE11"/>
++            <Glyph value="uniFE12"/>
++            <Glyph value="parenright.full.vert"/>
++            <Glyph value="tortoiseshellbracketright.vert"/>
++            <Glyph value="bracketright.full.vert"/>
++            <Glyph value="braceright.full.vert"/>
++            <Glyph value="anglebracketright.vert"/>
++            <Glyph value="dblanglebracketright.vert"/>
++            <Glyph value="cornerbracketright.vert"/>
++            <Glyph value="whitecornerbracketright.vert"/>
++            <Glyph value="blacklenticularbracketright.vert"/>
++            <Glyph value="comma.full.vert"/>
++            <Glyph value="period.full.vert"/>
++          </Coverage>
++          <ValueFormat value="8"/>
++          <Value YAdvance="-500"/>
++        </SinglePos>
++        <SinglePos index="1" Format="1">
++          <Coverage>
++            <Glyph value="parenleft.full.vert"/>
++            <Glyph value="tortoiseshellbracketleft.vert"/>
++            <Glyph value="bracketleft.full.vert"/>
++            <Glyph value="braceleft.full.vert"/>
++            <Glyph value="anglebracketleft.vert"/>
++            <Glyph value="dblanglebracketleft.vert"/>
++            <Glyph value="cornerbracketleft.vert"/>
++            <Glyph value="whitecornerbracketleft.vert"/>
++            <Glyph value="blacklenticularbracketleft.vert"/>
++          </Coverage>
++          <ValueFormat value="10"/>
++          <Value YPlacement="500" YAdvance="-500"/>
++        </SinglePos>
++        <SinglePos index="2" Format="1">
++          <Coverage>
++            <Glyph value="dotkata"/>
++          </Coverage>
++          <ValueFormat value="10"/>
++          <Value YPlacement="250" YAdvance="-500"/>
++        </SinglePos>
++      </Lookup>
++      <Lookup index="5">
++        <LookupType value="2"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=1 -->
++        <PairPos index="0" Format="2">
++          <Coverage>
++            <Glyph value="uniFE11"/>
++            <Glyph value="uniFE12"/>
++            <Glyph value="parenright.full.vert"/>
++            <Glyph value="tortoiseshellbracketright.vert"/>
++            <Glyph value="bracketright.full.vert"/>
++            <Glyph value="braceright.full.vert"/>
++            <Glyph value="anglebracketright.vert"/>
++            <Glyph value="dblanglebracketright.vert"/>
++            <Glyph value="cornerbracketright.vert"/>
++            <Glyph value="whitecornerbracketright.vert"/>
++            <Glyph value="blacklenticularbracketright.vert"/>
++            <Glyph value="comma.full.vert"/>
++            <Glyph value="period.full.vert"/>
++          </Coverage>
++          <ValueFormat1 value="8"/>
++          <ValueFormat2 value="0"/>
++          <ClassDef1>
++          </ClassDef1>
++          <ClassDef2>
++            <ClassDef glyph="anglebracketleft.vert" class="1"/>
++            <ClassDef glyph="anglebracketright.vert" class="1"/>
++            <ClassDef glyph="blacklenticularbracketleft.vert" class="1"/>
++            <ClassDef glyph="blacklenticularbracketright.vert" class="1"/>
++            <ClassDef glyph="braceleft.full.vert" class="1"/>
++            <ClassDef glyph="braceright.full.vert" class="1"/>
++            <ClassDef glyph="bracketleft.full.vert" class="1"/>
++            <ClassDef glyph="bracketright.full.vert" class="1"/>
++            <ClassDef glyph="comma.full.vert" class="1"/>
++            <ClassDef glyph="cornerbracketleft.vert" class="1"/>
++            <ClassDef glyph="cornerbracketright.vert" class="1"/>
++            <ClassDef glyph="dblanglebracketleft.vert" class="1"/>
++            <ClassDef glyph="dblanglebracketright.vert" class="1"/>
++            <ClassDef glyph="dotkata" class="1"/>
++            <ClassDef glyph="parenleft.full.vert" class="1"/>
++            <ClassDef glyph="parenright.full.vert" class="1"/>
++            <ClassDef glyph="period.full.vert" class="1"/>
++            <ClassDef glyph="spacehan" class="1"/>
++            <ClassDef glyph="tortoiseshellbracketleft.vert" class="1"/>
++            <ClassDef glyph="tortoiseshellbracketright.vert" class="1"/>
++            <ClassDef glyph="uniFE11" class="1"/>
++            <ClassDef glyph="uniFE12" class="1"/>
++            <ClassDef glyph="whitecornerbracketleft.vert" class="1"/>
++            <ClassDef glyph="whitecornerbracketright.vert" class="1"/>
++          </ClassDef2>
++          <!-- Class1Count=1 -->
++          <!-- Class2Count=2 -->
++          <Class1Record index="0">
++            <Class2Record index="0">
++              <Value1 YAdvance="0"/>
++            </Class2Record>
++            <Class2Record index="1">
++              <Value1 YAdvance="-500"/>
++            </Class2Record>
++          </Class1Record>
++        </PairPos>
++      </Lookup>
++      <Lookup index="6">
++        <LookupType value="1"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=1 -->
++        <SinglePos index="0" Format="1">
++          <Coverage>
++            <Glyph value="parenleft.full.vert"/>
++            <Glyph value="tortoiseshellbracketleft.vert"/>
++            <Glyph value="bracketleft.full.vert"/>
++            <Glyph value="braceleft.full.vert"/>
++            <Glyph value="anglebracketleft.vert"/>
++            <Glyph value="dblanglebracketleft.vert"/>
++            <Glyph value="cornerbracketleft.vert"/>
++            <Glyph value="whitecornerbracketleft.vert"/>
++            <Glyph value="blacklenticularbracketleft.vert"/>
++          </Coverage>
++          <ValueFormat value="10"/>
++          <Value YPlacement="500" YAdvance="-500"/>
++        </SinglePos>
++      </Lookup>
++      <Lookup index="7">
++        <LookupType value="8"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=1 -->
++        <ChainContextPos index="0" Format="3">
++          <!-- BacktrackGlyphCount=1 -->
++          <BacktrackCoverage index="0">
++            <Glyph value="spacehan"/>
++            <Glyph value="dotkata"/>
++            <Glyph value="parenleft.full.vert"/>
++            <Glyph value="tortoiseshellbracketleft.vert"/>
++            <Glyph value="bracketleft.full.vert"/>
++            <Glyph value="braceleft.full.vert"/>
++            <Glyph value="anglebracketleft.vert"/>
++            <Glyph value="dblanglebracketleft.vert"/>
++            <Glyph value="cornerbracketleft.vert"/>
++            <Glyph value="whitecornerbracketleft.vert"/>
++            <Glyph value="blacklenticularbracketleft.vert"/>
++          </BacktrackCoverage>
++          <!-- InputGlyphCount=1 -->
++          <InputCoverage index="0">
++            <Glyph value="parenleft.full.vert"/>
++            <Glyph value="tortoiseshellbracketleft.vert"/>
++            <Glyph value="bracketleft.full.vert"/>
++            <Glyph value="braceleft.full.vert"/>
++            <Glyph value="anglebracketleft.vert"/>
++            <Glyph value="dblanglebracketleft.vert"/>
++            <Glyph value="cornerbracketleft.vert"/>
++            <Glyph value="whitecornerbracketleft.vert"/>
++            <Glyph value="blacklenticularbracketleft.vert"/>
++          </InputCoverage>
++          <!-- LookAheadGlyphCount=0 -->
++          <!-- PosCount=1 -->
++          <PosLookupRecord index="0">
++            <SequenceIndex value="0"/>
++            <LookupListIndex value="6"/>
++          </PosLookupRecord>
++        </ChainContextPos>
++      </Lookup>
++    </LookupList>
++  </GPOS>
++
++</ttFont>

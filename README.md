@@ -98,7 +98,7 @@ When adding new fonts to the known font list,
 the following process is recommended:
 
 1. Find the font names.
-   Running the `add-chws` with `--dump-name` option can print them.
+   Running the `add-chws` with `--print-name` option can print them.
 2. Add them to the [config].
 3. Build the font and run the [Visual Test].
 4. Tweak the [config] if needed.

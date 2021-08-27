@@ -1,0 +1,19 @@
+@@ -1,5 +1,6 @@
+ Font 0: "Kaisei HarunoUmi" "Bold" PS="KaiseiHarunoUmi-Bold"
+ Tag  Size      
++GPOS        572 [0]
+ GSUB     10,216 [0]
+ OS/2         96 [0]
+ cmap    126,536 [0]
+@@ -14,7 +15,7 @@
+ post    105,267 [0]
+ vhea         36 [0]
+ vmtx     36,494 [0]
+-Total: 4,252,912
+-Data: 4,252,671
+-Gap: 241
+-Tables: 14
++Total: 4,253,498
++Data: 4,253,243
++Gap: 255
++Tables: 15

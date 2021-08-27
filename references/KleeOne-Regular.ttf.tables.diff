@@ -1,0 +1,20 @@
+@@ -1,7 +1,7 @@
+ Font 0: "Klee One" "Regular" PS="KleeOne-Regular"
+ Tag  Size      
+ GDEF        100 [0]
+-GPOS     28,022 [0]
++GPOS     28,450 [0]
+ GSUB     51,726 [0]
+ OS/2         96 [0]
+ cmap    155,510 [0]
+@@ -16,7 +16,7 @@
+ post    167,953 [0]
+ vhea         36 [0]
+ vmtx     52,458 [0]
+-Total: 7,925,104
+-Data: 7,924,819
+-Gap: 285
++Total: 7,925,530
++Data: 7,925,247
++Gap: 283
+ Tables: 16

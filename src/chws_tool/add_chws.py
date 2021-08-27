@@ -81,18 +81,21 @@ def add_chws(
     return loop.run_until_complete(add_chws_async(input, output, **kwargs))
 
 
-def _dump_font_names(inputs):
+def _print_font_names(inputs):
     for input in inputs:
         font = chws.Font.load(input)
         fonts = font.fonts_in_collection if font.is_collection else (font,)
         for font in fonts:
-            print(font.debug_name(1))
+            # Prefer Typographic Family name (16) if the font has it.
+            # Otherwise fallback to Font Family name (1).
+            # https://docs.microsoft.com/en-us/typography/opentype/spec/name#name-ids
+            print(font.debug_name(16, 1))
 
 
 async def main_async() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("inputs", nargs="+")
-    parser.add_argument("--dump-name", help="dump font names", action="store_true")
+    parser.add_argument("--print-name", help="print font names", action="store_true")
     parser.add_argument("-g", "--glyph-out", help="output glyph list")
     parser.add_argument(
         "-o", "--output", default="build", type=pathlib.Path, help="output directory"
@@ -112,8 +115,8 @@ async def main_async() -> None:
     # Expand directories.
     inputs = chws.Builder.expand_paths(args.inputs)
 
-    if args.dump_name:
-        _dump_font_names(inputs)
+    if args.print_name:
+        _print_font_names(inputs)
         return
 
     if args.glyph_out:

@@ -30,7 +30,7 @@ setup_args = dict(
     },
     setup_requires=["setuptools_scm"],
     install_requires=[
-        "east-asian-spacing>=1.3.2",
+        "east-asian-spacing>=1.3.4",
     ],
     extras_require={
         "dev": [

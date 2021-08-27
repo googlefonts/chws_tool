@@ -1,0 +1,20 @@
+@@ -1,7 +1,7 @@
+ Font 0: "Rampart One" "Regular" PS="RampartOne-Regular"
+ Tag  Size      
+ GDEF         64 [0]
+-GPOS      2,906 [0]
++GPOS      3,296 [0]
+ GSUB     21,992 [0]
+ OS/2         96 [0]
+ cmap    130,826 [0]
+@@ -16,7 +16,7 @@
+ post     98,432 [0]
+ vhea         36 [0]
+ vmtx     36,686 [0]
+-Total: 3,644,728
+-Data: 3,644,447
+-Gap: 281
++Total: 3,645,114
++Data: 3,644,837
++Gap: 277
+ Tables: 16

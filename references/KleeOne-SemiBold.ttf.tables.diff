@@ -1,0 +1,20 @@
+@@ -1,7 +1,7 @@
+ Font 0: "Klee One SemiBold" "Regular" PS="KleeOne-SemiBold"
+ Tag  Size      
+ GDEF        100 [0]
+-GPOS     28,734 [0]
++GPOS     29,162 [0]
+ GSUB     51,726 [0]
+ OS/2         96 [0]
+ cmap    155,510 [0]
+@@ -16,7 +16,7 @@
+ post    167,953 [0]
+ vhea         36 [0]
+ vmtx     52,458 [0]
+-Total: 8,091,328
+-Data: 8,091,047
+-Gap: 281
++Total: 8,091,754
++Data: 8,091,475
++Gap: 279
+ Tables: 16
