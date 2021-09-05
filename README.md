@@ -56,13 +56,16 @@ add-chws input_dir -o output_dir
 
 ## API
 
+The following example creates a font with the features
+in the "`build`" directory
+if the features are applicable:
 ```python
 import chws_tool
 
 def main():
     output_path = chws_tool.add_chws("fonts/input.otf", "build")
     if output_path:
-        print("Success!")
+        print(f"Success! saved to {output_path}")
     else:
         print("Skipped")
 ```
@@ -81,7 +84,7 @@ import chws_tool
 async def main_async():
     output_path = await chws_tool.add_chws_async("fonts/input.otf", "build")
     if output_path:
-        print("Success!")
+        print(f"Success! saved to {output_path}")
     else:
         print("Skipped")
 
