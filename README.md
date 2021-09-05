@@ -66,7 +66,14 @@ def main():
     else:
         print("Skipped")
 ```
-For [asyncio] programs:
+If you prefer to overwrite existing fonts, you can omit the output directory.
+```python
+import chws_tool
+
+def main():
+    chws_tool.add_chws("fonts/input.otf")
+```
+If your program uses [asyncio]:
 ```python
 import asyncio
 import chws_tool
@@ -101,6 +108,8 @@ the following process is recommended:
    Running the `add-chws` with `--print-name` option can print them.
 2. Add them to the [config].
 3. Build the font and run the [Visual Test].
+   This step is optional
+   because this package automatically avoids glyph collisions.
 4. Tweak the [config] if needed.
 
 [config]: src/chws_tool/config.py
