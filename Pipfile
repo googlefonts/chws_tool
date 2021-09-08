@@ -1,6 +1,7 @@
 # Use `setup.py` as the master of the dependencies.
 # This file is kept in sync for development environments.
 # See https://pipenv.pypa.io/en/latest/advanced/#pipfile-vs-setup-py
+
 [[source]]
 url = "https://pypi.org/simple"
 verify_ssl = true
@@ -10,16 +11,13 @@ name = "pypi"
 east-asian-spacing = ">=1.3.4"
 
 [dev-packages]
-# chws-tool = {editable = true, extras = ["dev"], path = "."}
-black = "*"
+# black has only pre-releases, but pipenv can't set `allow_prereleases` per package.
+# black = "*"
 pytest = "*"
 pytest-asyncio = "*"
 pytype = "*"
 tox = "*"
+chws-tool = {editable = true, extras = ["dev"], path = "."}
 
 [requires]
 python_version = "3.8"
-
-[pipenv]
-# black has only pre-releases.
-allow_prereleases = true
