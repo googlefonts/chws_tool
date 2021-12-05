@@ -172,3 +172,7 @@ but they may be useful in following cases.
   for the same reason as the "Fullwidth" feature.
 * The "Characters" input fields can change the test cases.
   You don't have to change them unless you have specific needs.
+
+## Releasing
+
+See https://googlefonts.github.io/python#make-a-release.
