@@ -37,8 +37,11 @@ setup_args = dict(
             "black",
             "pytest",
             "pytest-asyncio",
-            "pytype",
             "tox",
+        ],
+        # pytype does not support Python 3.10 yet.
+        'dev:python_version<"3.10"': [
+            "pytype",
         ],
     },
     python_requires=">=3.8",
