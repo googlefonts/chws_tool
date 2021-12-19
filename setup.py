@@ -44,7 +44,7 @@ setup_args = dict(
             "pytype",
         ],
     },
-    python_requires=">=3.8",
+    python_requires=">=3.7",
 
     # this is for type checker to use our inline type hints:
     # https://www.python.org/dev/peps/pep-0561/#id18
