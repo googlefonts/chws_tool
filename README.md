@@ -97,8 +97,6 @@ asyncio.run(main_async())
 [adding fonts]: #adding-fonts
 
 This package has a built-in list of supported fonts in its [config].
-The list indicates these fonts passed the [visual test],
-with possibly tweaked configurations.
 
 Fonts not in the known list are still processed
 with the default configuration,
@@ -110,10 +108,11 @@ the following process is recommended:
 1. Find the font names.
    Running the `add-chws` with `--print-name` option can print them.
 2. Add them to the [config].
-3. Build the font and run the [Visual Test].
+3. (Optional) Build the font and run the [Visual Test].
    This step is optional
-   because this package automatically avoids glyph collisions.
-4. Tweak the [config] if needed.
+   because this package automatically avoids glyph collisions
+   by computing glyph outlines.
+4. (Optional) Tweak the [config] if needed.
 
 [config]: src/chws_tool/config.py
 
