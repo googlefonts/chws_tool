@@ -98,6 +98,13 @@ async def main_async() -> None:
     parser.add_argument("--print-name", help="print font names", action="store_true")
     parser.add_argument("-g", "--glyph-out", help="output glyph list")
     parser.add_argument(
+        "-G",
+        "--glyph-comment",
+        type=int,
+        default=1,
+        help="comment level for the glyph list",
+    )
+    parser.add_argument(
         "-o", "--output", default="build", type=pathlib.Path, help="output directory"
     )
     parser.add_argument(
@@ -129,7 +136,11 @@ async def main_async() -> None:
 
     for input in inputs:
         await add_chws_async(
-            input, args.output, glyph_out=args.glyph_out, print_path=args.print_path
+            input,
+            args.output,
+            glyph_out=args.glyph_out,
+            glyph_comment=args.glyph_comment,
+            print_path=args.print_path,
         )
 
 
