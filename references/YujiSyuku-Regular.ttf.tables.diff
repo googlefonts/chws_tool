@@ -1,0 +1,19 @@
+@@ -1,5 +1,6 @@
+ Font 0: "Yuji Syuku" "Regular" PS="YujiSyuku-Regular"
+ Tag  Size      
++GPOS        804 [0]
+ GSUB     29,224 [0]
+ OS/2         96 [0]
+ cmap     98,070 [0]
+@@ -14,7 +15,7 @@
+ post    107,962 [0]
+ vhea         36 [0]
+ vmtx     37,520 [0]
+-Total: 8,375,892
+-Data: 8,375,646
+-Gap: 246
+-Tables: 14
++Total: 8,376,712
++Data: 8,376,450
++Gap: 262
++Tables: 15

@@ -2,18 +2,18 @@
  Font 0: "Kaisei Opti" "Bold" PS="KaiseiOpti-Bold"
  Tag  Size      
 +GPOS        572 [0]
- GSUB     10,216 [0]
+ GSUB     12,026 [0]
  OS/2         96 [0]
- cmap    126,536 [0]
+ cmap    126,494 [0]
 @@ -14,7 +15,7 @@
- post    105,267 [0]
+ post    106,948 [0]
  vhea         36 [0]
- vmtx     36,494 [0]
--Total: 4,191,700
--Data: 4,191,459
--Gap: 241
+ vmtx     36,942 [0]
+-Total: 4,256,514
+-Data: 4,256,270
+-Gap: 244
 -Tables: 14
-+Total: 4,192,286
-+Data: 4,192,031
-+Gap: 255
++Total: 4,257,102
++Data: 4,256,842
++Gap: 260
 +Tables: 15

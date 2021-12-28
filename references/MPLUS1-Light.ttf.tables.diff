@@ -1,0 +1,20 @@
+@@ -1,7 +1,7 @@
+ Font 0: "M PLUS 1 Light" "Regular" PS="MPLUS1-Light"
+ Tag  Size      
+ GDEF        370 [0]
+-GPOS     32,480 [0]
++GPOS     32,968 [0]
+ GSUB      3,522 [0]
+ OS/2         96 [0]
+ STAT         42 [0]
+@@ -17,7 +17,7 @@
+ post     66,570 [0]
+ vhea         36 [0]
+ vmtx     13,258 [0]
+-Total: 1,797,952
+-Data: 1,797,649
+-Gap: 303
++Total: 1,798,438
++Data: 1,798,137
++Gap: 301
+ Tables: 17

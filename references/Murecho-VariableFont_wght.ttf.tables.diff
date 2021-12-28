@@ -1,0 +1,20 @@
+@@ -1,7 +1,7 @@
+ Font 0: "Murecho Thin" "Regular" PS="Murecho-Thin"
+ Tag  Size      
+ GDEF        762 [0]
+-GPOS     23,316 [0]
++GPOS     24,010 [0]
+ GSUB      4,278 [0]
+ HVAR      9,324 [0]
+ OS/2         96 [0]
+@@ -23,7 +23,7 @@
+ prep          7 [0]
+ vhea         36 [0]
+ vmtx      9,276 [0]
+-Total: 1,424,152
+-Data: 1,423,748
+-Gap: 404
++Total: 1,424,848
++Data: 1,424,442
++Gap: 406
+ Tables: 23

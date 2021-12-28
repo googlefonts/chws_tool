@@ -1,0 +1,20 @@
+@@ -1,7 +1,7 @@
+ Font 0: "Zen Kurenaido" "Regular" PS="ZenKurenaido-Regular"
+ Tag  Size      
+ GDEF        300 [0]
+-GPOS      5,178 [0]
++GPOS      5,504 [0]
+ GSUB      2,522 [0]
+ OS/2         96 [0]
+ cmap     35,766 [0]
+@@ -16,7 +16,7 @@
+ post     77,299 [0]
+ vhea         36 [0]
+ vmtx     15,734 [0]
+-Total: 4,302,835
+-Data: 4,302,554
+-Gap: 281
++Total: 4,303,158
++Data: 4,302,880
++Gap: 278
+ Tables: 16

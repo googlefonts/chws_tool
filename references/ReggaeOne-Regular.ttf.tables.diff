@@ -2,19 +2,19 @@
  Font 0: "Reggae One" "Regular" PS="ReggaeOne-Regular"
  Tag  Size      
  GDEF         64 [0]
--GPOS      2,872 [0]
-+GPOS      3,260 [0]
- GSUB     21,992 [0]
+-GPOS      3,908 [0]
++GPOS      4,296 [0]
+ GSUB     24,634 [0]
  OS/2         96 [0]
- cmap    130,722 [0]
-@@ -19,7 +19,7 @@
- prep        203 [0]
+ cmap    131,692 [0]
+@@ -16,7 +16,7 @@
+ post    100,102 [0]
  vhea         36 [0]
- vmtx     18,354 [0]
--Total: 4,157,500
--Data: 4,157,173
--Gap: 327
-+Total: 4,157,886
-+Data: 4,157,561
-+Gap: 325
- Tables: 19
+ vmtx     18,576 [0]
+-Total: 2,147,390
+-Data: 2,147,116
+-Gap: 274
++Total: 2,147,780
++Data: 2,147,504
++Gap: 276
+ Tables: 16

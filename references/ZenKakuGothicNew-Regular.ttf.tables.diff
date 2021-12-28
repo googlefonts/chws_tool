@@ -1,0 +1,20 @@
+@@ -1,7 +1,7 @@
+ Font 0: "Zen Kaku Gothic New" "Regular" PS="ZenKakuGothicNew-Regular"
+ Tag  Size      
+ GDEF        240 [0]
+-GPOS      3,698 [0]
++GPOS      4,332 [0]
+ GSUB      2,664 [0]
+ OS/2         96 [0]
+ cmap     35,826 [0]
+@@ -16,7 +16,7 @@
+ post     76,878 [0]
+ vhea         36 [0]
+ vmtx     30,668 [0]
+-Total: 2,375,063
+-Data: 2,374,787
+-Gap: 276
++Total: 2,375,696
++Data: 2,375,421
++Gap: 275
+ Tables: 16

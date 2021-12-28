@@ -1,0 +1,20 @@
+@@ -1,7 +1,7 @@
+ Font 0: "Shippori Antique B1" "Regular" PS="ShipporiAntiqueB1-Regular"
+ Tag  Size      
+ GDEF        244 [0]
+-GPOS      8,050 [0]
++GPOS      8,676 [0]
+ GSUB     12,102 [0]
+ OS/2         96 [0]
+ cmap    100,358 [0]
+@@ -16,7 +16,7 @@
+ post    165,106 [0]
+ vhea         36 [0]
+ vmtx     64,172 [0]
+-Total: 13,051,211
+-Data: 13,050,931
+-Gap: 280
++Total: 13,051,836
++Data: 13,051,557
++Gap: 279
+ Tables: 16

@@ -2,18 +2,18 @@
  Font 0: "Shippori Mincho B1 Medium" "Regular" PS="ShipporiMinchoB1-Medium"
  Tag  Size      
  GDEF        754 [0]
--GPOS     10,692 [0]
-+GPOS     11,322 [0]
- GSUB     13,382 [0]
+-GPOS     10,704 [0]
++GPOS     11,334 [0]
+ GSUB     13,412 [0]
  OS/2         96 [0]
- cmap    100,708 [0]
-@@ -19,7 +19,7 @@
- prep        178 [0]
+ cmap    102,562 [0]
+@@ -16,7 +16,7 @@
+ post    167,383 [0]
  vhea         36 [0]
- vmtx     64,826 [0]
--Total: 33,153,716
--Data: 33,153,383
-+Total: 33,154,346
-+Data: 33,154,013
- Gap: 333
- Tables: 19
+ vmtx     64,838 [0]
+-Total: 15,175,044
+-Data: 15,174,765
++Total: 15,175,674
++Data: 15,175,395
+ Gap: 279
+ Tables: 16

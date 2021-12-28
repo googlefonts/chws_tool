@@ -1,0 +1,20 @@
+@@ -1,7 +1,7 @@
+ Font 0: "Zen Maru Gothic Black" "Regular" PS="ZenMaruGothic-Black"
+ Tag  Size      
+ GDEF        396 [0]
+-GPOS      4,750 [0]
++GPOS      5,384 [0]
+ GSUB      2,666 [0]
+ OS/2         96 [0]
+ cmap     35,762 [0]
+@@ -16,7 +16,7 @@
+ post     77,277 [0]
+ vhea         36 [0]
+ vmtx     15,730 [0]
+-Total: 3,710,029
+-Data: 3,709,746
+-Gap: 283
++Total: 3,710,662
++Data: 3,710,380
++Gap: 282
+ Tables: 16

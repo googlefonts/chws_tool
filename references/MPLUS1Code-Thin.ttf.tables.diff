@@ -1,0 +1,19 @@
+@@ -1,7 +1,7 @@
+ Font 0: "M PLUS 1 Code Thin" "Regular" PS="MPLUS1Code-Thin"
+ Tag  Size      
+ GDEF        318 [0]
+-GPOS      1,386 [0]
++GPOS      1,626 [0]
+ GSUB      2,564 [0]
+ OS/2         96 [0]
+ STAT         42 [0]
+@@ -17,7 +17,7 @@
+ post     65,690 [0]
+ vhea         36 [0]
+ vmtx     26,172 [0]
+-Total: 1,768,556
+-Data: 1,768,257
++Total: 1,768,796
++Data: 1,768,497
+ Gap: 299
+ Tables: 17

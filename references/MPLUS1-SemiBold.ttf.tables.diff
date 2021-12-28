@@ -1,0 +1,19 @@
+@@ -1,7 +1,7 @@
+ Font 0: "M PLUS 1 SemiBold" "Regular" PS="MPLUS1-SemiBold"
+ Tag  Size      
+ GDEF        370 [0]
+-GPOS     32,380 [0]
++GPOS     32,870 [0]
+ GSUB      4,138 [0]
+ OS/2         96 [0]
+ STAT         42 [0]
+@@ -17,7 +17,7 @@
+ post     66,570 [0]
+ vhea         36 [0]
+ vmtx     13,258 [0]
+-Total: 1,788,728
+-Data: 1,788,426
++Total: 1,789,218
++Data: 1,788,916
+ Gap: 302
+ Tables: 17

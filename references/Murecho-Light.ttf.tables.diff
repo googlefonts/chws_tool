@@ -1,0 +1,20 @@
+@@ -1,7 +1,7 @@
+ Font 0: "Murecho Light" "Regular" PS="Murecho-Light"
+ Tag  Size      
+ GDEF        560 [0]
+-GPOS     15,628 [0]
++GPOS     16,326 [0]
+ GSUB      4,278 [0]
+ OS/2         96 [0]
+ STAT         42 [0]
+@@ -18,7 +18,7 @@
+ prep          7 [0]
+ vhea         36 [0]
+ vmtx      9,276 [0]
+-Total: 888,304
+-Data: 887,994
+-Gap: 310
++Total: 889,004
++Data: 888,692
++Gap: 312
+ Tables: 18

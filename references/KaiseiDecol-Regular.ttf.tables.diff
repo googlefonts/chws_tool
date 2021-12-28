@@ -2,18 +2,18 @@
  Font 0: "Kaisei Decol" "Regular" PS="KaiseiDecol-Regular"
  Tag  Size      
 +GPOS        572 [0]
- GSUB     10,216 [0]
+ GSUB     12,026 [0]
  OS/2         96 [0]
- cmap    126,536 [0]
+ cmap    126,494 [0]
 @@ -14,7 +15,7 @@
- post    105,267 [0]
+ post    106,948 [0]
  vhea         36 [0]
- vmtx     36,494 [0]
--Total: 4,402,188
--Data: 4,401,944
+ vmtx     36,942 [0]
+-Total: 4,472,149
+-Data: 4,471,905
 -Gap: 244
 -Tables: 14
-+Total: 4,402,774
-+Data: 4,402,516
-+Gap: 258
++Total: 4,472,738
++Data: 4,472,477
++Gap: 261
 +Tables: 15

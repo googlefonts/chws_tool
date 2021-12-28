@@ -1,0 +1,19 @@
+@@ -1,7 +1,7 @@
+ Font 0: "M PLUS 2 ExtraLight" "Regular" PS="MPLUS2-ExtraLight"
+ Tag  Size      
+ GDEF        364 [0]
+-GPOS     32,320 [0]
++GPOS     32,808 [0]
+ GSUB      3,378 [0]
+ OS/2         96 [0]
+ STAT         42 [0]
+@@ -17,7 +17,7 @@
+ post     66,462 [0]
+ vhea         36 [0]
+ vmtx     13,248 [0]
+-Total: 1,802,832
+-Data: 1,802,534
++Total: 1,803,320
++Data: 1,803,022
+ Gap: 298
+ Tables: 17

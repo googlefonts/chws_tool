@@ -1,19 +1,19 @@
 @@ -1,5 +1,6 @@
- Font 0: "MotoyaLMaru" "W3 mono" PS="MotoyaLMaru-W3-90ms-RKSJ-H"
+ Font 0: "Kosugi Maru" "Regular" PS="KosugiMaru-Regular"
  Tag  Size      
-+GPOS        644 [0]
- GSUB        364 [0]
- OS/2         86 [0]
- cmap     34,020 [0]
++GPOS        656 [0]
+ GSUB      2,218 [0]
+ OS/2         96 [0]
+ cmap     35,400 [0]
 @@ -15,7 +16,7 @@
- prep         10 [0]
+ prep          7 [0]
  vhea         36 [0]
- vmtx     15,148 [0]
--Total: 2,558,264
--Data: 2,558,004
+ vmtx     15,152 [0]
+-Total: 3,569,912
+-Data: 3,569,652
 -Gap: 260
 -Tables: 15
-+Total: 2,558,924
-+Data: 2,558,648
++Total: 3,570,584
++Data: 3,570,308
 +Gap: 276
 +Tables: 16

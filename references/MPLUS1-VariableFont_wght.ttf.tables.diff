@@ -1,0 +1,20 @@
+@@ -1,7 +1,7 @@
+ Font 0: "M PLUS 1 Thin" "Regular" PS="MPLUS1-Thin"
+ Tag  Size      
+ GDEF        801 [0]
+-GPOS     49,580 [0]
++GPOS     50,068 [0]
+ GSUB      7,872 [0]
+ HVAR     13,737 [0]
+ OS/2         96 [0]
+@@ -22,7 +22,7 @@
+ post     66,570 [0]
+ vhea         36 [0]
+ vmtx     13,258 [0]
+-Total: 4,119,316
+-Data: 4,118,929
+-Gap: 387
++Total: 4,119,802
++Data: 4,119,417
++Gap: 385
+ Tables: 22

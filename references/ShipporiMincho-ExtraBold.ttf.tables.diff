@@ -2,18 +2,19 @@
  Font 0: "Shippori Mincho ExtraBold" "Regular" PS="ShipporiMincho-ExtraBold"
  Tag  Size      
  GDEF        706 [0]
--GPOS     11,712 [0]
-+GPOS     12,330 [0]
- GSUB     13,382 [0]
+-GPOS     11,730 [0]
++GPOS     12,348 [0]
+ GSUB     13,412 [0]
  OS/2         96 [0]
- cmap    100,708 [0]
-@@ -19,7 +19,7 @@
- prep        178 [0]
+ cmap    102,562 [0]
+@@ -16,7 +16,7 @@
+ post    167,383 [0]
  vhea         36 [0]
- vmtx     64,826 [0]
--Total: 18,800,900
--Data: 18,800,570
-+Total: 18,801,518
-+Data: 18,801,188
- Gap: 330
- Tables: 19
+ vmtx     64,838 [0]
+-Total: 8,558,510
+-Data: 8,558,229
+-Gap: 281
++Total: 8,559,126
++Data: 8,558,847
++Gap: 279
+ Tables: 16

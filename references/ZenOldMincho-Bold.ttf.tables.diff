@@ -1,0 +1,20 @@
+@@ -1,7 +1,7 @@
+ Font 0: "Zen Old Mincho" "Bold" PS="ZenOldMincho-Bold"
+ Tag  Size      
+ GDEF        280 [0]
+-GPOS      5,388 [0]
++GPOS      6,028 [0]
+ GSUB      2,666 [0]
+ OS/2         96 [0]
+ cmap     35,760 [0]
+@@ -16,7 +16,7 @@
+ post     77,299 [0]
+ vhea         36 [0]
+ vmtx     15,734 [0]
+-Total: 5,521,104
+-Data: 5,520,829
+-Gap: 275
++Total: 5,521,742
++Data: 5,521,469
++Gap: 273
+ Tables: 16

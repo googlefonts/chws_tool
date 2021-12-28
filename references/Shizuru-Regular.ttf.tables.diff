@@ -1,0 +1,20 @@
+@@ -1,6 +1,7 @@
+ Font 0: "Shizuru" "Regular" PS="Shizuru-Regular"
+ Tag  Size      
+ GDEF         22 [0]
++GPOS        448 [0]
+ GSUB        818 [0]
+ OS/2         96 [0]
+ cmap        482 [0]
+@@ -15,7 +16,7 @@
+ post      3,733 [0]
+ vhea         36 [0]
+ vmtx      1,632 [0]
+-Total: 251,218
+-Data: 250,951
+-Gap: 267
+-Tables: 15
++Total: 251,684
++Data: 251,399
++Gap: 285
++Tables: 16

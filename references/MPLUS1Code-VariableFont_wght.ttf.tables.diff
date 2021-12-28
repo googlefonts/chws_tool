@@ -1,0 +1,19 @@
+@@ -1,7 +1,7 @@
+ Font 0: "M PLUS 1 Code" "Regular" PS="MPLUS1Code-Regular"
+ Tag  Size      
+ GDEF        454 [0]
+-GPOS      1,900 [0]
++GPOS      2,140 [0]
+ GSUB      5,958 [0]
+ HVAR         47 [0]
+ OS/2         96 [0]
+@@ -22,7 +22,7 @@
+ post     65,690 [0]
+ vhea         36 [0]
+ vmtx     26,172 [0]
+-Total: 3,912,412
+-Data: 3,912,030
++Total: 3,912,652
++Data: 3,912,270
+ Gap: 382
+ Tables: 22

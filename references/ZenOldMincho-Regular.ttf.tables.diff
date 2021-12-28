@@ -1,0 +1,20 @@
+@@ -1,7 +1,7 @@
+ Font 0: "Zen Old Mincho" "Regular" PS="ZenOldMincho-Regular"
+ Tag  Size      
+ GDEF        280 [0]
+-GPOS      5,364 [0]
++GPOS      6,004 [0]
+ GSUB      2,666 [0]
+ OS/2         96 [0]
+ cmap     35,760 [0]
+@@ -16,7 +16,7 @@
+ post     77,299 [0]
+ vhea         36 [0]
+ vmtx     15,734 [0]
+-Total: 5,442,300
+-Data: 5,442,025
+-Gap: 275
++Total: 5,442,938
++Data: 5,442,665
++Gap: 273
+ Tables: 16

@@ -2,14 +2,15 @@
          <Script>
            <DefaultLangSys>
              <ReqFeatureIndex value="65535"/>
--            <!-- FeatureCount=4 -->
-+            <!-- FeatureCount=6 -->
+-            <!-- FeatureCount=5 -->
++            <!-- FeatureCount=7 -->
              <FeatureIndex index="0" value="0"/>
              <FeatureIndex index="1" value="1"/>
              <FeatureIndex index="2" value="2"/>
              <FeatureIndex index="3" value="3"/>
-+            <FeatureIndex index="4" value="4"/>
+             <FeatureIndex index="4" value="4"/>
 +            <FeatureIndex index="5" value="5"/>
++            <FeatureIndex index="6" value="6"/>
            </DefaultLangSys>
            <!-- LangSysCount=0 -->
          </Script>
@@ -17,22 +18,23 @@
          <Script>
            <DefaultLangSys>
              <ReqFeatureIndex value="65535"/>
--            <!-- FeatureCount=4 -->
-+            <!-- FeatureCount=6 -->
+-            <!-- FeatureCount=5 -->
++            <!-- FeatureCount=7 -->
              <FeatureIndex index="0" value="0"/>
              <FeatureIndex index="1" value="1"/>
              <FeatureIndex index="2" value="2"/>
              <FeatureIndex index="3" value="3"/>
-+            <FeatureIndex index="4" value="4"/>
+             <FeatureIndex index="4" value="4"/>
 +            <FeatureIndex index="5" value="5"/>
++            <FeatureIndex index="6" value="6"/>
            </DefaultLangSys>
            <!-- LangSysCount=0 -->
          </Script>
        </ScriptRecord>
      </ScriptList>
      <FeatureList>
--      <!-- FeatureCount=4 -->
-+      <!-- FeatureCount=6 -->
+-      <!-- FeatureCount=5 -->
++      <!-- FeatureCount=7 -->
        <FeatureRecord index="0">
          <FeatureTag value="halt"/>
          <Feature>
@@ -40,34 +42,34 @@
            <LookupListIndex index="0" value="3"/>
          </Feature>
        </FeatureRecord>
-+      <FeatureRecord index="4">
++      <FeatureRecord index="5">
 +        <FeatureTag value="chws"/>
 +        <Feature>
 +          <!-- LookupCount=2 -->
-+          <LookupListIndex index="0" value="4"/>
-+          <LookupListIndex index="1" value="6"/>
++          <LookupListIndex index="0" value="5"/>
++          <LookupListIndex index="1" value="7"/>
 +        </Feature>
 +      </FeatureRecord>
-+      <FeatureRecord index="5">
++      <FeatureRecord index="6">
 +        <FeatureTag value="vchw"/>
 +        <Feature>
 +          <!-- LookupCount=2 -->
-+          <LookupListIndex index="0" value="7"/>
-+          <LookupListIndex index="1" value="9"/>
++          <LookupListIndex index="0" value="8"/>
++          <LookupListIndex index="1" value="10"/>
 +        </Feature>
 +      </FeatureRecord>
      </FeatureList>
      <LookupList>
--      <!-- LookupCount=4 -->
-+      <!-- LookupCount=10 -->
+-      <!-- LookupCount=5 -->
++      <!-- LookupCount=11 -->
        <Lookup index="0">
          <LookupType value="1"/>
          <LookupFlag value="0"/>
 @@
-           <Value YPlacement="17"/>
-         </SinglePos>
+           </Class1Record>
+         </PairPos>
        </Lookup>
-+      <Lookup index="4">
++      <Lookup index="5">
 +        <LookupType value="2"/>
 +        <LookupFlag value="0"/>
 +        <!-- SubTableCount=1 -->
@@ -137,7 +139,7 @@
 +          </Class1Record>
 +        </PairPos>
 +      </Lookup>
-+      <Lookup index="5">
++      <Lookup index="6">
 +        <LookupType value="1"/>
 +        <LookupFlag value="0"/>
 +        <!-- SubTableCount=1 -->
@@ -159,7 +161,7 @@
 +          <Value XPlacement="-500" XAdvance="-500"/>
 +        </SinglePos>
 +      </Lookup>
-+      <Lookup index="6">
++      <Lookup index="7">
 +        <LookupType value="8"/>
 +        <LookupFlag value="0"/>
 +        <!-- SubTableCount=1 -->
@@ -200,11 +202,11 @@
 +          <!-- PosCount=1 -->
 +          <PosLookupRecord index="0">
 +            <SequenceIndex value="0"/>
-+            <LookupListIndex value="5"/>
++            <LookupListIndex value="6"/>
 +          </PosLookupRecord>
 +        </ChainContextPos>
 +      </Lookup>
-+      <Lookup index="7">
++      <Lookup index="8">
 +        <LookupType value="2"/>
 +        <LookupFlag value="0"/>
 +        <!-- SubTableCount=1 -->
@@ -269,7 +271,7 @@
 +          </Class1Record>
 +        </PairPos>
 +      </Lookup>
-+      <Lookup index="8">
++      <Lookup index="9">
 +        <LookupType value="1"/>
 +        <LookupFlag value="0"/>
 +        <!-- SubTableCount=1 -->
@@ -290,7 +292,7 @@
 +          <Value YPlacement="500" YAdvance="-500"/>
 +        </SinglePos>
 +      </Lookup>
-+      <Lookup index="9">
++      <Lookup index="10">
 +        <LookupType value="8"/>
 +        <LookupFlag value="0"/>
 +        <!-- SubTableCount=1 -->
@@ -327,7 +329,7 @@
 +          <!-- PosCount=1 -->
 +          <PosLookupRecord index="0">
 +            <SequenceIndex value="0"/>
-+            <LookupListIndex value="8"/>
++            <LookupListIndex value="9"/>
 +          </PosLookupRecord>
 +        </ChainContextPos>
 +      </Lookup>

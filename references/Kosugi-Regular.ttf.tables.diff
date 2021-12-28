@@ -1,19 +1,19 @@
 @@ -1,5 +1,6 @@
- Font 0: "MotoyaLCedar" "W3 mono" PS="MotoyaLCedar-W3-90ms-RKSJ-H"
+ Font 0: "Kosugi" "Regular" PS="Kosugi-Regular"
  Tag  Size      
-+GPOS        644 [0]
- GSUB        364 [0]
- OS/2         86 [0]
- cmap     34,012 [0]
++GPOS        656 [0]
+ GSUB      2,218 [0]
+ OS/2         96 [0]
+ cmap     35,392 [0]
 @@ -15,7 +16,7 @@
- prep         10 [0]
+ prep          7 [0]
  vhea         36 [0]
- vmtx     15,150 [0]
--Total: 1,918,536
--Data: 1,918,271
--Gap: 265
+ vmtx     15,154 [0]
+-Total: 2,292,992
+-Data: 2,292,728
+-Gap: 264
 -Tables: 15
-+Total: 1,919,194
-+Data: 1,918,915
-+Gap: 279
++Total: 2,293,662
++Data: 2,293,384
++Gap: 278
 +Tables: 16

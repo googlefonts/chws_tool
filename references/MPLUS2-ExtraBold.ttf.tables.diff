@@ -1,0 +1,20 @@
+@@ -1,7 +1,7 @@
+ Font 0: "M PLUS 2 ExtraBold" "Regular" PS="MPLUS2-ExtraBold"
+ Tag  Size      
+ GDEF        364 [0]
+-GPOS     32,336 [0]
++GPOS     32,830 [0]
+ GSUB      4,432 [0]
+ OS/2         96 [0]
+ STAT         42 [0]
+@@ -17,7 +17,7 @@
+ post     66,462 [0]
+ vhea         36 [0]
+ vmtx     13,248 [0]
+-Total: 1,786,188
+-Data: 1,785,893
+-Gap: 295
++Total: 1,786,684
++Data: 1,786,387
++Gap: 297
+ Tables: 17

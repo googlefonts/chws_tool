@@ -1,0 +1,20 @@
+@@ -1,7 +1,7 @@
+ Font 0: "Zen Antique" "Regular" PS="ZenAntique-Regular"
+ Tag  Size      
+ GDEF        322 [0]
+-GPOS      6,258 [0]
++GPOS      6,584 [0]
+ GSUB      2,676 [0]
+ OS/2         96 [0]
+ cmap     35,760 [0]
+@@ -16,7 +16,7 @@
+ post     77,310 [0]
+ vhea         36 [0]
+ vmtx     15,736 [0]
+-Total: 5,507,665
+-Data: 5,507,387
+-Gap: 278
++Total: 5,507,992
++Data: 5,507,713
++Gap: 279
+ Tables: 16

@@ -1,0 +1,20 @@
+@@ -1,7 +1,7 @@
+ Font 0: "M PLUS 2" "Bold" PS="MPLUS2-Bold"
+ Tag  Size      
+ GDEF        364 [0]
+-GPOS     32,300 [0]
++GPOS     32,790 [0]
+ GSUB      4,266 [0]
+ OS/2         96 [0]
+ STAT         42 [0]
+@@ -17,7 +17,7 @@
+ post     66,462 [0]
+ vhea         36 [0]
+ vmtx     13,248 [0]
+-Total: 1,789,328
+-Data: 1,789,032
+-Gap: 296
++Total: 1,789,820
++Data: 1,789,522
++Gap: 298
+ Tables: 17

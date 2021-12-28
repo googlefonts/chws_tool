@@ -1,0 +1,180 @@
+@@
+         <Script>
+           <DefaultLangSys>
+             <ReqFeatureIndex value="65535"/>
+-            <!-- FeatureCount=2 -->
++            <!-- FeatureCount=4 -->
+             <FeatureIndex index="0" value="0"/>
+             <FeatureIndex index="1" value="1"/>
++            <FeatureIndex index="2" value="2"/>
++            <FeatureIndex index="3" value="3"/>
+           </DefaultLangSys>
+           <!-- LangSysCount=0 -->
+         </Script>
+@@
+         <Script>
+           <DefaultLangSys>
+             <ReqFeatureIndex value="65535"/>
+-            <!-- FeatureCount=2 -->
++            <!-- FeatureCount=4 -->
+             <FeatureIndex index="0" value="0"/>
+             <FeatureIndex index="1" value="1"/>
++            <FeatureIndex index="2" value="2"/>
++            <FeatureIndex index="3" value="3"/>
+           </DefaultLangSys>
+           <!-- LangSysCount=0 -->
+         </Script>
+       </ScriptRecord>
+     </ScriptList>
+     <FeatureList>
+-      <!-- FeatureCount=2 -->
++      <!-- FeatureCount=4 -->
+       <FeatureRecord index="0">
+         <FeatureTag value="mark"/>
+         <Feature>
+@@
+           <LookupListIndex index="1" value="3"/>
+         </Feature>
+       </FeatureRecord>
++      <FeatureRecord index="2">
++        <FeatureTag value="halt"/>
++        <Feature>
++          <!-- LookupCount=1 -->
++          <LookupListIndex index="0" value="4"/>
++        </Feature>
++      </FeatureRecord>
++      <FeatureRecord index="3">
++        <FeatureTag value="chws"/>
++        <Feature>
++          <!-- LookupCount=2 -->
++          <LookupListIndex index="0" value="5"/>
++          <LookupListIndex index="1" value="7"/>
++        </Feature>
++      </FeatureRecord>
+     </FeatureList>
+     <LookupList>
+-      <!-- LookupCount=4 -->
++      <!-- LookupCount=8 -->
+       <Lookup index="0">
+         <LookupType value="4"/>
+         <LookupFlag value="0"/>
+@@
+         </MarkMarkPos>
+         <MarkFilteringSet value="1"/>
+       </Lookup>
++      <Lookup index="4">
++        <LookupType value="1"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=3 -->
++        <SinglePos index="0" Format="1">
++          <Coverage>
++            <Glyph value="anglebracketright"/>
++            <Glyph value="commahan"/>
++            <Glyph value="cornerbracketright"/>
++            <Glyph value="parenright.full"/>
++            <Glyph value="periodhan"/>
++          </Coverage>
++          <ValueFormat value="4"/>
++          <Value XAdvance="-500"/>
++        </SinglePos>
++        <SinglePos index="1" Format="1">
++          <Coverage>
++            <Glyph value="anglebracketleft"/>
++            <Glyph value="cornerbracketleft"/>
++            <Glyph value="parenleft.full"/>
++          </Coverage>
++          <ValueFormat value="5"/>
++          <Value XPlacement="-500" XAdvance="-500"/>
++        </SinglePos>
++        <SinglePos index="2" Format="1">
++          <Coverage>
++            <Glyph value="dotkata"/>
++          </Coverage>
++          <ValueFormat value="5"/>
++          <Value XPlacement="-250" XAdvance="-500"/>
++        </SinglePos>
++      </Lookup>
++      <Lookup index="5">
++        <LookupType value="2"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=1 -->
++        <PairPos index="0" Format="2">
++          <Coverage>
++            <Glyph value="anglebracketright"/>
++            <Glyph value="commahan"/>
++            <Glyph value="cornerbracketright"/>
++            <Glyph value="parenright.full"/>
++            <Glyph value="periodhan"/>
++          </Coverage>
++          <ValueFormat1 value="4"/>
++          <ValueFormat2 value="0"/>
++          <ClassDef1>
++          </ClassDef1>
++          <ClassDef2>
++            <ClassDef glyph="anglebracketleft" class="1"/>
++            <ClassDef glyph="anglebracketright" class="1"/>
++            <ClassDef glyph="commahan" class="1"/>
++            <ClassDef glyph="cornerbracketleft" class="1"/>
++            <ClassDef glyph="cornerbracketright" class="1"/>
++            <ClassDef glyph="dotkata" class="1"/>
++            <ClassDef glyph="parenleft.full" class="1"/>
++            <ClassDef glyph="parenright.full" class="1"/>
++            <ClassDef glyph="periodhan" class="1"/>
++            <ClassDef glyph="space" class="1"/>
++          </ClassDef2>
++          <!-- Class1Count=1 -->
++          <!-- Class2Count=2 -->
++          <Class1Record index="0">
++            <Class2Record index="0">
++              <Value1 XAdvance="0"/>
++            </Class2Record>
++            <Class2Record index="1">
++              <Value1 XAdvance="-500"/>
++            </Class2Record>
++          </Class1Record>
++        </PairPos>
++      </Lookup>
++      <Lookup index="6">
++        <LookupType value="1"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=1 -->
++        <SinglePos index="0" Format="1">
++          <Coverage>
++            <Glyph value="anglebracketleft"/>
++            <Glyph value="cornerbracketleft"/>
++            <Glyph value="parenleft.full"/>
++          </Coverage>
++          <ValueFormat value="5"/>
++          <Value XPlacement="-500" XAdvance="-500"/>
++        </SinglePos>
++      </Lookup>
++      <Lookup index="7">
++        <LookupType value="8"/>
++        <LookupFlag value="0"/>
++        <!-- SubTableCount=1 -->
++        <ChainContextPos index="0" Format="3">
++          <!-- BacktrackGlyphCount=1 -->
++          <BacktrackCoverage index="0">
++            <Glyph value="space"/>
++            <Glyph value="anglebracketleft"/>
++            <Glyph value="cornerbracketleft"/>
++            <Glyph value="dotkata"/>
++            <Glyph value="parenleft.full"/>
++          </BacktrackCoverage>
++          <!-- InputGlyphCount=1 -->
++          <InputCoverage index="0">
++            <Glyph value="anglebracketleft"/>
++            <Glyph value="cornerbracketleft"/>
++            <Glyph value="parenleft.full"/>
++          </InputCoverage>
++          <!-- LookAheadGlyphCount=0 -->
++          <!-- PosCount=1 -->
++          <PosLookupRecord index="0">
++            <SequenceIndex value="0"/>
++            <LookupListIndex value="6"/>
++          </PosLookupRecord>
++        </ChainContextPos>
++      </Lookup>
+     </LookupList>
+   </GPOS>
+ 
