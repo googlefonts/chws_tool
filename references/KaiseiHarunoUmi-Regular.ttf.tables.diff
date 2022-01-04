@@ -1,7 +1,7 @@
 @@ -1,5 +1,6 @@
  Font 0: "Kaisei HarunoUmi" "Regular" PS="KaiseiHarunoUmi-Regular"
  Tag  Size      
-+GPOS        572 [0]
++GPOS        596 [0]
  GSUB     12,026 [0]
  OS/2         96 [0]
  cmap    126,494 [0]
@@ -13,7 +13,7 @@
 -Data: 4,535,328
 -Gap: 244
 -Tables: 14
-+Total: 4,536,158
-+Data: 4,535,900
++Total: 4,536,182
++Data: 4,535,924
 +Gap: 258
 +Tables: 15

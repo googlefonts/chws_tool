@@ -1,7 +1,7 @@
 @@ -1,5 +1,6 @@
  Font 0: "Kosugi" "Regular" PS="Kosugi-Regular"
  Tag  Size      
-+GPOS        656 [0]
++GPOS        674 [0]
  GSUB      2,218 [0]
  OS/2         96 [0]
  cmap     35,392 [0]
@@ -13,7 +13,7 @@
 -Data: 2,292,728
 -Gap: 264
 -Tables: 15
-+Total: 2,293,662
-+Data: 2,293,384
-+Gap: 278
++Total: 2,293,682
++Data: 2,293,402
++Gap: 280
 +Tables: 16

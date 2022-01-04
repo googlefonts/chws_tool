@@ -1,7 +1,7 @@
 @@ -1,5 +1,6 @@
  Font 0: "Kosugi Maru" "Regular" PS="KosugiMaru-Regular"
  Tag  Size      
-+GPOS        656 [0]
++GPOS        674 [0]
  GSUB      2,218 [0]
  OS/2         96 [0]
  cmap     35,400 [0]
@@ -13,7 +13,7 @@
 -Data: 3,569,652
 -Gap: 260
 -Tables: 15
-+Total: 3,570,584
-+Data: 3,570,308
-+Gap: 276
++Total: 3,570,604
++Data: 3,570,326
++Gap: 278
 +Tables: 16

@@ -1,7 +1,7 @@
 @@ -1,5 +1,6 @@
  Font 0: "Kaisei Decol Medium" "Regular" PS="KaiseiDecol-Medium"
  Tag  Size      
-+GPOS        572 [0]
++GPOS        596 [0]
  GSUB     12,026 [0]
  OS/2         96 [0]
  cmap    126,494 [0]
@@ -13,7 +13,7 @@
 -Data: 4,265,289
 -Gap: 246
 -Tables: 14
-+Total: 4,266,122
-+Data: 4,265,861
++Total: 4,266,146
++Data: 4,265,885
 +Gap: 261
 +Tables: 15

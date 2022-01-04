@@ -1,7 +1,7 @@
 @@ -1,5 +1,6 @@
  Font 0: "Yuji Boku" "Regular" PS="YujiBoku-Regular"
  Tag  Size      
-+GPOS        804 [0]
++GPOS        816 [0]
  GSUB     29,224 [0]
  OS/2         96 [0]
  cmap     98,070 [0]
@@ -13,7 +13,7 @@
 -Data: 8,470,248
 -Gap: 246
 -Tables: 14
-+Total: 8,471,316
-+Data: 8,471,052
++Total: 8,471,328
++Data: 8,471,064
 +Gap: 264
 +Tables: 15

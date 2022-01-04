@@ -2,7 +2,7 @@
  Font 0: "Shizuru" "Regular" PS="Shizuru-Regular"
  Tag  Size      
  GDEF         22 [0]
-+GPOS        448 [0]
++GPOS        458 [0]
  GSUB        818 [0]
  OS/2         96 [0]
  cmap        482 [0]
@@ -14,7 +14,7 @@
 -Data: 250,951
 -Gap: 267
 -Tables: 15
-+Total: 251,684
-+Data: 251,399
-+Gap: 285
++Total: 251,696
++Data: 251,409
++Gap: 287
 +Tables: 16

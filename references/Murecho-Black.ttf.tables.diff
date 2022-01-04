@@ -3,7 +3,7 @@
  Tag  Size      
  GDEF        560 [0]
 -GPOS     15,634 [0]
-+GPOS     16,188 [0]
++GPOS     16,212 [0]
  GSUB      4,278 [0]
  OS/2         96 [0]
  STAT         42 [0]
@@ -14,7 +14,7 @@
 -Total: 885,708
 -Data: 885,396
 -Gap: 312
-+Total: 886,260
-+Data: 885,950
++Total: 886,284
++Data: 885,974
 +Gap: 310
  Tables: 18

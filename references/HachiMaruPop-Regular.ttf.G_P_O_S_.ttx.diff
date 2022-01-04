@@ -1,6 +1,6 @@
 @@
 +<?xml version="1.0" encoding="UTF-8"?>
-+<ttFont ttLibVersion="4.25">
++<ttFont ttLibVersion="4.28">
 +
 +  <GPOS>
 +    <Version value="0x00010000"/>
@@ -135,6 +135,8 @@
 +          <ClassDef1>
 +          </ClassDef1>
 +          <ClassDef2>
++            <ClassDef glyph="bracketright" class="1"/>
++            <ClassDef glyph="parenright" class="1"/>
 +            <ClassDef glyph="quotedblleft.full" class="1"/>
 +            <ClassDef glyph="quotedblright.full" class="1"/>
 +            <ClassDef glyph="quoteleft.full" class="1"/>
@@ -211,6 +213,8 @@
 +            <Glyph value="uniFF0C"/>
 +            <Glyph value="uniFF0E"/>
 +            <Glyph value="uniFF1B"/>
++            <Glyph value="parenleft"/>
++            <Glyph value="bracketleft"/>
 +            <Glyph value="uni3008"/>
 +            <Glyph value="uni3010"/>
 +            <Glyph value="uniFF5B"/>

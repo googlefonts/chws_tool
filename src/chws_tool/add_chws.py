@@ -54,7 +54,7 @@ async def add_chws_async(
         return None
     logger.info("%s ==> %s", input, output_path)
 
-    await builder.test()
+    await builder.test(smoke=False)
 
     return output_path
 

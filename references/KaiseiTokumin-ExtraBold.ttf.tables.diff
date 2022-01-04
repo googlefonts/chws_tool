@@ -1,7 +1,7 @@
 @@ -1,5 +1,6 @@
  Font 0: "Kaisei Tokumin ExtraBold" "Regular" PS="KaiseiTokumin-ExtraBold"
  Tag  Size      
-+GPOS        572 [0]
++GPOS        596 [0]
  GSUB     12,026 [0]
  OS/2         96 [0]
  cmap    126,494 [0]
@@ -13,7 +13,7 @@
 -Data: 4,526,070
 -Gap: 246
 -Tables: 14
-+Total: 4,526,902
-+Data: 4,526,642
++Total: 4,526,926
++Data: 4,526,666
 +Gap: 260
 +Tables: 15

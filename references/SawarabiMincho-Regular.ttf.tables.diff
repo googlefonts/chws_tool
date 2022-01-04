@@ -1,7 +1,7 @@
 @@ -1,5 +1,6 @@
  Font 0: "Sawarabi Mincho" "Regular" PS="SawarabiMincho-Regular"
  Tag  Size      
-+GPOS        306 [0]
++GPOS        322 [0]
  OS/2         96 [0]
  cmap     15,036 [0]
  cvt          36 [0]
@@ -13,7 +13,7 @@
 -Data: 1,082,048
 -Gap: 276
 -Tables: 16
-+Total: 1,082,646
-+Data: 1,082,354
++Total: 1,082,662
++Data: 1,082,370
 +Gap: 292
 +Tables: 17

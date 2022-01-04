@@ -2,7 +2,7 @@
  Font 0: "Hachi Maru Pop" "Regular" PS="HachiMaruPop-Regular"
  Tag  Size      
  GDEF         22 [0]
-+GPOS        630 [0]
++GPOS        640 [0]
  GSUB      2,112 [0]
  OS/2         96 [0]
  cmap     34,794 [0]
@@ -14,7 +14,7 @@
 -Data: 4,378,542
 -Gap: 266
 -Tables: 15
-+Total: 4,379,456
-+Data: 4,379,172
-+Gap: 284
++Total: 4,379,464
++Data: 4,379,182
++Gap: 282
 +Tables: 16

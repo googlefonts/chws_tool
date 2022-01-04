@@ -1,7 +1,7 @@
 @@ -1,5 +1,6 @@
  Font 0: "Kaisei Tokumin" "Regular" PS="KaiseiTokumin-Regular"
  Tag  Size      
-+GPOS        572 [0]
++GPOS        596 [0]
  GSUB     12,026 [0]
  OS/2         96 [0]
  cmap    126,494 [0]
@@ -13,7 +13,7 @@
 -Data: 4,544,796
 -Gap: 244
 -Tables: 14
-+Total: 4,545,626
-+Data: 4,545,368
++Total: 4,545,650
++Data: 4,545,392
 +Gap: 258
 +Tables: 15

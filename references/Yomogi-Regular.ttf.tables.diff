@@ -1,7 +1,7 @@
 @@ -1,5 +1,6 @@
  Font 0: "Yomogi" "Regular" PS="Yomogi-Regular"
  Tag  Size      
-+GPOS        344 [0]
++GPOS        368 [0]
  GSUB      5,906 [0]
  OS/2         96 [0]
  cmap     95,966 [0]
@@ -13,7 +13,7 @@
 -Data: 4,037,744
 -Gap: 249
 -Tables: 14
-+Total: 4,038,356
-+Data: 4,038,088
++Total: 4,038,380
++Data: 4,038,112
 +Gap: 268
 +Tables: 15

@@ -3,7 +3,7 @@
  Tag  Size      
  GDEF        370 [0]
 -GPOS     32,480 [0]
-+GPOS     32,968 [0]
++GPOS     32,978 [0]
  GSUB      3,522 [0]
  OS/2         96 [0]
  STAT         42 [0]
@@ -13,8 +13,7 @@
  vmtx     13,258 [0]
 -Total: 1,797,952
 -Data: 1,797,649
--Gap: 303
-+Total: 1,798,438
-+Data: 1,798,137
-+Gap: 301
++Total: 1,798,450
++Data: 1,798,147
+ Gap: 303
  Tables: 17

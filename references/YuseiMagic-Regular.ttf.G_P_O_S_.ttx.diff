@@ -120,6 +120,8 @@
 +          <ClassDef1>
 +          </ClassDef1>
 +          <ClassDef2>
++            <ClassDef glyph="bracketright" class="1"/>
++            <ClassDef glyph="parenright" class="1"/>
 +            <ClassDef glyph="uni3000" class="1"/>
 +            <ClassDef glyph="uni3001" class="1"/>
 +            <ClassDef glyph="uni3002" class="1"/>
@@ -144,6 +146,7 @@
 +            <ClassDef glyph="uniFF3D" class="1"/>
 +            <ClassDef glyph="uniFF5B" class="1"/>
 +            <ClassDef glyph="uniFF5D" class="1"/>
++            <ClassDef glyph="uniFF63" class="1"/>
 +          </ClassDef2>
 +          <!-- Class1Count=1 -->
 +          <!-- Class2Count=2 -->
@@ -185,6 +188,8 @@
 +          <BacktrackCoverage index="0">
 +            <Glyph value="uniFF1A"/>
 +            <Glyph value="uniFF1B"/>
++            <Glyph value="parenleft"/>
++            <Glyph value="bracketleft"/>
 +            <Glyph value="uni3008"/>
 +            <Glyph value="uni3010"/>
 +            <Glyph value="uniFF5B"/>
@@ -192,6 +197,7 @@
 +            <Glyph value="uni3014"/>
 +            <Glyph value="uni300E"/>
 +            <Glyph value="uniFF3B"/>
++            <Glyph value="uniFF62"/>
 +            <Glyph value="uniFF08"/>
 +            <Glyph value="uni30FB"/>
 +            <Glyph value="uni3000"/>

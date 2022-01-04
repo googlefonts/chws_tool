@@ -105,11 +105,13 @@
 +          <ClassDef1>
 +          </ClassDef1>
 +          <ClassDef2>
++            <ClassDef glyph="bracketright" class="1"/>
 +            <ClassDef glyph="commahan" class="1"/>
 +            <ClassDef glyph="cornerbracketleft" class="1"/>
 +            <ClassDef glyph="cornerbracketright" class="1"/>
 +            <ClassDef glyph="dotkata" class="1"/>
 +            <ClassDef glyph="parenleft.full" class="1"/>
++            <ClassDef glyph="parenright" class="1"/>
 +            <ClassDef glyph="parenright.full" class="1"/>
 +            <ClassDef glyph="periodhan" class="1"/>
 +            <ClassDef glyph="space" class="1"/>
@@ -146,6 +148,8 @@
 +        <ChainContextPos index="0" Format="3">
 +          <!-- BacktrackGlyphCount=1 -->
 +          <BacktrackCoverage index="0">
++            <Glyph value="parenleft"/>
++            <Glyph value="bracketleft"/>
 +            <Glyph value="space"/>
 +            <Glyph value="cornerbracketleft"/>
 +            <Glyph value="dotkata"/>

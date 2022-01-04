@@ -1,7 +1,7 @@
 @@ -1,5 +1,6 @@
  Font 0: "Kaisei Opti Medium" "Regular" PS="KaiseiOpti-Medium"
  Tag  Size      
-+GPOS        572 [0]
++GPOS        596 [0]
  GSUB     12,026 [0]
  OS/2         96 [0]
  cmap    126,494 [0]
@@ -13,7 +13,7 @@
 -Data: 4,265,469
 -Gap: 246
 -Tables: 14
-+Total: 4,266,302
-+Data: 4,266,041
++Total: 4,266,326
++Data: 4,266,065
 +Gap: 261
 +Tables: 15

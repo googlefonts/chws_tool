@@ -1,7 +1,7 @@
 @@ -1,5 +1,6 @@
  Font 0: "Kaisei Decol" "Bold" PS="KaiseiDecol-Bold"
  Tag  Size      
-+GPOS        572 [0]
++GPOS        596 [0]
  GSUB     12,026 [0]
  OS/2         96 [0]
  cmap    126,494 [0]
@@ -13,7 +13,7 @@
 -Data: 4,255,650
 -Gap: 244
 -Tables: 14
-+Total: 4,256,482
-+Data: 4,256,222
++Total: 4,256,506
++Data: 4,256,246
 +Gap: 260
 +Tables: 15

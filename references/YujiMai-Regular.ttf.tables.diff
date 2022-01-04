@@ -1,7 +1,7 @@
 @@ -1,5 +1,6 @@
  Font 0: "Yuji Mai" "Regular" PS="YujiMai-Regular"
  Tag  Size      
-+GPOS        804 [0]
++GPOS        816 [0]
  GSUB     29,224 [0]
  OS/2         96 [0]
  cmap     98,070 [0]
@@ -13,7 +13,7 @@
 -Data: 8,438,350
 -Gap: 246
 -Tables: 14
-+Total: 8,439,416
-+Data: 8,439,154
++Total: 8,439,428
++Data: 8,439,166
 +Gap: 262
 +Tables: 15

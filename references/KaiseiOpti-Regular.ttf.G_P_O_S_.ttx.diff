@@ -1,6 +1,6 @@
 @@
 +<?xml version="1.0" encoding="UTF-8"?>
-+<ttFont ttLibVersion="4.26">
++<ttFont ttLibVersion="4.28">
 +
 +  <GPOS>
 +    <Version value="0x00010000"/>
@@ -145,16 +145,19 @@
 +            <ClassDef glyph="braceleft.full" class="1"/>
 +            <ClassDef glyph="braceright.full" class="1"/>
 +            <ClassDef glyph="bracketleft.full" class="1"/>
++            <ClassDef glyph="bracketright" class="1"/>
 +            <ClassDef glyph="bracketright.full" class="1"/>
 +            <ClassDef glyph="colon.full" class="1"/>
 +            <ClassDef glyph="comma.full" class="1"/>
 +            <ClassDef glyph="cornerbracketleft" class="1"/>
 +            <ClassDef glyph="cornerbracketright" class="1"/>
++            <ClassDef glyph="cornerbracketright.half" class="1"/>
 +            <ClassDef glyph="dblanglebracketleft" class="1"/>
 +            <ClassDef glyph="dblanglebracketright" class="1"/>
 +            <ClassDef glyph="dotkata" class="1"/>
 +            <ClassDef glyph="lowquotedoubleprime" class="1"/>
 +            <ClassDef glyph="parenleft.full" class="1"/>
++            <ClassDef glyph="parenright" class="1"/>
 +            <ClassDef glyph="parenright.full" class="1"/>
 +            <ClassDef glyph="period.full" class="1"/>
 +            <ClassDef glyph="quotedblleft.full" class="1"/>
@@ -213,6 +216,9 @@
 +        <ChainContextPos index="0" Format="3">
 +          <!-- BacktrackGlyphCount=1 -->
 +          <BacktrackCoverage index="0">
++            <Glyph value="parenleft"/>
++            <Glyph value="bracketleft"/>
++            <Glyph value="cornerbracketleft.half"/>
 +            <Glyph value="spacehan"/>
 +            <Glyph value="dotkata"/>
 +            <Glyph value="colon.full"/>
