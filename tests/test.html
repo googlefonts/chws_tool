@@ -320,16 +320,30 @@ ol {
 <script>
 function populateFonts() {
   const styles = []
+  let parent = font
   fonts.forEach((filename) => {
-    const url = fonts_dir + filename;
-    const name = filename.replace(/[ \.]/g, '-');
-    styles.push(`@font-face { font-family: "${name}"; src: url("${url}"); ` +
-                `font-display: block; }`);
-    styles.push(`.font-${name} .test { font-family: ${name}; }`);
+    if (filename[0] === '#') {
+      parent = document.createElement("optgroup");
+      parent.label = filename.substr(1);
+      font.appendChild(parent);
+      return;
+    }
+    let name = filename
+    if (filename.startsWith("local(") && filename.endsWith(")")) {
+      const family_name = filename.slice(6, -1);
+      name = family_name.replace(/[ \.#]/g, '-');
+      styles.push(`.font-${name} .test { font-family: '${family_name}'; }`);
+    } else {
+      const url = fonts_dir + filename;
+      name = filename.replace(/[ \.#]/g, '-');
+      styles.push(`@font-face { font-family: "${name}"; src: url("${url}"); ` +
+                  `font-display: block; }`);
+      styles.push(`.font-${name} .test { font-family: ${name}; }`);
+    }
     option_element = document.createElement("option");
     option_element.value = name;
     option_element.textContent = name;
-    font.appendChild(option_element);
+    parent.appendChild(option_element);
   });
   style_element = document.createElement("style");
   style_element.textContent = styles.join("\n");
@@ -564,6 +578,9 @@ class Spacing {
     this.middle += this.colon;
     // For Chinese
     this.close += this.exclam_question;
+    // Narrow/halfwidth forms
+    this.open += '\u0028\u005B\uFF62'
+    this.close += '\u0029\u005D\uFF63'
     document.getElementById('open').value = this.open;
     document.getElementById('close').value = this.close;
     document.getElementById('middle').value = this.middle;
