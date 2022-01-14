@@ -440,19 +440,19 @@
         },
         "pytype": {
             "hashes": [
-                "sha256:18f730940c7178d4e9ce02e6c2f3f85f0cabad6016a093c23c982b5a6752c022",
-                "sha256:2103c84d9f313217f36630f7d130bf774c1f41444b8c49aca807c36a5f177431",
-                "sha256:6f988f54b9e1df95f9ff5e4eb008cd6bce93473eafc0ead282975cedbc8be9e4",
-                "sha256:a6051920b6941b894c6c0d9d6ea5a96669513f3d364a545bbcf204d5e7fd018f",
-                "sha256:b87ef88dc1d76feac42c85d40a3c7eda33fdf561bae2e25faa74016bf3d72776",
-                "sha256:c824d09dd463165ee47dd78f7ca30941353c2095361aadb57165c4211c148901",
-                "sha256:cd01e0d00716098fc5a6c74ecaa94652524ae746bc6a14323f8b57368bd8cf27",
-                "sha256:e513fde976c07c08807d5532435352678ba0e084a65697c64bd6b6d875aea648",
-                "sha256:f152d42d6077fccb4a8a2d2b19b6a9222a9cab5a33213e519021b1bfa86c5953",
-                "sha256:fd279ed6cf0a8ad0748efde1c02918dd02752c3dd93d144d3f2e6519617d3796"
+                "sha256:07bc897c79cb6a93411f392812c64ed9e2ba1d6093e46950b6f3c19c88f38265",
+                "sha256:0ab5295f83f762eec02acd5b38b7a4e333f1d4d8dc30ecde319f137c1f0ce3b3",
+                "sha256:0d11bc4e609ed8309c09fc67f3ba08bc109f0b9d4995c69d45e25068f2bdda2e",
+                "sha256:5d814e56ed3fb05db735b0179d7354a501e7884d170d75afc180284c1d1dde91",
+                "sha256:a017e5d6ac24986c0e0b6ac91b3c3bff50cee08e46b9acc15e528bfadae708d3",
+                "sha256:a14aaa3bc58b29d27582ef9f2484569ea04b25363325762c4c741a2c3ddf95c3",
+                "sha256:aadd325aa3926135e242c4e75dee4beb8e56f9d6c7d382f904201360bbb0e39d",
+                "sha256:b796e75c8421218ed90864829831d637a0c03668b61edb74e3f11b6746596b66",
+                "sha256:d3a1ee9b6ae0e65f779ba498eaa4d6bb83cf8bfac733003623a9b031cbab289f",
+                "sha256:fc8e5b6830eba2849b3032d3b817e79d56f6865ee562c64c705a91e1d44a2ac2"
             ],
             "index": "pypi",
-            "version": "==2022.1.7"
+            "version": "==2022.1.13"
         },
         "pyyaml": {
             "hashes": [
