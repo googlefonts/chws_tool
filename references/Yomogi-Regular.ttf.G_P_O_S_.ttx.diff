@@ -1,6 +1,6 @@
 @@
 +<?xml version="1.0" encoding="UTF-8"?>
-+<ttFont ttLibVersion="4.28">
++<ttFont ttLibVersion="4.38">
 +
 +  <GPOS>
 +    <Version value="0x00010000"/>
@@ -12,8 +12,8 @@
 +          <DefaultLangSys>
 +            <ReqFeatureIndex value="65535"/>
 +            <!-- FeatureCount=2 -->
-+            <FeatureIndex index="0" value="0"/>
-+            <FeatureIndex index="1" value="1"/>
++            <FeatureIndex index="0" value="1"/>
++            <FeatureIndex index="1" value="0"/>
 +          </DefaultLangSys>
 +          <!-- LangSysCount=0 -->
 +        </Script>
@@ -22,18 +22,18 @@
 +    <FeatureList>
 +      <!-- FeatureCount=2 -->
 +      <FeatureRecord index="0">
-+        <FeatureTag value="halt"/>
-+        <Feature>
-+          <!-- LookupCount=1 -->
-+          <LookupListIndex index="0" value="0"/>
-+        </Feature>
-+      </FeatureRecord>
-+      <FeatureRecord index="1">
 +        <FeatureTag value="chws"/>
 +        <Feature>
 +          <!-- LookupCount=2 -->
 +          <LookupListIndex index="0" value="1"/>
 +          <LookupListIndex index="1" value="3"/>
++        </Feature>
++      </FeatureRecord>
++      <FeatureRecord index="1">
++        <FeatureTag value="halt"/>
++        <Feature>
++          <!-- LookupCount=1 -->
++          <LookupListIndex index="0" value="0"/>
 +        </Feature>
 +      </FeatureRecord>
 +    </FeatureList>

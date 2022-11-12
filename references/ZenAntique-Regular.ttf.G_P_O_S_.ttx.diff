@@ -7,8 +7,8 @@
              <FeatureIndex index="0" value="0"/>
              <FeatureIndex index="1" value="1"/>
              <FeatureIndex index="2" value="2"/>
-+            <FeatureIndex index="3" value="3"/>
-+            <FeatureIndex index="4" value="4"/>
++            <FeatureIndex index="3" value="4"/>
++            <FeatureIndex index="4" value="3"/>
            </DefaultLangSys>
            <!-- LangSysCount=0 -->
          </Script>
@@ -25,18 +25,18 @@
          </Feature>
        </FeatureRecord>
 +      <FeatureRecord index="3">
-+        <FeatureTag value="vhal"/>
-+        <Feature>
-+          <!-- LookupCount=1 -->
-+          <LookupListIndex index="0" value="4"/>
-+        </Feature>
-+      </FeatureRecord>
-+      <FeatureRecord index="4">
 +        <FeatureTag value="vchw"/>
 +        <Feature>
 +          <!-- LookupCount=2 -->
 +          <LookupListIndex index="0" value="5"/>
 +          <LookupListIndex index="1" value="7"/>
++        </Feature>
++      </FeatureRecord>
++      <FeatureRecord index="4">
++        <FeatureTag value="vhal"/>
++        <Feature>
++          <!-- LookupCount=1 -->
++          <LookupListIndex index="0" value="4"/>
 +        </Feature>
 +      </FeatureRecord>
      </FeatureList>

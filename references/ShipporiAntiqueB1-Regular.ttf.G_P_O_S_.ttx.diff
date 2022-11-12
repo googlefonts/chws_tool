@@ -3,15 +3,19 @@
            <DefaultLangSys>
              <ReqFeatureIndex value="65535"/>
 -            <!-- FeatureCount=4 -->
+-            <FeatureIndex index="0" value="0"/>
+-            <FeatureIndex index="1" value="1"/>
+-            <FeatureIndex index="2" value="2"/>
+-            <FeatureIndex index="3" value="3"/>
 +            <!-- FeatureCount=8 -->
-             <FeatureIndex index="0" value="0"/>
-             <FeatureIndex index="1" value="1"/>
-             <FeatureIndex index="2" value="2"/>
-             <FeatureIndex index="3" value="3"/>
-+            <FeatureIndex index="4" value="4"/>
-+            <FeatureIndex index="5" value="5"/>
++            <FeatureIndex index="0" value="2"/>
++            <FeatureIndex index="1" value="3"/>
++            <FeatureIndex index="2" value="4"/>
++            <FeatureIndex index="3" value="7"/>
++            <FeatureIndex index="4" value="1"/>
++            <FeatureIndex index="5" value="0"/>
 +            <FeatureIndex index="6" value="6"/>
-+            <FeatureIndex index="7" value="7"/>
++            <FeatureIndex index="7" value="5"/>
            </DefaultLangSys>
            <!-- LangSysCount=0 -->
          </Script>
@@ -21,25 +25,51 @@
 -      <!-- FeatureCount=4 -->
 +      <!-- FeatureCount=8 -->
        <FeatureRecord index="0">
-         <FeatureTag value="mark"/>
-         <Feature>
-@@
-           <LookupListIndex index="0" value="4"/>
-         </Feature>
-       </FeatureRecord>
-+      <FeatureRecord index="4">
++        <FeatureTag value="chws"/>
++        <Feature>
++          <!-- LookupCount=2 -->
++          <LookupListIndex index="0" value="6"/>
++          <LookupListIndex index="1" value="8"/>
++        </Feature>
++      </FeatureRecord>
++      <FeatureRecord index="1">
 +        <FeatureTag value="halt"/>
 +        <Feature>
 +          <!-- LookupCount=1 -->
 +          <LookupListIndex index="0" value="5"/>
 +        </Feature>
 +      </FeatureRecord>
++      <FeatureRecord index="2">
+         <FeatureTag value="mark"/>
+         <Feature>
+           <!-- LookupCount=1 -->
+           <LookupListIndex index="0" value="0"/>
+         </Feature>
+       </FeatureRecord>
+-      <FeatureRecord index="1">
++      <FeatureRecord index="3">
+         <FeatureTag value="mkmk"/>
+         <Feature>
+           <!-- LookupCount=2 -->
+@@
+           <LookupListIndex index="1" value="2"/>
+         </Feature>
+       </FeatureRecord>
+-      <FeatureRecord index="2">
++      <FeatureRecord index="4">
+         <FeatureTag value="palt"/>
+         <Feature>
+           <!-- LookupCount=1 -->
+           <LookupListIndex index="0" value="3"/>
+         </Feature>
+       </FeatureRecord>
+-      <FeatureRecord index="3">
 +      <FeatureRecord index="5">
-+        <FeatureTag value="chws"/>
++        <FeatureTag value="vchw"/>
 +        <Feature>
 +          <!-- LookupCount=2 -->
-+          <LookupListIndex index="0" value="6"/>
-+          <LookupListIndex index="1" value="8"/>
++          <LookupListIndex index="0" value="10"/>
++          <LookupListIndex index="1" value="12"/>
 +        </Feature>
 +      </FeatureRecord>
 +      <FeatureRecord index="6">
@@ -50,13 +80,11 @@
 +        </Feature>
 +      </FeatureRecord>
 +      <FeatureRecord index="7">
-+        <FeatureTag value="vchw"/>
-+        <Feature>
-+          <!-- LookupCount=2 -->
-+          <LookupListIndex index="0" value="10"/>
-+          <LookupListIndex index="1" value="12"/>
-+        </Feature>
-+      </FeatureRecord>
+         <FeatureTag value="vpal"/>
+         <Feature>
+           <!-- LookupCount=1 -->
+@@
+       </FeatureRecord>
      </FeatureList>
      <LookupList>
 -      <!-- LookupCount=5 -->
