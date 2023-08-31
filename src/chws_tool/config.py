@@ -20,9 +20,11 @@ import east_asian_spacing as chws
 logger = logging.getLogger("config")
 
 
-def _get_factory_by_name() -> typing.Dict[
-    str, typing.Callable[[chws.Config, str, bool], typing.Optional[chws.Config]]
-]:
+def _get_factory_by_name() -> (
+    typing.Dict[
+        str, typing.Callable[[chws.Config, str, bool], typing.Optional[chws.Config]]
+    ]
+):
     def default(config, name, is_vertical):
         return config
 
