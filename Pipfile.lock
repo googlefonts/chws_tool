@@ -847,11 +847,11 @@
         },
         "tox": {
             "hashes": [
-                "sha256:7f7e5f1b20115560e610b9a11143bbcf48270ec3293f36c0a18be7b287c3b41f",
-                "sha256:cc665e1e6b095f843b952ea5696f7a64bb64982aff62b62547ef171fa60e21eb"
+                "sha256:8a8cc94b7269f8e43dfc636eff2da4b33a199a4e575b5b086cc51aae24ac4262",
+                "sha256:da761b4a57ee2b92b5ce39f48ff723fc42d185bf2af508effb683214efa662ea"
             ],
             "index": "pypi",
-            "version": "==4.11.0"
+            "version": "==4.11.1"
         },
         "typing-extensions": {
             "hashes": [
