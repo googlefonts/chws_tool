@@ -105,7 +105,11 @@ async def main_async() -> None:
         help="comment level for the glyph list",
     )
     parser.add_argument(
-        "-o", "--output", default="build", type=pathlib.Path, help="output path or directory"
+        "-o",
+        "--output",
+        default="build",
+        type=pathlib.Path,
+        help="output path or directory",
     )
     parser.add_argument(
         "-p",
