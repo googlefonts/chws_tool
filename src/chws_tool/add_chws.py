@@ -105,7 +105,7 @@ async def main_async() -> None:
         help="comment level for the glyph list",
     )
     parser.add_argument(
-        "-o", "--output", default="build", type=pathlib.Path, help="output directory"
+        "-o", "--output", default="build", type=pathlib.Path, help="output path or directory"
     )
     parser.add_argument(
         "-p",
@@ -120,7 +120,7 @@ async def main_async() -> None:
     chws.init_logging(args.verbose, main=logger)
 
     # Expand directories.
-    inputs = chws.Builder.expand_paths(args.inputs)
+    inputs = list(chws.Builder.expand_paths(args.inputs))
 
     if args.print_name:
         _print_font_names(inputs)
@@ -132,7 +132,9 @@ async def main_async() -> None:
         else:
             args.glyph_out = pathlib.Path(args.glyph_out)
             args.glyph_out.mkdir(exist_ok=True, parents=True)
-    args.output.mkdir(exist_ok=True, parents=True)
+
+    if len(inputs) > 1 or not chws.Font.is_font_extension(args.output.suffix):
+        args.output.mkdir(exist_ok=True, parents=True)
 
     for input in inputs:
         await add_chws_async(
