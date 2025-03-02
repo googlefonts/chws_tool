@@ -422,11 +422,11 @@
         },
         "cachetools": {
             "hashes": [
-                "sha256:02134e8439cdc2ffb62023ce1debca2944c3f289d66bb17ead3ab3dede74b292",
-                "sha256:2cc24fb4cbe39633fb7badd9db9ca6295d766d9c2995f245725a46715d050f2a"
+                "sha256:70f238fbba50383ef62e55c6aff6d9673175fe59f7c6782c7a0b9e38f4a9df95",
+                "sha256:b76651fdc3b24ead3c648bbdeeb940c1b04d365b38b4af66788f9ec4a81d42bb"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==5.5.0"
+            "version": "==5.5.1"
         },
         "chardet": {
             "hashes": [
@@ -977,19 +977,19 @@
         },
         "tox": {
             "hashes": [
-                "sha256:452bc32bb031f2282881a2118923176445bac783ab97c874b8770ab4c3b76c38",
-                "sha256:86075e00e555df6e82e74cfc333917f91ecb47ffbc868dcafbd2672e332f4a2c"
+                "sha256:083a720adbc6166fff0b7d1df9d154f9d00bfccb9403b8abf6bc0ee435d6a62e",
+                "sha256:57ba7df7d199002c6df8c2db9e6484f3de6ca8f42013c083ea2d4d1e5c6bdc75"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.8'",
-            "version": "==4.23.2"
+            "version": "==4.24.1"
         },
         "typing-extensions": {
             "hashes": [
                 "sha256:04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d",
                 "sha256:1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8"
             ],
-            "markers": "python_version >= '3.8'",
+            "markers": "python_version < '3.11'",
             "version": "==4.12.2"
         },
         "typing-inspect": {
@@ -1065,11 +1065,11 @@
         },
         "virtualenv": {
             "hashes": [
-                "sha256:2ca56a68ed615b8fe4326d11a0dca5dfbe8fd68510fb6c6349163bed3c15f2b2",
-                "sha256:44a72c29cceb0ee08f300b314848c86e57bf8d1f13107a5e671fb9274138d655"
+                "sha256:4e4cb403c0b0da39e13b46b1b2476e505cb0046b25f242bee80f62bf990b2779",
+                "sha256:b8b8970138d32fb606192cb97f6cd4bb644fa486be9308fb9b63f81091b5dc35"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==20.27.0"
+            "version": "==20.29.1"
         },
         "zopfli": {
             "hashes": [
