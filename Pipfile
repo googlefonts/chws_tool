@@ -17,6 +17,3 @@ pytest-asyncio = "*"
 pytype = "*"
 tox = "*"
 chws-tool = {editable = true, extras = ["dev"], path = "."}
-
-[requires]
-python_version = "3.8"
