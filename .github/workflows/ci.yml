@@ -17,10 +17,12 @@ jobs:
       with:
         # pytype: Python versions > 3.12 are not yet supported.
         python-version: "3.12"
-    - name: Install tox
-      run: pip install tox
+    - name: Install uv
+      uses: astral-sh/setup-uv@v5
+    - name: Install Dependencies
+      run: uv sync
     - name: Run style and typing checks
-      run: tox -e lint
+      run: uv run tox -e lint
   test:
     runs-on: ${{ matrix.platform }}
     strategy:
@@ -33,10 +35,12 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: ${{ matrix.python-version }}
-    - name: Install tox
-      run: pip install tox
+    - name: Install uv
+      uses: astral-sh/setup-uv@v5
+    - name: Install Dependencies
+      run: uv sync
     - name: Run the tests
-      run: tox -e py
+      run: uv run tox -e py
   deploy:
     # only run if the commit is tagged...
     if: startsWith(github.ref, 'refs/tags/v')
@@ -56,10 +60,11 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: "3.x"
+    - name: Install uv
+      uses: astral-sh/setup-uv@v5
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install setuptools wheel twine
+        uv sync
     - name: Extract release notes from annotated tag message
       id: release_notes
       env:
@@ -96,13 +101,12 @@ jobs:
         prerelease: ${{ env.IS_PRERELEASE }}
     - name: Build and publish
       env:
-        TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
-        TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+        UV_PUBLISH_TOKEN: ${{ secrets.PYPI_TOKEN }}
       run: |
         if [ "$IS_PRERELEASE" == true ]; then
           echo "DEBUG: This is a pre-release"
         else
           echo "DEBUG: This is a final release"
         fi
-        python setup.py sdist bdist_wheel
-        twine upload dist/*
+        uv build
+        uv publish
