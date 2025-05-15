@@ -1,2 +1,42 @@
+[project]
+name = "chws_tool"
+# version = "1.4.3"
+dynamic = ["version"]
+description = "Utility for OpenType chws/vchw features"
+authors = [
+    { name = "Koji Ishii", email = "kojii@chromium.org" }
+]
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.8"
+dependencies = [
+    "east-asian-spacing>=1.4.2",
+]
+
+[project.urls]
+repository = "https://github.com/googlefonts/chws_tool"
+
+[dependency-groups]
+dev = [
+    "black>=24.8.0",
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.24.0",
+    # `pytype` supports 3.8-3.12 (May 15, 2025)
+    # https://github.com/google/pytype/#requirements
+    "pytype>=2024.9.13; python_version <= '3.12'",
+    "tox>=4.25.0",
+    "tox-uv>=1.13.1",
+]
+
+[project.scripts]
+add-chws = 'chws_tool.add_chws:main'
+
+[build-system]
+requires = ["setuptools >= 77.0.3", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
 [tool.pytest.ini_options]
 testpaths = "tests"
+
+[tool.setuptools_scm]
+version_file = "src/chws_tool/_version.py"
