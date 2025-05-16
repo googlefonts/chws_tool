@@ -24,6 +24,7 @@ from typing import Optional
 from typing import Union
 
 import east_asian_spacing as chws
+from chws_tool import __version__
 from chws_tool.config import GoogleFontsConfig
 
 logger = logging.getLogger("add_chws")
@@ -119,6 +120,12 @@ async def main_async() -> None:
     )
     parser.add_argument(
         "-v", "--verbose", help="increase output verbosity", action="count", default=0
+    )
+    parser.add_argument(
+        "-V",
+        "--version",
+        action="version",
+        version=f"%(prog)s {__version__} (east-asian-spacing {chws.__version__})",
     )
     args = parser.parse_args()
     chws.init_logging(args.verbose, main=logger)
