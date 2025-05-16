@@ -415,16 +415,16 @@ wheels = [
 
 [[package]]
 name = "east-asian-spacing"
-version = "1.4.3"
+version = "1.4.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "fonttools", version = "4.57.0", source = { registry = "https://pypi.org/simple" }, extra = ["woff"], marker = "python_full_version < '3.9'" },
     { name = "fonttools", version = "4.58.0", source = { registry = "https://pypi.org/simple" }, extra = ["woff"], marker = "python_full_version >= '3.9'" },
     { name = "uharfbuzz" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/df/10/de1f974560453b8e9ac1fd4f97659e4098d226e6d74b68780e0a5685515c/east_asian_spacing-1.4.3.tar.gz", hash = "sha256:92c4fd42f2fe24ad96c1f1bfd91a6204077d510049a86ceac9bfff87a7775385", size = 41218, upload-time = "2025-05-14T18:49:55.035Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b0/6c/4b352228d65e24b4cf58bc6e8bdbb79219bc6eacbbee4b2d7918974f6cfa/east_asian_spacing-1.4.4.tar.gz", hash = "sha256:59015dbcb489cba4ab0adef0306ad77913347162f157ae24d933de61ffa816cf", size = 392552, upload-time = "2025-05-16T20:47:30.011Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/eb/fa/511ea07073fc57817f88db22575a72c0f7552fccb399bb32ac3626fbcb4e/east_asian_spacing-1.4.3-py3-none-any.whl", hash = "sha256:87873afd0b29cb4d724858db1dbc169b9305bbaeb27b822bb8b1cecda6ed3844", size = 42527, upload-time = "2025-05-14T18:49:53.032Z" },
+    { url = "https://files.pythonhosted.org/packages/90/e7/a24150f3c81f5606708963bd2890f0f7bfdfc4288c87d6cb8e6b889f4577/east_asian_spacing-1.4.4-py3-none-any.whl", hash = "sha256:032f66e5cc3e8e5bfab676ad35d7e24d92db58fb4cb94c4cbf20802219ab47a8", size = 43415, upload-time = "2025-05-16T20:47:29.04Z" },
 ]
 
 [[package]]
