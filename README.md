@@ -26,7 +26,7 @@ please see the [Adding Fonts] section below.
 
 ## Install
 
-You can install this tool by `pipx` or `uv`.
+You can install this tool by [pipx] or [uv].
 ```shell-session
 pipx install chws-tool
 ```
@@ -106,7 +106,8 @@ asyncio.run(main_async())
 ### Clone and Install
 
 If you want to clone the repository and install
-in the [editable mode] with the development packages:
+in the [editable mode] with the development packages,
+using [uv]:
 ```shell-session
 git clone https://github.com/googlefonts/chws_tool.git
 cd chws_tool
@@ -114,7 +115,7 @@ uv sync
 . .venv/bin/activate
 uv tool install -e .
 ```
-If you prefer using `pip`:
+If you prefer using [pip]:
 ```shell-session
 git clone https://github.com/googlefonts/chws_tool.git
 cd chws_tool
