@@ -10,7 +10,7 @@ readme = "README.md"
 license = "Apache-2.0"
 requires-python = ">=3.8"
 dependencies = [
-    "east-asian-spacing>=1.4.2",
+    "east-asian-spacing>=1.4.4",
 ]
 
 [project.urls]
