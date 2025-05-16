@@ -26,18 +26,26 @@ please see the [Adding Fonts] section below.
 
 ## Install
 
-```sh
+You can install this tool by `pipx` or `uv`.
+```shell-session
+pipx install chws-tool
+```
+```shell-session
+uv tool install chws-tool
+```
+Using [pip] is also supported, but please be aware that,
+if you install with [pip] in the global environment,
+its dependencies may cause conflicts with other packages.
+If all what you need is the command line tool,
+[pipx] or [uv] can install it globally
+while still isolating it in a virtual environment.
+```shell-session
 pip install chws-tool
 ```
-If you want to clone and install
-in the [editable mode] with the development packages:
-```sh
-git clone https://github.com/googlefonts/chws_tool.git
-cd chws_tool
-pip install -e '.[dev]'
-```
 
-[editable mode]: https://pip.pypa.io/en/stable/cli/pip_install/#install-editable
+[pip]: https://pip.pypa.io/en/latest/
+[pipx]: https://pipxproject.github.io/pipx/
+[uv]: https://docs.astral.sh/uv/
 
 ## Command Line Usage
 
@@ -45,12 +53,12 @@ The following example adds the features to `input.otf`
 and saves it to the `build` directory.
 If the argument is a directory,
 the tool expands it to all fonts in the directory recursively.
-```sh
+```shell-session
 add-chws input.otf
 ```
 Use the `-o` option to change the output directory,
 or the `--help` option for the full list of options.
-```sh
+```shell-session
 add-chws input_dir -o output_dir
 ```
 
@@ -93,7 +101,29 @@ asyncio.run(main_async())
 
 [asyncio]: https://docs.python.org/3/library/asyncio.html
 
-## Adding Fonts
+## Advanced Topics
+
+### Clone and Install
+
+If you want to clone the repository and install
+in the [editable mode] with the development packages:
+```shell-session
+git clone https://github.com/googlefonts/chws_tool.git
+cd chws_tool
+uv sync
+. .venv/bin/activate
+uv tool install -e .
+```
+If you prefer using `pip`:
+```shell-session
+git clone https://github.com/googlefonts/chws_tool.git
+cd chws_tool
+pip install -e '.[dev]'
+```
+
+[editable mode]: https://pip.pypa.io/en/stable/cli/pip_install/#install-editable
+
+### Adding Fonts
 [adding fonts]: #adding-fonts
 
 This package has a built-in list of supported fonts in its [config].
@@ -116,7 +146,7 @@ the following process is recommended:
 
 [config]: src/chws_tool/config.py
 
-## Visual Test
+### Visual Test
 [Visual Test]: #visual-test
 
 The primary purpose of this process is to find
@@ -172,6 +202,6 @@ but they may be useful in following cases.
 * The "Characters" input fields can change the test cases.
   You don't have to change them unless you have specific needs.
 
-## Releasing
+### Releasing
 
 See https://googlefonts.github.io/python#make-a-release.
