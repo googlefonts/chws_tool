@@ -40,3 +40,7 @@ testpaths = "tests"
 
 [tool.setuptools_scm]
 version_file = "src/chws_tool/_version.py"
+
+[tool.uv]
+# https://docs.astral.sh/uv/concepts/cache/#dynamic-metadata
+cache-keys = [{ file = "pyproject.toml" }, { git = { commit = true, tags = true } }]
