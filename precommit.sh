@@ -17,6 +17,12 @@
 # Things that should be run (and pass) before submitting code.
 #
 
+if [[ -z "$VIRTUAL_ENV" ]]; then
+  echo "Activating the virtual environment and rerunning..."
+  uv run "$0" "$@"
+  exit $?
+fi
+
 # everything should succeed
 set -e
 
