@@ -1,7 +1,6 @@
 [project]
 name = "chws_tool"
-# version = "1.4.3"
-dynamic = ["version"]
+version = "1.4.4"
 description = "Utility for OpenType chws/vchw features"
 authors = [
     { name = "Koji Ishii", email = "kojii@chromium.org" }
@@ -32,14 +31,11 @@ dev = [
 add-chws = 'chws_tool.add_chws:main'
 
 [build-system]
-requires = ["setuptools >= 77.0.3", "setuptools-scm>=8"]
+requires = ["setuptools >= 77.0.3"]
 build-backend = "setuptools.build_meta"
 
 [tool.pytest.ini_options]
 testpaths = "tests"
-
-[tool.setuptools_scm]
-version_file = "src/chws_tool/_version.py"
 
 [tool.uv]
 # https://docs.astral.sh/uv/concepts/cache/#dynamic-metadata
