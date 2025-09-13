@@ -31,8 +31,8 @@ dev = [
 add-chws = 'chws_tool.add_chws:main'
 
 [build-system]
-requires = ["setuptools >= 77.0.3"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [tool.pytest.ini_options]
 testpaths = "tests"
