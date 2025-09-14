@@ -36,7 +36,3 @@ build-backend = "hatchling.build"
 
 [tool.pytest.ini_options]
 testpaths = "tests"
-
-[tool.uv]
-# https://docs.astral.sh/uv/concepts/cache/#dynamic-metadata
-cache-keys = [{ file = "pyproject.toml" }, { git = { commit = true, tags = true } }]
