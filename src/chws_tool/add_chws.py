@@ -77,8 +77,7 @@ def add_chws(
         The path of the output font.
         `None` if the feature is not applicable to the font.
     """
-    loop = asyncio.get_event_loop()
-    return loop.run_until_complete(add_chws_async(input, output, **kwargs))
+    return asyncio.run(add_chws_async(input, output, **kwargs))
 
 
 def _print_font_names(inputs):
