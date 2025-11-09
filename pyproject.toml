@@ -1,15 +1,15 @@
 [project]
 name = "chws_tool"
-version = "1.4.4"
+version = "1.4.5"
 description = "Utility for OpenType chws/vchw features"
 authors = [
     { name = "Koji Ishii", email = "kojii@chromium.org" }
 ]
 readme = "README.md"
 license = "Apache-2.0"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 dependencies = [
-    "east-asian-spacing>=1.4.4",
+    "east-asian-spacing>=1.4.5",
 ]
 
 [project.urls]
