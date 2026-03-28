@@ -17,7 +17,7 @@ jobs:
     - name: Install Dependencies
       run: uv sync
     - name: Run style and typing checks
-      run: uv run tox -e lint
+      run: uv run black --check --diff src tests
   test:
     runs-on: ${{ matrix.platform }}
     strategy:
@@ -35,7 +35,7 @@ jobs:
     - name: Install Dependencies
       run: uv sync
     - name: Run the tests
-      run: uv run tox -e py
+      run: uv run pytest
   deploy:
     # only run if the commit is tagged...
     if: startsWith(github.ref, 'refs/tags/v')
