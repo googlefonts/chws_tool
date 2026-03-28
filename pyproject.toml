@@ -20,9 +20,6 @@ dev = [
     "black>=24.8.0",
     "pytest>=8.3.5",
     "pytest-asyncio>=0.24.0",
-    # `pytype` supports 3.8-3.12 (May 15, 2025)
-    # https://github.com/google/pytype/#requirements
-    "pytype>=2024.9.13; python_version <= '3.12'",
     "tox>=4.25.0",
     "tox-uv>=1.13.1",
 ]

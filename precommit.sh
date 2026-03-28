@@ -28,6 +28,6 @@ set -e
 
 black src tests
 pytest
-pytype src
+# pytype src
 
 echo "Seems OK :)"
