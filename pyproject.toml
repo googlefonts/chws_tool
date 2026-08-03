@@ -39,7 +39,4 @@ testpaths = "tests"
 [tool.ruff.lint]
 ignore = [
     "F401", # `...` imported but unused; consider removing, adding to `__all__`, or using a redundant alias
-    "UP006", # [*] Use `dict` instead of `typing.Dict` for type annotation
-    "UP007", # [*] Use `X | Y` for type annotations
-    "UP045", # [*] Use `X | None` for type annotations
 ]

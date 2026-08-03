@@ -21,9 +21,7 @@ logger = logging.getLogger("config")
 
 
 def _get_factory_by_name() -> (
-    typing.Dict[
-        str, typing.Callable[[chws.Config, str, bool], typing.Optional[chws.Config]]
-    ]
+    dict[str, typing.Callable[[chws.Config, str, bool], chws.Config | None]]
 ):
     def default(config, name, is_vertical):
         return config
@@ -162,9 +160,7 @@ def _get_factory_by_name() -> (
 class GoogleFontsConfig(chws.Config):
     _factory_by_name = _get_factory_by_name()
 
-    def for_font_name(
-        self, name: str, is_vertical: bool
-    ) -> typing.Optional[chws.Config]:
+    def for_font_name(self, name: str, is_vertical: bool) -> chws.Config | None:
         factory = GoogleFontsConfig._factory_by_name.get(name)
         if factory:
             return factory(self, name, is_vertical)
