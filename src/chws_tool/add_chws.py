@@ -20,10 +20,10 @@ import os
 import pathlib
 import sys
 import time
-from typing import Optional
-from typing import Union
+from typing import Optional, Union
 
 import east_asian_spacing as chws
+
 from chws_tool.config import GoogleFontsConfig
 
 logger = logging.getLogger("add_chws")

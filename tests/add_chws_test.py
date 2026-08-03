@@ -12,10 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import east_asian_spacing as chws
 import pytest
 
 import chws_tool
-import east_asian_spacing as chws
 
 
 @pytest.mark.asyncio
