@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://taskfile.dev/schema.json
 
-# Copyright 2020 Google LLC
+# Copyright 2026 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -36,12 +36,6 @@ tasks:
   tests:
     - "{{.RUN}} tox {{.TOX}} {{.CLI_ARGS}}"
   type: "{{.RUN}} pyrefly check {{.PYREFLY}} {{.CLI_ARGS}}"
-
-  download:
-    generates:
-      - fonts/NotoSansCJKjp-Regular.otf
-    cmds:
-      - "{{.RUN}} python3 ./tests/download_fonts.py"
 
   install-git-hooks:
     desc: Create git hooks
