@@ -18,6 +18,7 @@ repository = "https://github.com/googlefonts/chws_tool"
 [dependency-groups]
 dev = [
     "black>=24.8.0",
+    "pyrefly>=1.2.0",
     "pytest>=8.3.5",
     "pytest-asyncio>=0.24.0",
     "tox>=4.25.0",

@@ -22,6 +22,7 @@ tasks:
 
   check:
     - task: tests
+    - task: type
     - task: fmtchk
     - git diff --exit-code
 
@@ -31,6 +32,7 @@ tasks:
     - "{{.RUN}} pytest {{.PYTEST}} {{.CLI_ARGS}}"
   tests:
     - "{{.RUN}} tox {{.TOX}} {{.CLI_ARGS}}"
+  type: "{{.RUN}} pyrefly check {{.PYREFLY}} {{.CLI_ARGS}}"
 
   download:
     generates:
@@ -47,6 +49,7 @@ tasks:
         platforms: [linux, darwin]
 
 vars:
+  PYREFLY: --summarize-errors
   PYTEST: -v
   RUN: uv run
   TOX: -p
