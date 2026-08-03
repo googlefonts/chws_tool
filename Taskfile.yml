@@ -31,10 +31,8 @@ tasks:
   fmt: "{{.RUN}} black src tests {{.CLI_ARGS}}"
   fmtchk: "{{.RUN}} black --check --diff src tests {{.CLI_ARGS}}"
   lint: "{{.RUN}} ruff check {{.CLI_ARGS}}"
-  test:
-    - "{{.RUN}} pytest {{.PYTEST}} {{.CLI_ARGS}}"
-  tests:
-    - "{{.RUN}} tox {{.TOX}} {{.CLI_ARGS}}"
+  test: "{{.RUN}} pytest {{.PYTEST}} {{.CLI_ARGS}}"
+  tests: "{{.RUN}} tox {{.TOX}} {{.CLI_ARGS}}"
   type: "{{.RUN}} pyrefly check {{.PYREFLY}} {{.CLI_ARGS}}"
 
   install-git-hooks:
