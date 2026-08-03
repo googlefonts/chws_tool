@@ -19,10 +19,16 @@ jobs:
         persist-credentials: false
     - name: Install uv
       uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+    - name: Install Task
+      uses: go-task/setup-task@01a4adf9db2d14c1de7a560f09170b6e0df736aa # v2.1.0
     - name: Install Dependencies
       run: uv sync
+    - name: Run type
+      run: task type
+    - name: Run lint
+      run: task lint
     - name: Run style and typing checks
-      run: uv run black --check --diff src tests
+      run: task fmtchk
 
   test:
     runs-on: ${{ matrix.platform }}
@@ -40,10 +46,12 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install uv
       uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+    - name: Install Task
+      uses: go-task/setup-task@01a4adf9db2d14c1de7a560f09170b6e0df736aa # v2.1.0
     - name: Install Dependencies
       run: uv sync
     - name: Run the tests
-      run: uv run pytest
+      run: task test
 
   deploy:
     # only run if the commit is tagged...
