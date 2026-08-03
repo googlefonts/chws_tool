@@ -12,6 +12,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+from .add_chws import add_chws, add_chws_async
 from .config import GoogleFontsConfig
-from .add_chws import add_chws
-from .add_chws import add_chws_async
