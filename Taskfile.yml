@@ -23,11 +23,14 @@ tasks:
   check:
     - task: tests
     - task: type
+    - task: lint
     - task: fmtchk
     - git diff --exit-code
 
+  fix: "{{.RUN}} ruff check --fix {{.CLI_ARGS}}"
   fmt: "{{.RUN}} black src tests {{.CLI_ARGS}}"
   fmtchk: "{{.RUN}} black --check --diff src tests {{.CLI_ARGS}}"
+  lint: "{{.RUN}} ruff check {{.CLI_ARGS}}"
   test:
     - "{{.RUN}} pytest {{.PYTEST}} {{.CLI_ARGS}}"
   tests:
