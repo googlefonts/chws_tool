@@ -20,7 +20,6 @@ import os
 import pathlib
 import sys
 import time
-from typing import Optional, Union
 
 import east_asian_spacing as chws
 
@@ -30,10 +29,10 @@ logger = logging.getLogger("add_chws")
 
 
 async def add_chws_async(
-    input: Union[str, os.PathLike],
-    output: Optional[Union[str, os.PathLike]] = None,
+    input: str | os.PathLike,
+    output: str | os.PathLike | None = None,
     **kwargs,
-) -> Optional[pathlib.Path]:
+) -> pathlib.Path | None:
     """Add OpenType chws/vchw features to a font.
 
     Args:
@@ -60,10 +59,10 @@ async def add_chws_async(
 
 
 def add_chws(
-    input: Union[str, os.PathLike],
-    output: Optional[Union[str, os.PathLike]] = None,
+    input: str | os.PathLike,
+    output: str | os.PathLike | None = None,
     **kwargs,
-) -> Optional[pathlib.Path]:
+) -> pathlib.Path | None:
     """Add OpenType chws/vchw features to a font.
 
     Args:
