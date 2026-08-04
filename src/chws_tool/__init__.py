@@ -15,6 +15,11 @@
 from .add_chws import add_chws, add_chws_async
 from .config import GoogleFontsConfig
 
+try:
+    from ._version import version as __version__
+except ImportError:
+    __version__ = "0.0.0+unknown"
+
 __all__ = [
     "GoogleFontsConfig",
     "add_chws",
