@@ -14,3 +14,9 @@
 
 from .add_chws import add_chws, add_chws_async
 from .config import GoogleFontsConfig
+
+__all__ = [
+    "GoogleFontsConfig",
+    "add_chws",
+    "add_chws_async",
+]
