@@ -7,17 +7,23 @@ on:
   pull_request:
     branches: [main]
 
+permissions:
+  contents: read
+
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v7
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      with:
+        persist-credentials: false
     - name: Install uv
-      uses: astral-sh/setup-uv@v7
+      uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
     - name: Install Dependencies
       run: uv sync
     - name: Run style and typing checks
       run: uv run black --check --diff src tests
+
   test:
     runs-on: ${{ matrix.platform }}
     strategy:
@@ -25,17 +31,20 @@ jobs:
         python-version: ['3.10', '3.11', '3.12', '3.13', '3.14']
         platform: [ubuntu-latest]
     steps:
-    - uses: actions/checkout@v7
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      with:
+        persist-credentials: false
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v7
+      uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
       with:
         python-version: ${{ matrix.python-version }}
     - name: Install uv
-      uses: astral-sh/setup-uv@v7
+      uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
     - name: Install Dependencies
       run: uv sync
     - name: Run the tests
       run: uv run pytest
+
   deploy:
     # only run if the commit is tagged...
     if: startsWith(github.ref, 'refs/tags/v')
@@ -44,64 +53,43 @@ jobs:
       - lint
       - test
     runs-on: ubuntu-latest
+    environment: release
     permissions:
       contents: write
     steps:
-    - uses: actions/checkout@v7
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
         # setuptools_scm requires the git clone to not be 'shallow'
         fetch-depth: 0
+        persist-credentials: false
     - name: Set up Python
-      uses: actions/setup-python@v7
+      uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
       with:
         python-version: "3.x"
     - name: Install uv
-      uses: astral-sh/setup-uv@v7
+      uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
     - name: Install dependencies
-      run: |
-        uv sync
-    - name: Extract release notes from annotated tag message
-      id: release_notes
-      env:
-        # e.g. v0.1.0a1, v1.2.0b2 or v2.3.0rc3, but not v1.0.0
-        PRERELEASE_TAG_PATTERN: "v[[:digit:]]+\\.[[:digit:]]+\\.[[:digit:]]+([ab]|rc)[[:digit:]]+"
-      run: |
-        # GH checkout action doesn't preserve tag annotations, we must fetch them
-        # https://github.com/actions/checkout/issues/290
-        git fetch --tags --force
-        # strip leading 'refs/tags/' to get the tag name
-        TAG_NAME="${GITHUB_REF##*/}"
-        # Dump tag message to temporary .md file (excluding the PGP signature at the bottom)
-        TAG_MESSAGE=$(git tag -l --format='%(contents)' $TAG_NAME | sed -n '/-----BEGIN PGP SIGNATURE-----/q;p')
-        echo "$TAG_MESSAGE" > "${{ runner.temp }}/release_notes.md"
-        # if the tag has a pre-release suffix mark the Github Release accordingly
-        if egrep -q "$PRERELEASE_TAG_PATTERN" <<< "$TAG_NAME"; then
-          echo "Tag contains a pre-release suffix"
-          echo "IS_PRERELEASE=true" >> "$GITHUB_ENV"
-        else
-          echo "Tag does not contain pre-release suffix"
-          echo "IS_PRERELEASE=false" >> "$GITHUB_ENV"
-        fi
+      run: uv sync
     - name: Create GitHub release
-      id: create_release
-      uses: actions/create-release@v1
       env:
-        # This token is provided by Actions, you do not need to create your own token
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ github.ref }}
-        release_name: ${{ github.ref }}
-        body_path: "${{ runner.temp }}/release_notes.md"
-        draft: false
-        prerelease: ${{ env.IS_PRERELEASE }}
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PRERELEASE_TAG_PATTERN: "^v[[:digit:]]+\\.[[:digit:]]+\\.[[:digit:]]+([ab]|rc)[[:digit:]]+"
+      run: |
+        git fetch --tags --force
+        TAG_NAME="${GITHUB_REF##*/}"
+        TAG_MESSAGE=$(git tag -l --format='%(contents)' "$TAG_NAME" | sed -n '/-----BEGIN PGP SIGNATURE-----/q;p')
+        echo "$TAG_MESSAGE" > "$RUNNER_TEMP/release_notes.md"
+        prerelease_flag=""
+        if grep -Eq "$PRERELEASE_TAG_PATTERN" <<< "$TAG_NAME"; then
+          prerelease_flag="--prerelease"
+        fi
+        gh release create "$TAG_NAME" \
+          --title "$TAG_NAME" \
+          --notes-file "$RUNNER_TEMP/release_notes.md" \
+          $prerelease_flag
     - name: Build and publish
       env:
         UV_PUBLISH_TOKEN: ${{ secrets.PYPI_TOKEN }}
       run: |
-        if [ "$IS_PRERELEASE" == true ]; then
-          echo "DEBUG: This is a pre-release"
-        else
-          echo "DEBUG: This is a final release"
-        fi
         uv build
         uv publish
