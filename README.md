@@ -205,4 +205,8 @@ but they may be useful in following cases.
 
 ### Releasing
 
-See https://googlefonts.github.io/python#make-a-release.
+Create a new release on github, by creating
+a new tag with a leading ‘v’ followed by three MAJOR.MINOR.PATCH digits,
+using [semantic versioning].
+
+[semantic versioning]: https://semver.org/
