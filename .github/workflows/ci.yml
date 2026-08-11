@@ -1,9 +1,8 @@
-name: Continuous Test + Deploy
+name: Continuous Test
 
 on:
   push:
     branches: [main]
-    tags: ["v*.*.*"]
   pull_request:
     branches: [main]
 
@@ -52,52 +51,3 @@ jobs:
       run: uv sync
     - name: Run the tests
       run: task test
-
-  deploy:
-    # only run if the commit is tagged...
-    if: startsWith(github.ref, 'refs/tags/v')
-    # ... and both the lint and test jobs completed successfully
-    needs:
-      - lint
-      - test
-    runs-on: ubuntu-latest
-    environment: release
-    permissions:
-      contents: write
-    steps:
-    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      with:
-        # setuptools_scm requires the git clone to not be 'shallow'
-        fetch-depth: 0
-        persist-credentials: false
-    - name: Set up Python
-      uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
-      with:
-        python-version: "3.x"
-    - name: Install uv
-      uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
-    - name: Install dependencies
-      run: uv sync
-    - name: Create GitHub release
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PRERELEASE_TAG_PATTERN: "^v[[:digit:]]+\\.[[:digit:]]+\\.[[:digit:]]+([ab]|rc)[[:digit:]]+"
-      run: |
-        git fetch --tags --force
-        TAG_NAME="${GITHUB_REF##*/}"
-        TAG_MESSAGE=$(git tag -l --format='%(contents)' "$TAG_NAME" | sed -n '/-----BEGIN PGP SIGNATURE-----/q;p')
-        echo "$TAG_MESSAGE" > "$RUNNER_TEMP/release_notes.md"
-        prerelease_flag=""
-        if grep -Eq "$PRERELEASE_TAG_PATTERN" <<< "$TAG_NAME"; then
-          prerelease_flag="--prerelease"
-        fi
-        gh release create "$TAG_NAME" \
-          --title "$TAG_NAME" \
-          --notes-file "$RUNNER_TEMP/release_notes.md" \
-          $prerelease_flag
-    - name: Build and publish
-      env:
-        UV_PUBLISH_TOKEN: ${{ secrets.PYPI_TOKEN }}
-      run: |
-        uv build
-        uv publish
