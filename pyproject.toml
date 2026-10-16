@@ -7,7 +7,7 @@ authors = [
 ]
 readme = "README.md"
 license = "Apache-2.0"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
     "east-asian-spacing>=1.4.5",
 ]
